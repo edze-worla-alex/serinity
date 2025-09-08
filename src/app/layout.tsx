@@ -1,7 +1,22 @@
+
 import type { Metadata } from "next";
+import Navbar from "@/components/navbar"
+import ChatBot from "@/components/ChatBot"
+import BookingModal from "@/components/BookingModal"
+import ReviewWidget from "@/components/ReviewWidget"
+import LoadingScreen from "@/components/LoadingScreen"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import React from "react";
+import Link from "next/link";
+import {Phone,
+  Mail,
+  Instagram,
+  Facebook,
+  Sparkles,
+  MapPin,} from "lucide-react";
 
+  import SubscribeForm from "@/components/subscribe-form"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,12 +37,205 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <LoadingScreen/>
+        <Navbar/>
         {children}
+         {/* Footer */}
+      <footer
+        className="bg-[#0F0F0F] text-white relative overflow-hidden"
+        role="contentinfo"
+      >
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-[#0F0F0F] via-[#1a1a1a] to-[#0F0F0F]"
+          aria-hidden="true"
+        />
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[clamp(1rem,2vw,2.5rem)] text-center md:text-left">
+            {/* Brand */}
+            <div className="lg:col-span-1 flex flex-col items-center md:items-start mb-[1.2em]">
+              <div className="flex items-center gap-3 mb-6">
+                <Sparkles
+                  className="w-8 h-8 text-[#C8A882] sparkle-animation"
+                  aria-hidden="true"
+                />
+                <div>
+                  <h2 className="font-serif text-2xl font-bold glow-text">
+                    SERENITY
+                  </h2>
+                  <p className="text-xs text-[#C8A882] tracking-widest">
+                    Luxury Spa & Salon
+                  </p>
+                </div>
+              </div>
+              <p className="text-sm leading-[1.618] text-gray-300 mb-6">
+                Kolkata&apos;s premier luxury wellness destination. Experience
+                unparalleled service with our highly skilled professionals and
+                state-of-the-art equipment.
+              </p>
+              <div className="flex gap-4" role="list" aria-label="Social media links">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-[#C8A882] rounded-full flex items-center justify-center hover:bg-[#FF5C8D] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
+                  aria-label="Follow us on Instagram"
+                  role="listitem"
+                >
+                  <Instagram className="w-5 h-5" aria-hidden="true" />
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-[#C8A882] rounded-full flex items-center justify-center hover:bg-[#FF5C8D] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
+                  aria-label="Follow us on Facebook"
+                  role="listitem"
+                >
+                  <Facebook className="w-5 h-5" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+
+            {/* Services */}
+            <div className="mb-[1.2em]">
+              <h3 className="font-serif text-lg font-semibold mb-6 text-[#C8A882]">
+                Premium Services
+              </h3>
+              <nav aria-label="Services navigation">
+                <ul className="space-y-3 text-sm">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                    >
+                      Luxury Hair Styling
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                    >
+                      Advanced Skincare
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                    >
+                      Therapeutic Massage
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                    >
+                      Premium Nail Care
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                    >
+                      Wellness Treatments
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            {/* Contact */}
+            <div className="mb-[1.2em]">
+              <h3 className="font-serif text-lg font-semibold mb-6 text-[#C8A882]">
+                Visit Our Sanctuary
+              </h3>
+              <address className="space-y-4 text-sm flex flex-col items-center md:items-start not-italic">
+                <div className="flex items-start gap-3">
+                  <MapPin
+                    className="w-5 h-5 text-[#C8A882] mt-0.5 flex-shrink-0"
+                    aria-hidden="true"
+                  />
+                  <span className="text-gray-300 leading-[1.618]">
+                    P-145, Sector A, Metropolitan Co-Operative Housing Society
+                    Limited, Tangra, Kolkata 700105
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-[#C8A882]" aria-hidden="true" />
+                  <a
+                    href="tel:+919876543210"
+                    className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                  >
+                    +91 98765 43210
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Mail className="w-5 h-5 text-[#C8A882]" aria-hidden="true" />
+                  <a
+                    href="mailto:info@serenitysalon.in"
+                    className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                  >
+                    info@serenitysalon.in
+                  </a>
+                </div>
+              </address>
+            </div>
+
+            {/* Newsletter */}
+            <div className="mb-[1.2em]">
+              <h3 className="font-serif text-lg font-semibold mb-6 text-[#C8A882]">
+                Luxury Updates
+              </h3>
+              <p className="text-sm text-gray-300 mb-4 leading-[1.618]">
+                Subscribe for exclusive offers and premium wellness insights.
+              </p>
+              <SubscribeForm/>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-gray-400">
+              © 2025 Serenity Luxury Spa & Salon. All rights reserved.
+            </p>
+            <nav aria-label="Legal links">
+              <div className="flex gap-6 text-sm">
+                <Link
+                  href={"/sitemap"}
+                  className="text-gray-400 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                >
+                  Sitemap
+                </Link>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                >
+                  Terms of Service
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      {/* Widgets/Modals */}
+      <ChatBot />
+      <ReviewWidget />
+      <BookingModal
+        initialService={[]}
+      />
       </body>
     </html>
   );
