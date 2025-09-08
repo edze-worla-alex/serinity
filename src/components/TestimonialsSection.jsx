@@ -17,7 +17,7 @@ const testimonials = [
     name: "Priya Sharma",
     role: "Fashion Designer",
     rating: 5,
-    text: "NUNYUI has completely transformed my beauty routine. The highly skilled professionals and premium equipment deliver results that exceed expectations. Every visit feels like a luxury retreat in the heart of Kolkata.",
+    text: "NUNYUI has completely transformed my beauty routine. The highly skilled professionals and premium equipment deliver results that exceed expectations. Every visit feels like a luxury retreat in the heart of Volta.",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/845cb87f5_image.png?w=800&q=90"
   },
   {
@@ -49,7 +49,7 @@ const testimonials = [
     name: "Kavita Roy",
     role: "Business Owner",
     rating: 5,
-    text: "NUNYUI sets the gold standard for luxury wellness in Kolkata. The professional expertise combined with world-class equipment ensures every treatment delivers exceptional results. It's my personal sanctuary for beauty and wellness.",
+    text: "NUNYUI sets the gold standard for luxury wellness in Volta. The professional expertise combined with world-class equipment ensures every treatment delivers exceptional results. It's my personal sanctuary for beauty and wellness.",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/2ffc407b6_image.png?w=800&q=90"
   }
 ];
@@ -144,7 +144,7 @@ export default function TestimonialsSection() {
                     ) : (
                       <img
                         src={currentTestimonial.image_url}
-                        alt={`${currentTestimonial.name}, a happy client of NUNYUI Spa in Kolkata`}
+                        alt={`${currentTestimonial.name}, a happy client of NUNYUI Spa in Volta`}
                         className="w-full h-full object-cover"
                         onError={() => handleImageError(currentTestimonial.id)}
                       />

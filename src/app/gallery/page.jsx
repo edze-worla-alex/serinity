@@ -11,13 +11,13 @@ const galleryImages = [
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/287fd6130_13.jpg?w=1200&q=90",
     title: "Reception Area",
     category: "Reception",
-    alt: "Elegant reception area at NUNYUI luxury spa and salon in Tangra, Kolkata - welcoming entrance with modern design"
+    alt: "Elegant reception area at NUNYUI luxury spa and salon in Tangra, Volta - welcoming entrance with modern design"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/831601306_14.jpg?w=1200&q=90",
     title: "Main Salon Floor",
     category: "Salon",
-    alt: "Main salon floor at NUNYUI Kolkata - spacious styling area with professional stations and premium equipment"
+    alt: "Main salon floor at NUNYUI Volta - spacious styling area with professional stations and premium equipment"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7b593983f_15.jpg?w=1200&q=90",
@@ -59,7 +59,7 @@ const galleryImages = [
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/664dc3f67_15.jpg?w=1200&q=90",
     title: "Relaxation Room",
     category: "Treatment",
-    alt: "Peaceful relaxation room at NUNYUI spa Kolkata - comfortable seating area for post-treatment relaxation and recovery"
+    alt: "Peaceful relaxation room at NUNYUI spa Volta - comfortable seating area for post-treatment relaxation and recovery"
   }
 ];
 
@@ -118,14 +118,14 @@ export default function Gallery() {
   return (
     <>
       <Head>
-        <title>Gallery - Luxury Spa & Salon Interior | NUNYUI Kolkata</title>
+        <title>Gallery - Luxury Spa & Salon Interior | NUNYUI Volta</title>
         <meta 
           name="description" 
-          content="Explore our beautiful luxury spa and salon interior at NUNYUI Kolkata. View our elegant treatment rooms, reception area, and premium facilities in Tangra." 
+          content="Explore our beautiful luxury spa and salon interior at NUNYUI Volta. View our elegant treatment rooms, reception area, and premium facilities in Tangra." 
         />
-        <meta name="keywords" content="NUNYUI spa gallery, luxury salon interior Kolkata, spa photos Tangra, wellness center facilities, massage rooms, beauty salon pictures" />
-        <meta property="og:title" content="Gallery - Luxury Spa & Salon Interior | NUNYUI Kolkata" />
-        <meta property="og:description" content="Take a visual tour of NUNYUI's luxurious spa and salon facilities in Kolkata. See our elegant treatment rooms and premium amenities." />
+        <meta name="keywords" content="NUNYUI spa gallery, luxury salon interior Volta, spa photos Tangra, wellness center facilities, massage rooms, beauty salon pictures" />
+        <meta property="og:title" content="Gallery - Luxury Spa & Salon Interior | NUNYUI Volta" />
+        <meta property="og:description" content="Take a visual tour of NUNYUI's luxurious spa and salon facilities in Volta. See our elegant treatment rooms and premium amenities." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={galleryImages[0].src} />
         <link rel="canonical" href="https://yourwebsite.com/gallery" />
@@ -146,7 +146,7 @@ export default function Gallery() {
             </div>
             
             <h1 className="font-serif font-medium text-[clamp(2.5rem,5vw,4rem)] text-[#0F0F0F] mb-6 leading-tight">
-              Luxury Organic Spa & Salon in Kolkata | Nunyui Wellness
+              Luxury Organic Spa & Salon in Volta | Nunyui Wellness
             </h1>
             
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-[1.618]">

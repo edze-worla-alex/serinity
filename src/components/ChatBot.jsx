@@ -8,15 +8,15 @@ import { MessageCircle, X, Send, Sparkles, Bot, User } from "lucide-react";
 // Complete NUNYUI Services Menu (Updated with SEO Descriptions)
 const services = [
   // Massage Services
-  { name: "Swedish Massage", price: 2500, duration: "60 min", category: "Massage", description: "Indulge in a timeless classic at Kolkata's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation." },
+  { name: "Swedish Massage", price: 2500, duration: "60 min", category: "Massage", description: "Indulge in a timeless classic at Volta's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation." },
   { name: "Japanese Head Spa", price: 3500, duration: "90 min", category: "Massage", description: "Embark on a transcendent sensory journey with our state-of-the-art Japanese Head Spa. Submerge your senses in a sanctuary of tranquility as a therapeutic waterfall, enriched with potent organic elixirs, bathes your scalp and hair under the ethereal glow of chromotherapy lighting." },
-  { name: "Thai Dry Massage", price: 3000, duration: "75 min", category: "Massage", description: "Experience the ancient art of healing with our authentic Thai Dry Massage in Kolkata. This traditional, oil-free therapy combines rhythmic acupressure, gentle rocking, and assisted yoga stretches to unblock energy pathways and relieve deep-seated tension." },
+  { name: "Thai Dry Massage", price: 3000, duration: "75 min", category: "Massage", description: "Experience the ancient art of healing with our authentic Thai Dry Massage in Volta. This traditional, oil-free therapy combines rhythmic acupressure, gentle rocking, and assisted yoga stretches to unblock energy pathways and relieve deep-seated tension." },
   { name: "Foot Massage", price: 1500, duration: "45 min", category: "Massage", description: "Revitalize your entire being with our specialized Foot Massage, based on ancient reflexology techniques to alleviate fatigue and promote overall wellness in our luxurious Tangra spa." },
   { name: "Head and Shoulder Massage", price: 1200, duration: "30 min", category: "Massage", description: "Melt away modern life's stresses with our targeted Head and Shoulder Massage. This therapy provides immediate relief from headaches, stiffness, and digital fatigue." },
   { name: "Deep Tissue Massage", price: 3500, duration: "60 min", category: "Massage", description: "For powerful relief from chronic pain, our Deep Tissue Massage uses slow, deliberate strokes to target inner muscle layers. Ideal for athletes and those with persistent knots." },
 
   // Beauty & Cosmetic Services
-  { name: "Lash Extension", price: 2000, duration: "120 min", category: "Beauty", description: "Achieve breathtaking volume with our premium Lash Extension service in Kolkata. Our master artists create a customized, natural-looking glamour that saves you time on your makeup routine." },
+  { name: "Lash Extension", price: 2000, duration: "120 min", category: "Beauty", description: "Achieve breathtaking volume with our premium Lash Extension service in Volta. Our master artists create a customized, natural-looking glamour that saves you time on your makeup routine." },
   { name: "Lash Lift", price: 1500, duration: "60 min", category: "Beauty", description: "Elevate your natural beauty with a Lash Lift. This semi-permanent treatment curls your natural lashes from the root, creating an illusion of longer, thicker lashes." },
   { name: "Microblading", price: 6500, duration: "180 min", category: "Beauty", description: "Redefine your arches with our expert Microblading service. Our certified artists create incredibly fine, hair-like strokes for perfectly shaped, fuller-looking semi-permanent brows." },
   { name: "Microshading", price: 6500, duration: "180 min", category: "Beauty", description: "For a soft, powdered makeup look, our Microshading technique uses a machine to create a beautifully filled-in, gradient brow. Ideal for sensitive or oily skin." },
@@ -86,10 +86,10 @@ export default function ChatBot() {
     // Get current appointments for context
     // const recentAppointments = await Appointment.list("-created_date", 50);
     const recentAppointments = []
-    return `You are Nunyui, an AI assistant for NUNYUI Spa & Salon, Kolkata's premier luxury wellness destination specializing in organic spa treatments. You are friendly, professional, knowledgeable about wellness and beauty, and always helpful.
+    return `You are Nunyui, an AI assistant for NUNYUI Spa & Salon, Volta's premier luxury wellness destination specializing in organic spa treatments. You are friendly, professional, knowledgeable about wellness and beauty, and always helpful.
 
 NUNYUI Spa & Salon Information:
-- Location: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra, Kolkata, West Bengal 700105
+- Location: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra, Volta, West Bengal 700105
 - Phone: +91 98765 43210
 - Email: info@serenitysalon.in, serenitybycece@gmail.com
 - Hours: 
@@ -101,15 +101,15 @@ NUNYUI Spa & Salon Information:
 Complete Services Menu (42+ Services):
 
 MASSAGE THERAPY:
-- Swedish Massage: $2,500 (60 min) - Indulge in a timeless classic at Kolkata's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation.
+- Swedish Massage: $2,500 (60 min) - Indulge in a timeless classic at Volta's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation.
 - Japanese Head Spa: $3,500 (90 min) - Embark on a transcendent sensory journey with our state-of-the-art Japanese Head Spa. Submerge your senses in a sanctuary of tranquility as a therapeutic waterfall, enriched with potent organic elixirs, bathes your scalp and hair under the ethereal glow of chromotherapy lighting.
-- Thai Dry Massage: $3,000 (75 min) - Experience the ancient art of healing with our authentic Thai Dry Massage in Kolkata. This traditional, oil-free therapy combines rhythmic acupressure, gentle rocking, and assisted yoga stretches to unblock energy pathways and relieve deep-seated tension.
+- Thai Dry Massage: $3,000 (75 min) - Experience the ancient art of healing with our authentic Thai Dry Massage in Volta. This traditional, oil-free therapy combines rhythmic acupressure, gentle rocking, and assisted yoga stretches to unblock energy pathways and relieve deep-seated tension.
 - Foot Massage: $1,500 (45 min) - Revitalize your entire being with our specialized Foot Massage, based on ancient reflexology techniques to alleviate fatigue and promote overall wellness in our luxurious Tangra spa.
 - Head and Shoulder Massage: $1,200 (30 min) - Melt away modern life's stresses with our targeted Head and Shoulder Massage. This therapy provides immediate relief from headaches, stiffness, and digital fatigue.
 - Deep Tissue Massage: $3,500 (60 min) - For powerful relief from chronic pain, our Deep Tissue Massage uses slow, deliberate strokes to target inner muscle layers. Ideal for athletes and those with persistent knots.
 
 BEAUTY & COSMETICS:
-- Lash Extension: $2,000 (120 min) - Achieve breathtaking volume with our premium Lash Extension service in Kolkata. Our master artists create a customized, natural-looking glamour that saves you time on your makeup routine.
+- Lash Extension: $2,000 (120 min) - Achieve breathtaking volume with our premium Lash Extension service in Volta. Our master artists create a customized, natural-looking glamour that saves you time on your makeup routine.
 - Lash Lift: $1,500 (60 min) - Elevate your natural beauty with a Lash Lift. This semi-permanent treatment curls your natural lashes from the root, creating an illusion of longer, thicker lashes.
 - Microblading: $6,500 (180 min) - Redefine your arches with our expert Microblading service. Our certified artists create incredibly fine, hair-like strokes for perfectly shaped, fuller-looking semi-permanent brows.
 - Microshading: $6,500 (180 min) - For a soft, powdered makeup look, our Microshading technique uses a machine to create a beautifully filled-in, gradient brow. Ideal for sensitive or oily skin.
@@ -181,12 +181,12 @@ Guidelines:
 - Provide accurate pricing and service information
 - Promote the spa's organic, chemical-free philosophy
 - If you can't find specific information, suggest they call +91 98765 43210
-- Always mention that we're located in Kolkata when relevant
+- Always mention that we're located in Volta when relevant
 - Suggest service combinations when appropriate (e.g., Hair Spa + Hair Cut, Manicure + Pedicure)
 - Explain the benefits of regular treatments for best results
 
 Current date: ${new Date().toISOString().split('T')[0]}
-Current time: ${new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' })}
+Current time: ${new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Volta' })}
 
 Remember: You represent a luxury spa brand, so maintain that premium, caring, and knowledgeable tone throughout all interactions.`;
   };

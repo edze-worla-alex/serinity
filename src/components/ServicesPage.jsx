@@ -13,11 +13,11 @@ const servicesData = [
     id: 1,
     name: "Swedish Massage",
     category: "massage",
-    description: "Indulge in a timeless classic at Kolkata's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation. This is the perfect introduction to therapeutic massage, meticulously performed by our certified therapists in Tangra to restore your body's natural harmony.",
+    description: "Indulge in a timeless classic at Volta's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation. This is the perfect introduction to therapeutic massage, meticulously performed by our certified therapists in Tangra to restore your body's natural harmony.",
     price: 2500,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/77609c815_image.png?w=600&q=80",
-    alt_text: "Professional Swedish massage therapy session at NUNYUI luxury spa in Kolkata - premium relaxation treatment"
+    alt_text: "Professional Swedish massage therapy session at NUNYUI luxury spa in Volta - premium relaxation treatment"
   },
   {
     id: 2,
@@ -33,11 +33,11 @@ const servicesData = [
     id: 3,
     name: "Thai Dry Massage",
     category: "massage", 
-    description: "Experience the ancient art of healing with our authentic Thai Dry Massage in Kolkata. This traditional, oil-free therapy combines rhythmic acupressure, gentle rocking, and assisted yoga stretches to unblock energy pathways, improve flexibility, and relieve deep-seated tension. Let our expert therapists guide your body into a state of blissful release and renewed vitality.",
+    description: "Experience the ancient art of healing with our authentic Thai Dry Massage in Volta. This traditional, oil-free therapy combines rhythmic acupressure, gentle rocking, and assisted yoga stretches to unblock energy pathways, improve flexibility, and relieve deep-seated tension. Let our expert therapists guide your body into a state of blissful release and renewed vitality.",
     price: 3000,
     duration: "75 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/5ea9a35b6_image.png?w=600&q=80",
-    alt_text: "Traditional Thai dry massage therapy with acupressure and yoga stretches at NUNYUI spa Kolkata"
+    alt_text: "Traditional Thai dry massage therapy with acupressure and yoga stretches at NUNYUI spa Volta"
   },
   {
     id: 4,
@@ -47,17 +47,17 @@ const servicesData = [
     price: 1500,
     duration: "45 min", 
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/0c4d65a6a_image.png?w=600&q=80",
-    alt_text: "Relaxing foot reflexology massage therapy at NUNYUI luxury wellness center in Kolkata"
+    alt_text: "Relaxing foot reflexology massage therapy at NUNYUI luxury wellness center in Volta"
   },
   {
     id: 5,
     name: "Head and Shoulder Massage",
     category: "massage",
-    description: "Melt away the stresses of modern life with our targeted Head and Shoulder Massage. This concentrated therapy focuses on the high-tension areas of your neck, shoulders, and scalp, providing immediate relief from headaches, stiffness, and digital fatigue. It's the ultimate quick escape to tranquility, offered at the best spa in Kolkata.",
+    description: "Melt away the stresses of modern life with our targeted Head and Shoulder Massage. This concentrated therapy focuses on the high-tension areas of your neck, shoulders, and scalp, providing immediate relief from headaches, stiffness, and digital fatigue. It's the ultimate quick escape to tranquility, offered at the best spa in Volta.",
     price: 1200,
     duration: "30 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/30adeac89_image.png?w=600&q=80",
-    alt_text: "Therapeutic head and shoulder massage for stress relief at NUNYUI premium spa in Tangra Kolkata"
+    alt_text: "Therapeutic head and shoulder massage for stress relief at NUNYUI premium spa in Tangra Volta"
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ const servicesData = [
     price: 3500,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7581a5afb_image.png?w=600&q=80",
-    alt_text: "Deep tissue massage therapy for chronic pain relief at NUNYUI luxury spa - professional treatment in Kolkata"
+    alt_text: "Deep tissue massage therapy for chronic pain relief at NUNYUI luxury spa - professional treatment in Volta"
   },
 
   // Beauty & Cosmetic Services
@@ -75,11 +75,11 @@ const servicesData = [
     id: 7,
     name: "Lash Extension",
     category: "beauty",
-    description: "Achieve breathtaking, natural-looking volume with our premium Lash Extension service in Kolkata. Our master lash artists meticulously apply individual, high-quality synthetic lashes to your own, creating a customized look from subtle enhancement to full-on glamour. Wake up beautiful and save time on your makeup routine.",
+    description: "Achieve breathtaking, natural-looking volume with our premium Lash Extension service in Volta. Our master lash artists meticulously apply individual, high-quality synthetic lashes to your own, creating a customized look from subtle enhancement to full-on glamour. Wake up beautiful and save time on your makeup routine.",
     price: 2000,
     duration: "120 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/17af3b19c_image.png?w=600&q=80",
-    alt_text: "Professional eyelash extensions application at NUNYUI beauty salon Kolkata - dramatic volume lashes"
+    alt_text: "Professional eyelash extensions application at NUNYUI beauty salon Volta - dramatic volume lashes"
   },
   {
     id: 8,
@@ -95,11 +95,11 @@ const servicesData = [
     id: 9,
     name: "Microblading",
     category: "beauty",
-    description: "Redefine your arches with our expert Microblading service, the gold standard for flawless eyebrows in Kolkata. Our certified artists use a precise, manual tool to create incredibly fine, hair-like strokes that mimic your natural brow hair. The result is perfectly shaped, fuller-looking brows that are semi-permanent and utterly convincing.",
+    description: "Redefine your arches with our expert Microblading service, the gold standard for flawless eyebrows in Volta. Our certified artists use a precise, manual tool to create incredibly fine, hair-like strokes that mimic your natural brow hair. The result is perfectly shaped, fuller-looking brows that are semi-permanent and utterly convincing.",
     price: 6500,
     duration: "180 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/eac0a9a29_image.png?w=600&q=80",
-    alt_text: "Expert microblading procedure for natural-looking, fuller eyebrows at NUNYUI beauty clinic Kolkata"
+    alt_text: "Expert microblading procedure for natural-looking, fuller eyebrows at NUNYUI beauty clinic Volta"
   },
   {
     id: 10,
@@ -129,17 +129,17 @@ const servicesData = [
     price: 3000,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/e4068a7fd_image.png?w=600&q=80",
-    alt_text: "Professional touch-up session for semi-permanent makeup at NUNYUI luxury beauty studio Kolkata"
+    alt_text: "Professional touch-up session for semi-permanent makeup at NUNYUI luxury beauty studio Volta"
   },
   {
     id: 13,
     name: "Lip Neutralisation / Lip Blush",
     category: "beauty",
-    description: "Awaken your smile with our Lip Blush service, a revolutionary semi-permanent makeup treatment. We enhance your natural lip shape and colour, correct asymmetries, and give the illusion of fuller, more youthful lips. It's the secret to a perfect pout, 24/7, offered exclusively at our luxury salon in Kolkata.",
+    description: "Awaken your smile with our Lip Blush service, a revolutionary semi-permanent makeup treatment. We enhance your natural lip shape and colour, correct asymmetries, and give the illusion of fuller, more youthful lips. It's the secret to a perfect pout, 24/7, offered exclusively at our luxury salon in Volta.",
     price: 5000,
     duration: "120 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/74b9d8a69_image.png?w=600&q=80",
-    alt_text: "Lip blush semi-permanent makeup for enhanced lip color and shape at NUNYUI beauty salon Kolkata"
+    alt_text: "Lip blush semi-permanent makeup for enhanced lip color and shape at NUNYUI beauty salon Volta"
   },
 
   // Laser Hair Removal
@@ -147,11 +147,11 @@ const servicesData = [
     id: 14,
     name: "Underarm Laser",
     category: "laser",
-    description: "Embrace the freedom of flawlessly smooth underarms with our advanced laser hair removal. Using state-of-the-art, pain-free technology, we provide a safe and permanent solution to unwanted hair, ensuring you're confident and ready for any outfit, anytime. Discover the best laser hair removal in Kolkata.",
+    description: "Embrace the freedom of flawlessly smooth underarms with our advanced laser hair removal. Using state-of-the-art, pain-free technology, we provide a safe and permanent solution to unwanted hair, ensuring you're confident and ready for any outfit, anytime. Discover the best laser hair removal in Volta.",
     price: 1000,
     duration: "30 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/fa95b506d_image.png?w=600&q=80",
-    alt_text: "Advanced laser hair removal for smooth underarms at NUNYUI medical spa in Kolkata"
+    alt_text: "Advanced laser hair removal for smooth underarms at NUNYUI medical spa in Volta"
   },
   {
     id: 15,
@@ -171,7 +171,7 @@ const servicesData = [
     price: 2000,
     duration: "90 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/f2d4681df_image.png?w=600&q=80",
-    alt_text: "Comprehensive full leg laser hair removal for permanent smooth skin at NUNYUI clinic Kolkata"
+    alt_text: "Comprehensive full leg laser hair removal for permanent smooth skin at NUNYUI clinic Volta"
   },
   {
     id: 17,
@@ -197,11 +197,11 @@ const servicesData = [
     id: 19,
     name: "Full Face Laser",
     category: "laser",
-    description: "Reveal a flawless complexion with our gentle yet effective Full Face Laser treatment. We safely remove unwanted hair from the upper lip, chin, cheeks, and sideburns, resulting in smoother skin and more even makeup application. It's a cornerstone of modern skincare, available at the best salon in Kolkata.",
+    description: "Reveal a flawless complexion with our gentle yet effective Full Face Laser treatment. We safely remove unwanted hair from the upper lip, chin, cheeks, and sideburns, resulting in smoother skin and more even makeup application. It's a cornerstone of modern skincare, available at the best salon in Volta.",
     price: 1500,
     duration: "45 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/9e9f0d824_image.png?w=600&q=80",
-    alt_text: "Gentle full face laser hair removal for flawless complexion at NUNYUI skincare clinic Kolkata"
+    alt_text: "Gentle full face laser hair removal for flawless complexion at NUNYUI skincare clinic Volta"
   },
   {
     id: 20,
@@ -211,7 +211,7 @@ const servicesData = [
     price: 2000,
     duration: "75 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/a74b83a89_image.png?w=600&q=80",
-    alt_text: "Effective full back laser hair removal for men and women at NUNYUI aesthetic center Kolkata"
+    alt_text: "Effective full back laser hair removal for men and women at NUNYUI aesthetic center Volta"
   },
   {
     id: 21,
@@ -231,13 +231,13 @@ const servicesData = [
     price: 900,
     duration: "15 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/c7a20dcd0_image.png?w=600&q=80",
-    alt_text: "Quick and precise upper lip laser hair removal for women at NUNYUI beauty clinic Kolkata"
+    alt_text: "Quick and precise upper lip laser hair removal for women at NUNYUI beauty clinic Volta"
   },
   {
     id: 23,
     name: "Full Body Laser",
     category: "laser",
-    description: "Embrace the ultimate in smoothness and convenience with our Full Body Laser hair removal package. This comprehensive treatment offers a permanent solution to unwanted hair from head to toe. It's the most effective and luxurious path to a lifetime of hair-free, carefree living, exclusively at Kolkata's top-rated spa.",
+    description: "Embrace the ultimate in smoothness and convenience with our Full Body Laser hair removal package. This comprehensive treatment offers a permanent solution to unwanted hair from head to toe. It's the most effective and luxurious path to a lifetime of hair-free, carefree living, exclusively at Volta's top-rated spa.",
     price: 12999,
     duration: "240 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/de75478b0_image.png?w=600&q=80",
@@ -253,13 +253,13 @@ const servicesData = [
     price: 1200,
     duration: "90 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6e5b55054_image.png?w=600&q=80",
-    alt_text: "Elegant soft gel nail extensions for natural-looking, durable manicure at NUNYUI nail salon Kolkata"
+    alt_text: "Elegant soft gel nail extensions for natural-looking, durable manicure at NUNYUI nail salon Volta"
   },
   {
     id: 25,
     name: "Acrylic Extension",
     category: "nails",
-    description: "For those who desire dramatic length and ultimate durability, our Acrylic Extensions are the perfect choice. Our expert nail technicians sculpt strong, beautiful nails that are perfect for intricate nail art and a glamorous, long-lasting look. Discover the best acrylics in Kolkata.",
+    description: "For those who desire dramatic length and ultimate durability, our Acrylic Extensions are the perfect choice. Our expert nail technicians sculpt strong, beautiful nails that are perfect for intricate nail art and a glamorous, long-lasting look. Discover the best acrylics in Volta.",
     price: 1500,
     duration: "120 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/3cf879beb_image.png?w=600&q=80",
@@ -293,7 +293,7 @@ const servicesData = [
     price: 800,
     duration: "60 min",
     image_url: "https://images.pexels.com/photos/3997378/pexels-photo-3997378.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    alt_text: "Classic manicure service including nail shaping, cuticle care, and hand massage at NUNYUI spa Kolkata"
+    alt_text: "Classic manicure service including nail shaping, cuticle care, and hand massage at NUNYUI spa Volta"
   },
   {
     id: 29,
@@ -313,7 +313,7 @@ const servicesData = [
     price: 1200,
     duration: "75 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/2f60c4655_image.png?w=600&q=80",
-    alt_text: "Rejuvenating pedicure with foot soak, exfoliation, and massage for tired feet at NUNYUI spa Kolkata"
+    alt_text: "Rejuvenating pedicure with foot soak, exfoliation, and massage for tired feet at NUNYUI spa Volta"
   },
   {
     id: 31,
@@ -331,11 +331,11 @@ const servicesData = [
     id: 32,
     name: "Women Hair Cut",
     category: "hair",
-    description: "Transform your look with a bespoke Women's Hair Cut from our master stylists in Kolkata. Following a thorough consultation, we will craft a style that perfectly complements your face shape, hair type, and lifestyle, using precision cutting techniques for a flawless finish.",
+    description: "Transform your look with a bespoke Women's Hair Cut from our master stylists in Volta. Following a thorough consultation, we will craft a style that perfectly complements your face shape, hair type, and lifestyle, using precision cutting techniques for a flawless finish.",
     price: 800,
     duration: "60 min",
     image_url: "https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    alt_text: "Bespoke women's haircut by master stylists at NUNYUI hair salon Kolkata - precision cutting and styling"
+    alt_text: "Bespoke women's haircut by master stylists at NUNYUI hair salon Volta - precision cutting and styling"
   },
   {
     id: 33,
@@ -345,7 +345,7 @@ const servicesData = [
     price: 500,
     duration: "45 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/84f23d8d4_image.png?w=600&q=80",
-    alt_text: "Expert men's haircut with modern barbering techniques and styling at NUNYUI salon for men Kolkata"
+    alt_text: "Expert men's haircut with modern barbering techniques and styling at NUNYUI salon for men Volta"
   },
   {
     id: 34,
@@ -365,18 +365,18 @@ const servicesData = [
     price: 700,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/687f41d49_image.png?w=600&q=80",
-    alt_text: "Professional hair wash and styling for a perfect blowout or event-ready look at NUNYUI salon Kolkata"
+    alt_text: "Professional hair wash and styling for a perfect blowout or event-ready look at NUNYUI salon Volta"
   },
   {
     id: 36,
     name: "Hair Perming",
     category: "hair",
-    description: "Create beautiful, lasting texture with our expert Hair Perming services. Whether you desire soft, beachy waves or vibrant, bouncy curls, our stylists use advanced, gentle formulas to achieve your desired look while maintaining the health and integrity of your hair. Find the best hair perming in Kolkata here.",
+    description: "Create beautiful, lasting texture with our expert Hair Perming services. Whether you desire soft, beachy waves or vibrant, bouncy curls, our stylists use advanced, gentle formulas to achieve your desired look while maintaining the health and integrity of your hair. Find the best hair perming in Volta here.",
     price: 2500,
     duration: "180 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/92b9aa50d_image.png?w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Expert hair perming for soft waves or bouncy curls using gentle formulas at NUNYUI hair studio Kolkata"
+    alt_text: "Expert hair perming for soft waves or bouncy curls using gentle formulas at NUNYUI hair studio Volta"
   },
   {
     id: 37,
@@ -393,12 +393,12 @@ const servicesData = [
     id: 38,
     name: "Hair Colouring",
     category: "hair",
-    description: "Express your style with our bespoke Hair Colouring services. From rich, all-over colour to vibrant fashion shades, our expert colorists use premium, low-ammonia products to achieve stunning, luminous results. We are renowned for the best hair colouring services in Kolkata, delivering artistry and hair health.",
+    description: "Express your style with our bespoke Hair Colouring services. From rich, all-over colour to vibrant fashion shades, our expert colorists use premium, low-ammonia products to achieve stunning, luminous results. We are renowned for the best hair colouring services in Volta, delivering artistry and hair health.",
     price: 3500,
     duration: "180 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/35023bf1e_image.png?w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Premium hair colouring services including balayage and highlights with luminous results at NUNYUI Kolkata"
+    alt_text: "Premium hair colouring services including balayage and highlights with luminous results at NUNYUI Volta"
   },
   {
     id: 39,
@@ -442,7 +442,7 @@ const servicesData = [
     duration: "240 min",
     image_url: "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Transformative keratin treatment for smooth, frizz-free, and manageable hair at NUNYUI salon Kolkata"
+    alt_text: "Transformative keratin treatment for smooth, frizz-free, and manageable hair at NUNYUI salon Volta"
   }
 ];
 
@@ -496,14 +496,14 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <title>Premium Spa & Salon Services in Kolkata | NUNYUI</title>
+        <title>Premium Spa & Salon Services in Volta | NUNYUI</title>
         <meta 
           name="description" 
-          content="Discover luxury spa treatments, massage therapy, beauty services, laser hair removal, nail care, and hair styling at NUNYUI Kolkata. Book your premium wellness experience today." 
+          content="Discover luxury spa treatments, massage therapy, beauty services, laser hair removal, nail care, and hair styling at NUNYUI Volta. Book your premium wellness experience today." 
         />
-        <meta name="keywords" content="spa services Kolkata, massage therapy, beauty salon, laser hair removal, nail care, hair styling, Tangra wellness center" />
-        <meta property="og:title" content="Premium Spa & Salon Services in Kolkata | NUNYUI" />
-        <meta property="og:description" content="Experience luxury wellness treatments at Kolkata's premier spa. From therapeutic massages to beauty services and hair care." />
+        <meta name="keywords" content="spa services Volta, massage therapy, beauty salon, laser hair removal, nail care, hair styling, Tangra wellness center" />
+        <meta property="og:title" content="Premium Spa & Salon Services in Volta | NUNYUI" />
+        <meta property="og:description" content="Experience luxury wellness treatments at Volta's premier spa. From therapeutic massages to beauty services and hair care." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://yourwebsite.com/services" />
       </Head>
@@ -523,7 +523,7 @@ export default function ServicesPage() {
             </div>
             
             <h1 className="font-serif font-medium text-[clamp(2.5rem,5vw,4rem)] text-[#0F0F0F] mb-6 leading-tight">
-              Premium Spa & Salon Services in Kolkata
+              Premium Spa & Salon Services in Volta
             </h1>
             
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-[1.618]">
@@ -636,7 +636,7 @@ export default function ServicesPage() {
               </h2>
               <p className="text-gray-600 mb-8 max-w-2xl mx-auto leading-[1.618]">
                 Book your appointment today and experience the luxury wellness treatments 
-                that have made NUNYUI the #1 spa in Kolkata.
+                that have made NUNYUI the #1 spa in Volta.
               </p>
               <button 
                 onClick={() => {

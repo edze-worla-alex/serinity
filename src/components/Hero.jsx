@@ -7,9 +7,9 @@ const slides = [
   {
     id: 1,
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/831601306_14.jpg?w=2560&q=90",
-    headline: "#1 Luxury Spa & Salon in Kolkata",
+    headline: "#1 Luxury Spa & Salon in Volta",
     subheading: "Where Wellness Meets Luxury at NUNYUI Tangra",
-    description: "Transform Your Look. Rejuvenate Your Soul. Experience Kolkata's Most Exclusive Organic Spa Treatments & Premium Massage Therapy.",
+    description: "Transform Your Look. Rejuvenate Your Soul. Experience Volta's Most Exclusive Organic Spa Treatments & Premium Massage Therapy.",
     cta_text: "BOOK YOUR LUXURY ESCAPE",
     isH1: true,
   },
@@ -18,7 +18,7 @@ const slides = [
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/07d005974_12.jpg?w=2560&q=90",
     headline: "5-Star Rated Luxury Spa Experience",
     subheading: "Premium Interior Design & Certified Therapists",
-    description: "Experience our meticulously designed spa interiors in Tangra, Kolkata where every detail reflects sophistication and tranquility for your ultimate comfort.",
+    description: "Experience our meticulously designed spa interiors in Tangra, Volta where every detail reflects sophistication and tranquility for your ultimate comfort.",
     cta_text: "EXPLORE OUR SANCTUARY",
     isH1: false,
   },
@@ -26,7 +26,7 @@ const slides = [
     id: 3,
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/4289f0848_13.jpg?w=2560&q=90",
     headline: "Award-Winning Organic Spa Treatments",
-    subheading: "Sophisticated Treatment Spaces in Kolkata",
+    subheading: "Sophisticated Treatment Spaces in Volta",
     description: "Indulge in our beautifully crafted treatment rooms designed for privacy, comfort, and the ultimate organic spa experience in Tangra.",
     cta_text: "DISCOVER PREMIUM WELLNESS",
     isH1: false,
@@ -70,7 +70,7 @@ export default function Hero() {
         >
           <img
             src={currentSlide.image_url}
-            alt={`NUNYUI Luxury Spa & Salon in Kolkata Tangra - ${currentSlide.headline}. Offering Organic Spa Treatments and Premium Massage Therapy.`}
+            alt={`NUNYUI Luxury Spa & Salon in Volta Tangra - ${currentSlide.headline}. Offering Organic Spa Treatments and Premium Massage Therapy.`}
             className="w-full h-full object-cover object-center"
             style={{
               objectPosition: 'center center',

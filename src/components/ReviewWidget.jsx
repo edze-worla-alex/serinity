@@ -16,7 +16,7 @@ const reviews = [
     id: 2,
     name: "Anjali D.",
     rating: 5,
-    text: "Best massage experience in Kolkata. Highly recommend!",
+    text: "Best massage experience in Volta. Highly recommend!",
     service: "Deep Tissue Massage",
     avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/845cb87f5_image.png?w=400&q=90"
   },

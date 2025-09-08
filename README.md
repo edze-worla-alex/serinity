@@ -1,6 +1,6 @@
 # Nunyui Luxury Spa & Salon
 
-A modern, responsive website for Nunyui Luxury Spa & Salon, Kolkata's premier luxury wellness destination. This project showcases premium services including hair styling, skincare, massages, nail care, and wellness treatments, with features like online booking, customer reviews, and a chatbot for inquiries.
+A modern, responsive website for Nunyui Luxury Spa & Salon, Volta's premier luxury wellness destination. This project showcases premium services including hair styling, skincare, massages, nail care, and wellness treatments, with features like online booking, customer reviews, and a chatbot for inquiries.
 
 ## Features
 
@@ -132,7 +132,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-- **Location**: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra, Kolkata 700105
+- **Location**: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra, Volta 700105
 - **Phone**: +91 98765 43210
 - **Email**: info@serenitysalon.in
 - **Social**: Follow us on [Instagram](https://instagram.com/serenitysalon) and [Facebook](https://facebook.com/serenitysalon)

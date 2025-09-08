@@ -23,7 +23,7 @@ const sitePages = [
       {
         name: "Home",
         url: "/",
-        description: "Welcome to NUNYUI - Kolkata's premier luxury spa & salon experience"
+        description: "Welcome to NUNYUI - Volta's premier luxury spa & salon experience"
       },
       {
         name: "Services",
@@ -203,7 +203,7 @@ export default function Sitemap() {
                 <p>NUNYUI Luxury Spa & Salon</p>
                 <p>P-145, Sector A, Metropolitan Co-Operative</p>
                 <p>Housing Society Limited, Tangra</p>
-                <p>Kolkata, West Bengal 700105</p>
+                <p>Volta, West Bengal 700105</p>
                 <p className="mt-3 font-medium">Phone: +91 98765 43210</p>
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function Sitemap() {
               Ready to Experience Nunyui?
             </h2>
             <p className="text-lg mb-8 text-white/90 max-w-2xl mx-auto">
-              Book your appointment today and discover why we're Kolkata's premier luxury spa & salon destination.
+              Book your appointment today and discover why we're Volta's premier luxury spa & salon destination.
             </p>
             <button 
               onClick={() => window.dispatchEvent(new CustomEvent('open-booking-modal'))}

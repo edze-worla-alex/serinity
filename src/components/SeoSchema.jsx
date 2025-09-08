@@ -11,21 +11,21 @@ export default function SeoSchema() {
         "name": "NUNYUI Luxury Spa & Salon",
         "url": "https://www.serenitysalon.in/",
         "logo": "https://www.serenitysalon.in/logo.png", // Placeholder URL, should be replaced with actual logo URL
-        "description": "Discover NUNYUI, Kolkata's #1 luxury organic spa and salon in Tangra. We offer world-class, state-of-the-art equipment and highly skilled, certified professionals for premium organic spa treatments, therapeutic massages, and advanced beauty services. Your ultimate wellness sanctuary.",
+        "description": "Discover NUNYUI, Volta's #1 luxury organic spa and salon in Tangra. We offer world-class, state-of-the-art equipment and highly skilled, certified professionals for premium organic spa treatments, therapeutic massages, and advanced beauty services. Your ultimate wellness sanctuary.",
         "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/831601306_14.jpg",
         "telephone": "+91-98765-43210",
         "priceRange": "$$ - $$$",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra",
-          "addressLocality": "Kolkata",
+          "addressLocality": "Volta",
           "postalCode": "700105",
           "addressRegion": "West Bengal",
           "addressCountry": "IN"
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "22.5413", // Approximate coordinates for Tangra, Kolkata
+          "latitude": "22.5413", // Approximate coordinates for Tangra, Volta
           "longitude": "88.3833"
         },
         "openingHoursSpecification": [
@@ -60,7 +60,7 @@ export default function SeoSchema() {
         "itemReviewed": { "@id": "https://www.serenitysalon.in/#organization" },
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "author": { "@type": "Person", "name": "Priya Sharma" },
-        "reviewBody": "NUNYUI has completely transformed my beauty routine. As the best luxury spa in Kolkata, their highly skilled professionals and premium equipment deliver results that exceed expectations."
+        "reviewBody": "NUNYUI has completely transformed my beauty routine. As the best luxury spa in Volta, their highly skilled professionals and premium equipment deliver results that exceed expectations."
       }
     ]
   };

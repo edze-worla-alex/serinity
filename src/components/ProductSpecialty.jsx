@@ -81,7 +81,7 @@ export default function ProductSpecialty() {
           viewport={{ once: true }}
           className="font-sans text-lg text-gray-600 mt-6 max-w-3xl mx-auto leading-relaxed"
         >
-          At NUNYUI, we exclusively use lab-tested, cruelty-free, and certified organic products for our spa treatments in Kolkata. Our commitment to sulfate-free, paraben-free, and alcohol-free formulations ensures your skin receives only the purest ingredients for a truly radiant, healthy glow.
+          At NUNYUI, we exclusively use lab-tested, cruelty-free, and certified organic products for our spa treatments in Volta. Our commitment to sulfate-free, paraben-free, and alcohol-free formulations ensures your skin receives only the purest ingredients for a truly radiant, healthy glow.
         </motion.p>
       </div>
 

@@ -62,7 +62,7 @@ export default function Team() {
           </div>
           
           <h1 className="font-serif font-medium text-[length:var(--font-h1)] text-[#0F0F0F] mb-6 leading-tight">
-            Our Team of Certified Wellness Professionals in Kolkata
+            Our Team of Certified Wellness Professionals in Volta
           </h1>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-[1.618]">
@@ -90,7 +90,7 @@ export default function Team() {
                 <div className="relative h-80 overflow-hidden">
                   <Image
                     src={member.image_url}
-                    alt={`${member.name}, ${member.title} at NUNYUI Luxury Spa & Salon Kolkata`}
+                    alt={`${member.name}, ${member.title} at NUNYUI Luxury Spa & Salon Volta`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

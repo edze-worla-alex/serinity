@@ -7,7 +7,7 @@ const features = [
   {
     icon: Shield,
     title: "Advanced Equipment & Technology",
-    description: "State-of-the-art spa equipment for premium organic treatments in Kolkata"
+    description: "State-of-the-art spa equipment for premium organic treatments in Volta"
   },
   {
     icon: Leaf,
@@ -112,7 +112,7 @@ export default function WhatWeDo() {
             viewport={{ once: true }}
             className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed"
           >
-            Welcome to NUNYUI, Kolkata's premier luxury wellness sanctuary. We blend the expertise of master therapists with advanced technology and the purest organic ingredients. This is more than a treatment; it's a meticulously crafted experience designed to deliver profound results and restore your ultimate state of well-being.
+            Welcome to NUNYUI, Volta's premier luxury wellness sanctuary. We blend the expertise of master therapists with advanced technology and the purest organic ingredients. This is more than a treatment; it's a meticulously crafted experience designed to deliver profound results and restore your ultimate state of well-being.
           </motion.p>
         </motion.div>
 
@@ -133,7 +133,7 @@ export default function WhatWeDo() {
             >
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/c85593c6e_3.jpg?w=800&q=90"
-                alt="A serene, luxurious organic spa treatment room at NUNYUI Wellness Center in Kolkata, designed for ultimate relaxation."
+                alt="A serene, luxurious organic spa treatment room at NUNYUI Wellness Center in Volta, designed for ultimate relaxation."
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
               />
             </motion.div>
@@ -237,7 +237,7 @@ export default function WhatWeDo() {
             >
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/81c836a67_4.jpg?w=800&q=90"
-                alt="A tranquil premium organic spa massage room, showcasing natural elements at NUNYUI, Kolkata's leading luxury wellness destination."
+                alt="A tranquil premium organic spa massage room, showcasing natural elements at NUNYUI, Volta's leading luxury wellness destination."
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
               />
             </motion.div>

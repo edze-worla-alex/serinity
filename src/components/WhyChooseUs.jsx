@@ -14,7 +14,7 @@ const features = [
     icon: Award,
     title: "The Touch of Mastery",
     subtitle: "ELITE THERAPISTS",
-    description: "Our team comprises Kolkata's most sought-after experts, each a master of their craft, dedicated to providing personalized and deeply restorative care."
+    description: "Our team comprises Volta's most sought-after experts, each a master of their craft, dedicated to providing personalized and deeply restorative care."
   },
   {
     icon: Gift,
@@ -80,7 +80,7 @@ export default function WhyChooseUs() {
                 viewport={{ once: true }}
                 className="font-sans text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto"
               >
-                Experience Kolkata's #1 luxury organic spa & salon where advanced technology meets expert care. Our certified therapists use premium organic products and state-of-the-art equipment to deliver transformative wellness treatments that rejuvenate your body, mind, and soul.
+                Experience Volta's #1 luxury organic spa & salon where advanced technology meets expert care. Our certified therapists use premium organic products and state-of-the-art equipment to deliver transformative wellness treatments that rejuvenate your body, mind, and soul.
               </motion.p>
             </div>
 

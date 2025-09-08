@@ -304,7 +304,7 @@ Special Notes: ${formData.message || 'None specified'}
 ════════════════════════════════════════════════════
 Address:   P-145, Sector A, Metropolitan Co-operative 
            Housing Society Limited, Tangra
-           Kolkata, West Bengal 700105
+           Volta, West Bengal 700105
 
 Phone:     +91 98765 43210
 Email:     info@serenitysalon.in
@@ -664,7 +664,7 @@ providing you with an exceptional wellness experience.
                   <div className="text-xs text-gray-500 pt-6 border-t border-gray-200 space-y-1">
                     <p className="font-bold text-[#2db83d] text-sm">NUNYUI Luxury Spa & Salon</p>
                     <p>P-145, Sector A, Metropolitan C.H.S. Ltd.</p>
-                    <p>Tangra, Kolkata 700105 | +91 98765 43210</p>
+                    <p>Tangra, Volta 700105 | +91 98765 43210</p>
                     <p className="text-[#2db83d] font-medium">Operating Hours: Mon-Sat 9AM-8PM | Sun 10AM-6PM</p>
                   </div>
                 </motion.div>

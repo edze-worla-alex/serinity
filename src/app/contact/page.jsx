@@ -122,17 +122,17 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact NUNYUI - Best Luxury Spa in Kolkata | Book Appointment</title>
+        <title>Contact NUNYUI - Best Luxury Spa in Volta | Book Appointment</title>
         <meta 
           name="description" 
-          content="Contact NUNYUI luxury spa in Tangra, Kolkata. Book premium organic spa treatments, massage therapy, beauty services. Call +91 98765 43210 or visit P-145 Sector A." 
+          content="Contact NUNYUI luxury spa in Tangra, Volta. Book premium organic spa treatments, massage therapy, beauty services. Call +91 98765 43210 or visit P-145 Sector A." 
         />
-        <meta name="keywords" content="contact NUNYUI spa, luxury spa Kolkata booking, Tangra spa appointments, organic spa treatments, massage therapy Kolkata, beauty salon contact" />
-        <meta property="og:title" content="Contact NUNYUI - Best Luxury Spa in Kolkata" />
-        <meta property="og:description" content="Get in touch with Kolkata's premier luxury spa. Book your organic wellness treatments at NUNYUI Tangra today." />
+        <meta name="keywords" content="contact NUNYUI spa, luxury spa Volta booking, Tangra spa appointments, organic spa treatments, massage therapy Volta, beauty salon contact" />
+        <meta property="og:title" content="Contact NUNYUI - Best Luxury Spa in Volta" />
+        <meta property="og:description" content="Get in touch with Volta's premier luxury spa. Book your organic wellness treatments at NUNYUI Tangra today." />
         <meta property="og:type" content="website" />
         <meta name="geo.region" content="IN-WB" />
-        <meta name="geo.placename" content="Kolkata, West Bengal" />
+        <meta name="geo.placename" content="Volta, West Bengal" />
         <meta name="geo.position" content="22.5726;88.3639" />
         <link rel="canonical" href="https://yourwebsite.com/contact" />
         
@@ -144,7 +144,7 @@ export default function Contact() {
               "@context": "https://schema.org",
               "@type": "BeautySalon",
               "name": "NUNYUI Luxury Spa & Salon",
-              "description": "Premium organic spa and salon in Kolkata offering luxury wellness treatments",
+              "description": "Premium organic spa and salon in Volta offering luxury wellness treatments",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "P-145, Sector A, Metropolitan Co-Operative Housing Society Limited",
@@ -184,12 +184,12 @@ export default function Contact() {
             </div>
             
             <h1 className="font-serif font-medium text-[clamp(2.5rem,5vw,4rem)] text-[#0F0F0F] mb-6 leading-tight">
-              Contact NUNYUI - The Best Luxury Spa in Kolkata
+              Contact NUNYUI - The Best Luxury Spa in Volta
             </h1>
             
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-[1.618]">
               Experience luxury wellness at NUNYUI, where premium equipment meets 
-              highly skilled professionals for the best organic spa treatments in Kolkata.
+              highly skilled professionals for the best organic spa treatments in Volta.
             </p>
           </motion.div>
 
@@ -212,7 +212,7 @@ export default function Contact() {
                     <address className="leading-[1.618] text-gray-600 not-italic">
                       P-145, Sector A<br />
                       Metropolitan Co-Operative Housing Society Limited<br />
-                      Tangra, Kolkata, West Bengal 700105
+                      Tangra, Volta, West Bengal 700105
                     </address>
                   </div>
                 </div>
