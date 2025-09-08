@@ -479,8 +479,8 @@ export default function LoadingScreen() {
           clearInterval(timer);
           setTimeout(() => {
             setIsVisible(false);
-            setTimeout(() => onLoadingComplete(true), 500);
-          }, 500);
+            setTimeout(() => onLoadingComplete(true), 10);
+          }, 10);
           return 100;
         }
         return prev + Math.random() * 15 + 5;
