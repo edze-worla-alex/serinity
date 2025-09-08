@@ -45,7 +45,7 @@ Pages include: Home, Services, Contact, Gallery, Team, Booking Notifications, an
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/serinity.git
+   git clone https://github.com/edze-worla-alex/serinity.git
    cd serinity
    ```
 
