@@ -8,6 +8,8 @@ import LoadingScreen from "@/components/LoadingScreen"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import { Suspense } from "react";
+
 import Link from "next/link";
 import {Phone,
   Mail,
@@ -46,7 +48,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <LoadingScreen/>
+        <Suspense fallback={null}>
         <Navbar/>
+        </Suspense>
         {children}
          {/* Footer */}
       <footer
