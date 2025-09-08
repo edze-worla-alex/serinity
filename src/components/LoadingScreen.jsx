@@ -497,7 +497,7 @@ export default function LoadingScreen() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="fixed inset-0 bg-gradient-to-br from-[#F8F2EC] via-white to-[#F5E6D8] z-60 flex flex-col items-center justify-center"
+          className="fixed inset-0 bg-gradient-to-br from-[#F8F2EC] via-white to-[#F5E6D8] z-60 flex flex-col md:hidden items-center justify-center"
         >
           {/* Logo and Flower Animation */}
           <motion.div
