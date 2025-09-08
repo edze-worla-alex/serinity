@@ -7,10 +7,10 @@ export default function SeoSchema() {
     "@graph": [
       {
         "@type": "HealthAndBeautyBusiness",
-        "@id": "https://www.serenitysalon.in/#organization",
+        "@id": "https://www.nunyuispa.com/#organization",
         "name": "NUNYUI Luxury Spa & Salon",
-        "url": "https://www.serenitysalon.in/",
-        "logo": "https://www.serenitysalon.in/logo.png", // Placeholder URL, should be replaced with actual logo URL
+        "url": "https://www.nunyuispa.com/",
+        "logo": "https://www.nunyuispa.com/logo.png", // Placeholder URL, should be replaced with actual logo URL
         "description": "Discover NUNYUI, Volta's #1 luxury organic spa and salon in Tangra. We offer world-class, state-of-the-art equipment and highly skilled, certified professionals for premium organic spa treatments, therapeutic massages, and advanced beauty services. Your ultimate wellness sanctuary.",
         "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/831601306_14.jpg",
         "telephone": "+91-98765-43210",
@@ -34,8 +34,8 @@ export default function SeoSchema() {
           { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "18:00" }
         ],
         "sameAs": [
-            "https://www.facebook.com/serenitykolkata", // Placeholder
-            "https://www.instagram.com/serenitykolkata" // Placeholder
+            "https://www.facebook.com/nunyuispa", // Placeholder
+            "https://www.instagram.com/nunyuispa" // Placeholder
         ],
         "hasOffer": [
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Japanese Head Spa" }, "price": "3500", "priceCurrency": "INR" },
@@ -45,19 +45,19 @@ export default function SeoSchema() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://www.serenitysalon.in/#website",
-        "url": "https://www.serenitysalon.in/",
+        "@id": "https://www.nunyuispa.com/#website",
+        "url": "https://www.nunyuispa.com/",
         "name": "NUNYUI Luxury Spa & Salon",
-        "publisher": { "@id": "https://www.serenitysalon.in/#organization" },
+        "publisher": { "@id": "https://www.nunyuispa.com/#organization" },
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://www.serenitysalon.in/search?q={search_term_string}",
+            "target": "https://www.nunyuispa.com/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
         }
       },
       {
         "@type": "Review",
-        "itemReviewed": { "@id": "https://www.serenitysalon.in/#organization" },
+        "itemReviewed": { "@id": "https://www.nunyuispa.com/#organization" },
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "author": { "@type": "Person", "name": "Priya Sharma" },
         "reviewBody": "NUNYUI has completely transformed my beauty routine. As the best luxury spa in Volta, their highly skilled professionals and premium equipment deliver results that exceed expectations."

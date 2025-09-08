@@ -307,8 +307,8 @@ Address:   P-145, Sector A, Metropolitan Co-operative
            Volta, West Bengal 700105
 
 Phone:     +91 98765 43210
-Email:     info@serenitysalon.in
-Website:   www.serenitysalon.com
+Email:     info@nunyuispa.com
+Website:   www.nunyuispa.com
 
 Operating Hours:
 Monday - Saturday: 9:00 AM - 8:00 PM

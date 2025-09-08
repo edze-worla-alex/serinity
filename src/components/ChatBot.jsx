@@ -91,7 +91,7 @@ export default function ChatBot() {
 NUNYUI Spa & Salon Information:
 - Location: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra, Volta, West Bengal 700105
 - Phone: +91 98765 43210
-- Email: info@serenitysalon.in, serenitybycece@gmail.com
+- Email: info@nunyuispa.com, serenitynunyuispa@gmail.com
 - Hours: 
   * Monday-Friday: 10:00 AM - 8:00 PM
   * Saturday: 9:00 AM - 7:00 PM  

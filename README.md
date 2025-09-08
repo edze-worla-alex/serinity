@@ -134,7 +134,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Location**: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra, Volta 700105
 - **Phone**: +91 98765 43210
-- **Email**: info@serenitysalon.in
-- **Social**: Follow us on [Instagram](https://instagram.com/serenitysalon) and [Facebook](https://facebook.com/serenitysalon)
+- **Email**: info@nunyuispa.com
+- **Social**: Follow us on [Instagram](https://instagram.com/nunyuispa) and [Facebook](https://facebook.com/nunyuispa)
 
 For support or inquiries, reach out via email or the website's contact form.

@@ -110,8 +110,8 @@ export default function Contact() {
   const handleSocialClick = (platform) => {
     // Replace with actual social media links
     const links = {
-      instagram: 'https://instagram.com/serenity_kolkata',
-      facebook: 'https://facebook.com/serenity_kolkata'
+      instagram: 'https://instagram.com/nunyuispa',
+      facebook: 'https://facebook.com/nunyuispa'
     };
     
     if (typeof window !== 'undefined') {
@@ -154,15 +154,15 @@ export default function Contact() {
                 "addressCountry": "IN"
               },
               "telephone": "+91 98765 43210",
-              "email": "info@serenitysalon.in",
+              "email": "info@nunyuispa.com",
               "openingHours": [
                 "Mo-Fr 10:00-20:00",
                 "Sa 09:00-19:00", 
                 "Su 10:00-18:00"
               ],
               "sameAs": [
-                "https://instagram.com/serenity_kolkata",
-                "https://facebook.com/serenity_kolkata"
+                "https://instagram.com/nunyuispa",
+                "https://facebook.com/nunyuispa"
               ]
             })
           }}
@@ -250,10 +250,10 @@ export default function Contact() {
                     <h3 className="font-serif text-xl font-bold text-[#0F0F0F] mb-2">Concierge Email</h3>
                     <div className="leading-[1.618] text-gray-600">
                       <a 
-                        href="mailto:info@serenitysalon.in"
+                        href="mailto:info@nunyuispa.com"
                         className="text-[#2db83d] hover:text-[#45f248] transition-colors duration-300 font-medium"
                       >
-                        info@serenitysalon.in
+                        info@nunyuispa.com
                       </a>
                       <br />
                       <span className="text-sm">Premium support within 2 hours</span>
