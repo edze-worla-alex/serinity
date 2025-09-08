@@ -66,7 +66,7 @@ const timeSlots = [
   "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM"
 ];
 
-export default function BookingModal({ initialService }) {
+export default function BookingModal() {
   const [isOpen,setIsOpen] = useState(false)
   const [formData, setFormData] = useState({
     client_name: "",
@@ -81,6 +81,8 @@ export default function BookingModal({ initialService }) {
   const [step, setStep] = useState(1);
   const [createdAppointment, setCreatedAppointment] = useState(null);
   const [error, setError] = useState("");
+  const [initialService, setInitialService] = React.useState(null);
+
   const onClose = React.useCallback(() => { setIsOpen(false); 
     //setInitialService(null);
      }, []);
@@ -90,11 +92,18 @@ export default function BookingModal({ initialService }) {
         setIsOpen((prev) => !prev)
         // set state to open modal, e.g. setIsOpen(true)
       };
+
+      const openBookingModalWithService = (event) => {
+        setInitialService(event.detail.service);
+        setIsOpen(true);
+      };
   
       window.addEventListener("open-booking-modal", handleOpen);
-  
+      window.addEventListener('open-booking-modal-with-service', openBookingModalWithService);
+
       return () => {
         window.removeEventListener("open-booking-modal", handleOpen);
+        window.removeEventListener('open-booking-modal-with-service', openBookingModalWithService);
       };
     }, []);
 

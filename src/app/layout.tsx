@@ -233,9 +233,7 @@ export default function RootLayout({
       {/* Widgets/Modals */}
       <ChatBot />
       <ReviewWidget />
-      <BookingModal
-        initialService={[]}
-      />
+      <BookingModal/>
       </body>
     </html>
   );
