@@ -32,7 +32,7 @@ const LeafDecoration = () => (
     whileInView={{ opacity: 0.6, rotate: 0, scale: 1 }}
     transition={{ duration: 2, ease: "easeOut" }}
     viewport={{ once: true }}
-    width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#C8A882]"
+    width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#2db83d]"
   >
     <path d="M10 40C15 20 35 10 50 15C55 17 60 22 65 30" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.6"/>
     <path d="M50 15C52 12 58 8 65 12C70 15 75 22 80 35" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.6"/>
@@ -94,13 +94,13 @@ export default function WhatWeDo() {
             viewport={{ once: true }}
             className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F0F0F] leading-tight mb-6"
           >
-            The SERENITY Standard<br />
+            The NUNYUI Standard<br />
             <motion.span 
-              initial={{ opacity: 0, scale: 0.5, color: "#C8A882" }}
-              whileInView={{ opacity: 1, scale: 1, color: "#C8A882" }}
+              initial={{ opacity: 0, scale: 0.5, color: "#2db83d" }}
+              whileInView={{ opacity: 1, scale: 1, color: "#2db83d" }}
               transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="text-[#C8A882]"
+              className="text-[#2db83d]"
             >
               Excellence in Every Detail
             </motion.span>
@@ -112,7 +112,7 @@ export default function WhatWeDo() {
             viewport={{ once: true }}
             className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed"
           >
-            Welcome to SERENITY, Kolkata's premier luxury wellness sanctuary. We blend the expertise of master therapists with advanced technology and the purest organic ingredients. This is more than a treatment; it's a meticulously crafted experience designed to deliver profound results and restore your ultimate state of well-being.
+            Welcome to NUNYUI, Kolkata's premier luxury wellness sanctuary. We blend the expertise of master therapists with advanced technology and the purest organic ingredients. This is more than a treatment; it's a meticulously crafted experience designed to deliver profound results and restore your ultimate state of well-being.
           </motion.p>
         </motion.div>
 
@@ -133,7 +133,7 @@ export default function WhatWeDo() {
             >
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/c85593c6e_3.jpg?w=800&q=90"
-                alt="A serene, luxurious organic spa treatment room at SERENITY Wellness Center in Kolkata, designed for ultimate relaxation."
+                alt="A serene, luxurious organic spa treatment room at NUNYUI Wellness Center in Kolkata, designed for ultimate relaxation."
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
               />
             </motion.div>
@@ -189,11 +189,11 @@ export default function WhatWeDo() {
                     whileHover={{ 
                       rotate: 180, 
                       scale: 1.3,
-                      backgroundColor: "#C8A882"
+                      backgroundColor: "#2db83d"
                     }}
-                    className="w-12 h-12 bg-[#F5E6D8] rounded-full flex items-center justify-center group-hover:bg-[#C8A882] transition-all duration-500"
+                    className="w-12 h-12 bg-[#F5E6D8] rounded-full flex items-center justify-center group-hover:bg-[#2db83d] transition-all duration-500"
                   >
-                    <feature.icon className="w-6 h-6 text-[#C8A882] group-hover:text-white transition-colors duration-300" />
+                    <feature.icon className="w-6 h-6 text-[#2db83d] group-hover:text-white transition-colors duration-300" />
                   </motion.div>
                   
                   {/* Content */}
@@ -203,7 +203,7 @@ export default function WhatWeDo() {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.8, delay: index * 0.2 + 0.5 }}
                       viewport={{ once: true }}
-                      className="font-serif text-xl font-bold text-[#0F0F0F] mb-2 group-hover:text-[#C8A882] transition-colors duration-300"
+                      className="font-serif text-xl font-bold text-[#0F0F0F] mb-2 group-hover:text-[#2db83d] transition-colors duration-300"
                     >
                       {feature.title}
                     </motion.h3>
@@ -237,7 +237,7 @@ export default function WhatWeDo() {
             >
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/81c836a67_4.jpg?w=800&q=90"
-                alt="A tranquil premium organic spa massage room, showcasing natural elements at SERENITY, Kolkata's leading luxury wellness destination."
+                alt="A tranquil premium organic spa massage room, showcasing natural elements at NUNYUI, Kolkata's leading luxury wellness destination."
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
               />
             </motion.div>
@@ -256,7 +256,7 @@ export default function WhatWeDo() {
             whileHover={{ scale: 1.1, boxShadow: "0 20px 40px rgba(200, 168, 130, 0.3)" }}
             whileTap={{ scale: 0.95 }}
             onClick={() => window.dispatchEvent(new CustomEvent('open-booking-modal'))}
-            className="bg-gradient-to-r from-[#C8A882] to-[#FF5C8D] text-white px-8 py-4 rounded-full font-sans font-semibold hover:from-[#FF5C8D] hover:to-[#C8A882] transition-all duration-300 shadow-lg text-lg"
+            className="bg-gradient-to-r from-[#2db83d] to-[#45f248] text-white px-8 py-4 rounded-full font-sans font-semibold hover:from-[#45f248] hover:to-[#2db83d] transition-all duration-300 shadow-lg text-lg"
           >
             Book Your Organic Spa Experience Today
           </motion.button>

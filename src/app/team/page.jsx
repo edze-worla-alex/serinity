@@ -56,9 +56,9 @@ export default function Team() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-[#C8A882]/10 rounded-full px-4 py-2 mb-6">
-            <Sparkles className="w-4 h-4 text-[#C8A882]" />
-            <span className="text-sm text-[#C8A882] font-medium">Meet Our Experts</span>
+          <div className="inline-flex items-center gap-2 bg-[#2db83d]/10 rounded-full px-4 py-2 mb-6">
+            <Sparkles className="w-4 h-4 text-[#2db83d]" />
+            <span className="text-sm text-[#2db83d] font-medium">Meet Our Experts</span>
           </div>
           
           <h1 className="font-serif font-medium text-[length:var(--font-h1)] text-[#0F0F0F] mb-6 leading-tight">
@@ -90,7 +90,7 @@ export default function Team() {
                 <div className="relative h-80 overflow-hidden">
                   <Image
                     src={member.image_url}
-                    alt={`${member.name}, ${member.title} at SERENITY Luxury Spa & Salon Kolkata`}
+                    alt={`${member.name}, ${member.title} at NUNYUI Luxury Spa & Salon Kolkata`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -99,7 +99,7 @@ export default function Team() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   
                   {/* Experience Badge */}
-                  <div className="absolute top-4 right-4 bg-[#C8A882] text-white rounded-full px-3 py-1 flex items-center gap-1">
+                  <div className="absolute top-4 right-4 bg-[#2db83d] text-white rounded-full px-3 py-1 flex items-center gap-1">
                     <Award className="w-3 h-3" />
                     <span className="text-xs font-medium">{member.years_experience}+ Years</span>
                   </div>
@@ -107,11 +107,11 @@ export default function Team() {
 
                 {/* Member Content */}
                 <div className="p-8">
-                  <h3 className="font-serif text-2xl font-bold text-[#0F0F0F] mb-2 group-hover:text-[#C8A882] transition-colors duration-300">
+                  <h3 className="font-serif text-2xl font-bold text-[#0F0F0F] mb-2 group-hover:text-[#2db83d] transition-colors duration-300">
                     {member.name}
                   </h3>
                   
-                  <p className="text-[#C8A882] font-medium mb-[1.2em]">
+                  <p className="text-[#2db83d] font-medium mb-[1.2em]">
                     {member.title}
                   </p>
                   
@@ -126,7 +126,7 @@ export default function Team() {
                       {member.specialties.map((specialty, idx) => (
                         <span
                           key={idx}
-                          className="bg-[#C8A882]/10 text-[#C8A882] px-3 py-1 rounded-full text-xs font-medium"
+                          className="bg-[#2db83d]/10 text-[#2db83d] px-3 py-1 rounded-full text-xs font-medium"
                         >
                           {specialty}
                         </span>
@@ -146,7 +146,7 @@ export default function Team() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <div className="bg-white rounded-3xl p-12 shadow-lg border border-[#C8A882]/20">
+          <div className="bg-white rounded-3xl p-12 shadow-lg border border-[#2db83d]/20">
             <h2 className="font-serif text-[length:var(--font-h2)] font-bold text-[#0F0F0F] mb-4">
               Ready to Meet Our Team?
             </h2>
@@ -156,7 +156,7 @@ export default function Team() {
             </p>
             <button 
               onClick={() => window.dispatchEvent(new CustomEvent('open-booking-modal'))}
-              className="bg-[#C8A882] text-white px-8 py-4 rounded-full font-medium hover:bg-[#FF5C8D] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+              className="bg-[#2db83d] text-white px-8 py-4 rounded-full font-medium hover:bg-[#45f248] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
               Schedule Consultation
             </button>
           </div>

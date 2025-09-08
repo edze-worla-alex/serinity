@@ -63,14 +63,14 @@ export default function RootLayout({
             <div className="lg:col-span-1 flex flex-col items-center md:items-start mb-[1.2em]">
               <div className="flex items-center gap-3 mb-6">
                 <Sparkles
-                  className="w-8 h-8 text-[#C8A882] sparkle-animation"
+                  className="w-8 h-8 text-[#2db83d] sparkle-animation"
                   aria-hidden="true"
                 />
                 <div>
                   <h2 className="font-serif text-2xl font-bold glow-text">
-                    SERENITY
+                    NUNYUI
                   </h2>
-                  <p className="text-xs text-[#C8A882] tracking-widest">
+                  <p className="text-xs text-[#2db83d] tracking-widest">
                     Luxury Spa & Salon
                   </p>
                 </div>
@@ -83,7 +83,7 @@ export default function RootLayout({
               <div className="flex gap-4" role="list" aria-label="Social media links">
                 <a
                   href="#"
-                  className="w-10 h-10 bg-[#C8A882] rounded-full flex items-center justify-center hover:bg-[#FF5C8D] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
+                  className="w-10 h-10 bg-[#2db83d] rounded-full flex items-center justify-center hover:bg-[#45f248] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
                   aria-label="Follow us on Instagram"
                   role="listitem"
                 >
@@ -91,7 +91,7 @@ export default function RootLayout({
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-[#C8A882] rounded-full flex items-center justify-center hover:bg-[#FF5C8D] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
+                  className="w-10 h-10 bg-[#2db83d] rounded-full flex items-center justify-center hover:bg-[#45f248] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
                   aria-label="Follow us on Facebook"
                   role="listitem"
                 >
@@ -102,7 +102,7 @@ export default function RootLayout({
 
             {/* Services */}
             <div className="mb-[1.2em]">
-              <h3 className="font-serif text-lg font-semibold mb-6 text-[#C8A882]">
+              <h3 className="font-serif text-lg font-semibold mb-6 text-[#2db83d]">
                 Premium Services
               </h3>
               <nav aria-label="Services navigation">
@@ -110,7 +110,7 @@ export default function RootLayout({
                   <li>
                     <a
                       href="#"
-                      className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                      className="text-gray-300 hover:text-[#2db83d] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
                     >
                       Luxury Hair Styling
                     </a>
@@ -118,7 +118,7 @@ export default function RootLayout({
                   <li>
                     <a
                       href="#"
-                      className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                      className="text-gray-300 hover:text-[#2db83d] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
                     >
                       Advanced Skincare
                     </a>
@@ -126,7 +126,7 @@ export default function RootLayout({
                   <li>
                     <a
                       href="#"
-                      className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                      className="text-gray-300 hover:text-[#2db83d] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
                     >
                       Therapeutic Massage
                     </a>
@@ -134,7 +134,7 @@ export default function RootLayout({
                   <li>
                     <a
                       href="#"
-                      className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                      className="text-gray-300 hover:text-[#2db83d] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
                     >
                       Premium Nail Care
                     </a>
@@ -142,7 +142,7 @@ export default function RootLayout({
                   <li>
                     <a
                       href="#"
-                      className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                      className="text-gray-300 hover:text-[#2db83d] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
                     >
                       Wellness Treatments
                     </a>
@@ -153,13 +153,13 @@ export default function RootLayout({
 
             {/* Contact */}
             <div className="mb-[1.2em]">
-              <h3 className="font-serif text-lg font-semibold mb-6 text-[#C8A882]">
+              <h3 className="font-serif text-lg font-semibold mb-6 text-[#2db83d]">
                 Visit Our Sanctuary
               </h3>
               <address className="space-y-4 text-sm flex flex-col items-center md:items-start not-italic">
                 <div className="flex items-start gap-3">
                   <MapPin
-                    className="w-5 h-5 text-[#C8A882] mt-0.5 flex-shrink-0"
+                    className="w-5 h-5 text-[#2db83d] mt-0.5 flex-shrink-0"
                     aria-hidden="true"
                   />
                   <span className="text-gray-300 leading-[1.618]">
@@ -168,19 +168,19 @@ export default function RootLayout({
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-[#C8A882]" aria-hidden="true" />
+                  <Phone className="w-5 h-5 text-[#2db83d]" aria-hidden="true" />
                   <a
                     href="tel:+919876543210"
-                    className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                    className="text-gray-300 hover:text-[#2db83d] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
                   >
                     +91 98765 43210
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-[#C8A882]" aria-hidden="true" />
+                  <Mail className="w-5 h-5 text-[#2db83d]" aria-hidden="true" />
                   <a
                     href="mailto:info@serenitysalon.in"
-                    className="text-gray-300 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                    className="text-gray-300 hover:text-[#2db83d] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
                   >
                     info@serenitysalon.in
                   </a>
@@ -190,7 +190,7 @@ export default function RootLayout({
 
             {/* Newsletter */}
             <div className="mb-[1.2em]">
-              <h3 className="font-serif text-lg font-semibold mb-6 text-[#C8A882]">
+              <h3 className="font-serif text-lg font-semibold mb-6 text-[#2db83d]">
                 Luxury Updates
               </h3>
               <p className="text-sm text-gray-300 mb-4 leading-[1.618]">
@@ -203,25 +203,25 @@ export default function RootLayout({
           {/* Bottom Bar */}
           <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">
-              © 2025 Serenity Luxury Spa & Salon. All rights reserved.
+              © 2025 Nunyui Luxury Spa & Salon. All rights reserved.
             </p>
             <nav aria-label="Legal links">
               <div className="flex gap-6 text-sm">
                 <Link
                   href={"/sitemap"}
-                  className="text-gray-400 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                  className="text-gray-400 hover:text-[#2db83d] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
                 >
                   Sitemap
                 </Link>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                  className="text-gray-400 hover:text-[#2db83d] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
                 >
                   Privacy Policy
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#C8A882] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
+                  className="text-gray-400 hover:text-[#2db83d] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F] rounded"
                 >
                   Terms of Service
                 </a>

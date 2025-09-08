@@ -17,12 +17,12 @@ function SubscribeForm() {
                   id="newsletter-email"
                   type="email"
                   placeholder="Your email"
-                  className="flex-1 px-4 py-2 bg-white/10 border border-[#C8A882]/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#C8A882] focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
+                  className="flex-1 px-4 py-2 bg-white/10 border border-[#2db83d]/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#2db83d] focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
                   required
                 />
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-[#C8A882] text-white rounded-lg hover:bg-[#FF5C8D] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A882] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
+                  className="px-4 py-2 bg-[#2db83d] text-white rounded-lg hover:bg-[#45f248] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2db83d] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
                 >
                   Subscribe
                 </button>

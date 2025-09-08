@@ -23,7 +23,7 @@ const sitePages = [
       {
         name: "Home",
         url: "/",
-        description: "Welcome to SERENITY - Kolkata's premier luxury spa & salon experience"
+        description: "Welcome to NUNYUI - Kolkata's premier luxury spa & salon experience"
       },
       {
         name: "Services",
@@ -91,13 +91,13 @@ export default function Sitemap() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-[#C8A882]/10 rounded-full px-4 py-2 mb-6">
-            <Sparkles className="w-4 h-4 text-[#C8A882]" />
+          <div className="inline-flex items-center gap-2 bg-[#2db83d]/10 rounded-full px-4 py-2 mb-6">
+            <Sparkles className="w-4 h-4 text-[#2db83d]" />
             <span className="text-sm font-medium">Site Navigation</span>
           </div>
           
           <h1 className="font-serif font-medium text-[length:var(--font-h1)] text-[#0F0F0F] mb-6 leading-tight">
-            SERENITY Website Sitemap
+            NUNYUI Website Sitemap
           </h1>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-[1.618]">
@@ -118,12 +118,12 @@ export default function Sitemap() {
                 delay: sectionIndex * 0.2,
                 ease: "easeOut"
               }}
-              className="bg-white rounded-3xl p-8 shadow-lg border border-[#C8A882]/20"
+              className="bg-white rounded-3xl p-8 shadow-lg border border-[#2db83d]/20"
             >
               {/* Section Header */}
               <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 bg-[#C8A882]/10 rounded-2xl flex items-center justify-center">
-                  <section.icon className="w-6 h-6 text-[#C8A882]" />
+                <div className="w-12 h-12 bg-[#2db83d]/10 rounded-2xl flex items-center justify-center">
+                  <section.icon className="w-6 h-6 text-[#2db83d]" />
                 </div>
                 <h2 className="font-serif text-2xl font-bold text-[#0F0F0F]">
                   {section.category}
@@ -145,20 +145,20 @@ export default function Sitemap() {
                   >
                     <Link
                       href={page.url}
-                      className="block p-6 bg-gray-50 rounded-2xl hover:bg-[#C8A882]/5 transition-all duration-300 hover:shadow-md group-hover:border-[#C8A882]/30 border border-transparent"
+                      className="block p-6 bg-gray-50 rounded-2xl hover:bg-[#2db83d]/5 transition-all duration-300 hover:shadow-md group-hover:border-[#2db83d]/30 border border-transparent"
                     >
                       <div className="flex items-center justify-between mb-3">
-                        <h3 className="font-serif text-lg font-bold text-[#0F0F0F] group-hover:text-[#C8A882] transition-colors duration-300">
+                        <h3 className="font-serif text-lg font-bold text-[#0F0F0F] group-hover:text-[#2db83d] transition-colors duration-300">
                           {page.name}
                         </h3>
-                        <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-[#C8A882] group-hover:translate-x-1 transition-all duration-300" />
+                        <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-[#2db83d] group-hover:translate-x-1 transition-all duration-300" />
                       </div>
                       
                       <p className="text-gray-600 text-sm leading-relaxed mb-3">
                         {page.description}
                       </p>
                       
-                      <div className="text-xs font-mono text-[#C8A882] bg-[#C8A882]/10 px-3 py-1 rounded-full inline-block">
+                      <div className="text-xs font-mono text-[#2db83d] bg-[#2db83d]/10 px-3 py-1 rounded-full inline-block">
                         {page.url}
                       </div>
                     </Link>
@@ -174,7 +174,7 @@ export default function Sitemap() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-16 bg-white rounded-3xl p-8 shadow-lg border border-[#C8A882]/20"
+          className="mt-16 bg-white rounded-3xl p-8 shadow-lg border border-[#2db83d]/20"
         >
           <h2 className="font-serif text-2xl font-bold text-[#0F0F0F] mb-6 text-center">
             About Our Website
@@ -182,7 +182,7 @@ export default function Sitemap() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="font-serif text-lg font-bold text-[#C8A882] mb-3">
+              <h3 className="font-serif text-lg font-bold text-[#2db83d] mb-3">
                 Website Features
               </h3>
               <ul className="space-y-2 text-gray-600">
@@ -196,11 +196,11 @@ export default function Sitemap() {
             </div>
             
             <div>
-              <h3 className="font-serif text-lg font-bold text-[#C8A882] mb-3">
+              <h3 className="font-serif text-lg font-bold text-[#2db83d] mb-3">
                 Our Location
               </h3>
               <div className="text-gray-600 space-y-1">
-                <p>SERENITY Luxury Spa & Salon</p>
+                <p>NUNYUI Luxury Spa & Salon</p>
                 <p>P-145, Sector A, Metropolitan Co-Operative</p>
                 <p>Housing Society Limited, Tangra</p>
                 <p>Kolkata, West Bengal 700105</p>
@@ -217,16 +217,16 @@ export default function Sitemap() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-br from-[#C8A882] to-[#FF5C8D] rounded-3xl p-12 text-white">
+          <div className="bg-gradient-to-br from-[#2db83d] to-[#45f248] rounded-3xl p-12 text-white">
             <h2 className="font-serif text-3xl font-bold mb-4">
-              Ready to Experience Serenity?
+              Ready to Experience Nunyui?
             </h2>
             <p className="text-lg mb-8 text-white/90 max-w-2xl mx-auto">
               Book your appointment today and discover why we're Kolkata's premier luxury spa & salon destination.
             </p>
             <button 
               onClick={() => window.dispatchEvent(new CustomEvent('open-booking-modal'))}
-              className="bg-white text-[#C8A882] px-8 py-4 rounded-full font-medium hover:bg-gray-50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-white text-[#2db83d] px-8 py-4 rounded-full font-medium hover:bg-gray-50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Book Your Experience
             </button>

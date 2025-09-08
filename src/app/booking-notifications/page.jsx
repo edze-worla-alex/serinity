@@ -52,7 +52,7 @@ export default function BookingNotifications() {
     return (
       <div className="pt-32 pb-24 bg-[#F8F2EC] min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="w-12 h-12 border-4 border-[#C8A882] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <div className="w-12 h-12 border-4 border-[#2db83d] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
           <p className="text-gray-600">Loading booking notifications...</p>
         </div>
       </div>
@@ -85,8 +85,8 @@ export default function BookingNotifications() {
               onClick={() => setFilter(tab.key)}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 flex items-center gap-2 ${
                 filter === tab.key
-                  ? 'bg-[#C8A882] text-white shadow-lg'
-                  : 'bg-white text-gray-600 hover:bg-[#C8A882]/10 hover:text-[#C8A882] border border-gray-200'
+                  ? 'bg-[#2db83d] text-white shadow-lg'
+                  : 'bg-white text-gray-600 hover:bg-[#2db83d]/10 hover:text-[#2db83d] border border-gray-200'
               }`}
             >
               {tab.label}
@@ -180,7 +180,7 @@ export default function BookingNotifications() {
                       <div className="bg-gray-50 rounded-lg p-4 space-y-2">
                         <p><strong>Service:</strong> {notification.service_name}</p>
                         <p><strong>Price:</strong> 
-                          <span className="text-[#C8A882] font-bold ml-1">
+                          <span className="text-[#2db83d] font-bold ml-1">
                             ${notification.service_price?.toLocaleString('en-IN')}
                           </span>
                         </p>
@@ -224,7 +224,7 @@ export default function BookingNotifications() {
                     {notification.notification_status === 'viewed' && (
                       <button
                         onClick={() => updateNotificationStatus(notification.id, 'contacted')}
-                        className="bg-[#C8A882] text-white px-4 py-2 rounded-lg hover:bg-[#FF5C8D] transition-colors flex items-center gap-2"
+                        className="bg-[#2db83d] text-white px-4 py-2 rounded-lg hover:bg-[#45f248] transition-colors flex items-center gap-2"
                       >
                         <Star className="w-4 h-4" />
                         Mark as Contacted

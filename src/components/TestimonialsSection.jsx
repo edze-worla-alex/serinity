@@ -17,7 +17,7 @@ const testimonials = [
     name: "Priya Sharma",
     role: "Fashion Designer",
     rating: 5,
-    text: "SERENITY has completely transformed my beauty routine. The highly skilled professionals and premium equipment deliver results that exceed expectations. Every visit feels like a luxury retreat in the heart of Kolkata.",
+    text: "NUNYUI has completely transformed my beauty routine. The highly skilled professionals and premium equipment deliver results that exceed expectations. Every visit feels like a luxury retreat in the heart of Kolkata.",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/845cb87f5_image.png?w=800&q=90"
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
     name: "Anjali Das",
     role: "Corporate Executive",
     rating: 4,
-    text: "The attention to detail and professional expertise at SERENITY is unmatched. Their state-of-the-art equipment and skilled staff make every treatment a perfect experience. I wouldn't trust my skin and wellness to anyone else.",
+    text: "The attention to detail and professional expertise at NUNYUI is unmatched. Their state-of-the-art equipment and skilled staff make every treatment a perfect experience. I wouldn't trust my skin and wellness to anyone else.",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/1acf8ba01_image.png?w=800&q=90"
   },
   {
@@ -33,7 +33,7 @@ const testimonials = [
     name: "Ritu Banerjee",
     role: "Entrepreneur",
     rating: 5,
-    text: "From the moment you enter SERENITY, you know you're in for something special. The combination of luxury ambiance, professional staff, and cutting-edge treatments creates an experience that's truly transformative.",
+    text: "From the moment you enter NUNYUI, you know you're in for something special. The combination of luxury ambiance, professional staff, and cutting-edge treatments creates an experience that's truly transformative.",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/088f1f218_image.png?w=800&q=90"
   },
   {
@@ -41,7 +41,7 @@ const testimonials = [
     name: "Meera Singh",
     role: "Doctor",
     rating: 4,
-    text: "As a healthcare professional, I appreciate SERENITY's commitment to using premium equipment and maintaining the highest standards. The skilled therapists understand exactly what my body needs for complete rejuvenation.",
+    text: "As a healthcare professional, I appreciate NUNYUI's commitment to using premium equipment and maintaining the highest standards. The skilled therapists understand exactly what my body needs for complete rejuvenation.",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7cf2b68ad_image.png?w=800&q=90"
   },
   {
@@ -49,7 +49,7 @@ const testimonials = [
     name: "Kavita Roy",
     role: "Business Owner",
     rating: 5,
-    text: "SERENITY sets the gold standard for luxury wellness in Kolkata. The professional expertise combined with world-class equipment ensures every treatment delivers exceptional results. It's my personal sanctuary for beauty and wellness.",
+    text: "NUNYUI sets the gold standard for luxury wellness in Kolkata. The professional expertise combined with world-class equipment ensures every treatment delivers exceptional results. It's my personal sanctuary for beauty and wellness.",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/2ffc407b6_image.png?w=800&q=90"
   }
 ];
@@ -136,7 +136,7 @@ export default function TestimonialsSection() {
                 <div className="flex justify-center mb-4">
                   <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg border-4 border-white bg-gray-200">
                     {imageError[currentTestimonial.id] ? (
-                      <div className="w-full h-full bg-gradient-to-br from-[#C8A882] to-[#FF5C8D] flex items-center justify-center">
+                      <div className="w-full h-full bg-gradient-to-br from-[#2db83d] to-[#45f248] flex items-center justify-center">
                         <span className="text-white font-bold text-lg">
                           {currentTestimonial.name.split(' ').map(n => n[0]).join('')}
                         </span>
@@ -144,7 +144,7 @@ export default function TestimonialsSection() {
                     ) : (
                       <img
                         src={currentTestimonial.image_url}
-                        alt={`${currentTestimonial.name}, a happy client of SERENITY Spa in Kolkata`}
+                        alt={`${currentTestimonial.name}, a happy client of NUNYUI Spa in Kolkata`}
                         className="w-full h-full object-cover"
                         onError={() => handleImageError(currentTestimonial.id)}
                       />
@@ -162,7 +162,7 @@ export default function TestimonialsSection() {
                       key={i}
                       className={`w-5 h-5 transition-colors duration-300 ${
                         i < currentTestimonial.rating
-                          ? 'text-[#C8A882] fill-current'
+                          ? 'text-[#2db83d] fill-current'
                           : 'text-gray-300'
                       }`}
                     />
@@ -185,13 +185,13 @@ export default function TestimonialsSection() {
               <div className="flex items-center gap-4">
                 <button
                   onClick={prevTestimonial}
-                  className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-[#C8A882] hover:text-white transition-all duration-300"
+                  className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-[#2db83d] hover:text-white transition-all duration-300"
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </button>
                 <button
                   onClick={nextTestimonial}
-                  className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-[#C8A882] hover:text-white transition-all duration-300"
+                  className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-[#2db83d] hover:text-white transition-all duration-300"
                 >
                   <ChevronRight className="w-4 h-4" />
                 </button>
@@ -205,7 +205,7 @@ export default function TestimonialsSection() {
                     onClick={() => goToTestimonial(index)}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
                       index === currentIndex
-                        ? 'bg-[#C8A882] w-6'
+                        ? 'bg-[#2db83d] w-6'
                         : 'bg-gray-300 hover:bg-gray-400'
                     }`}
                   />

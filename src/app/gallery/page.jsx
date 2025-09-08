@@ -11,55 +11,55 @@ const galleryImages = [
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/287fd6130_13.jpg?w=1200&q=90",
     title: "Reception Area",
     category: "Reception",
-    alt: "Elegant reception area at SERENITY luxury spa and salon in Tangra, Kolkata - welcoming entrance with modern design"
+    alt: "Elegant reception area at NUNYUI luxury spa and salon in Tangra, Kolkata - welcoming entrance with modern design"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/831601306_14.jpg?w=1200&q=90",
     title: "Main Salon Floor",
     category: "Salon",
-    alt: "Main salon floor at SERENITY Kolkata - spacious styling area with professional stations and premium equipment"
+    alt: "Main salon floor at NUNYUI Kolkata - spacious styling area with professional stations and premium equipment"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7b593983f_15.jpg?w=1200&q=90",
     title: "Styling Stations", 
     category: "Salon",
-    alt: "Professional styling stations at SERENITY hair salon - modern equipment and luxurious seating for premium hair services"
+    alt: "Professional styling stations at NUNYUI hair salon - modern equipment and luxurious seating for premium hair services"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/572e1afba_16.jpg?w=1200&q=90",
     title: "Private Lounge",
     category: "Interior",
-    alt: "Private lounge area at SERENITY spa - intimate relaxation space with comfortable seating and ambient lighting"
+    alt: "Private lounge area at NUNYUI spa - intimate relaxation space with comfortable seating and ambient lighting"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/5e03cef8d_17.jpg?w=1200&q=90",
     title: "Reception", 
     category: "Reception",
-    alt: "Secondary view of SERENITY reception area - customer service desk with elegant interior design and branding"
+    alt: "Secondary view of NUNYUI reception area - customer service desk with elegant interior design and branding"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/1d99ea153_24.jpg?w=1200&q=90",
     title: "Treatment Corridor",
     category: "Interior",
-    alt: "Treatment corridor at SERENITY wellness center - peaceful hallway leading to private therapy rooms"
+    alt: "Treatment corridor at NUNYUI wellness center - peaceful hallway leading to private therapy rooms"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/601ccd748_1.jpg?w=1200&q=90",
     title: "Massage Room",
     category: "Treatment",
-    alt: "Serene massage room at SERENITY spa - therapeutic treatment space with professional massage table and calming ambiance"
+    alt: "Serene massage room at NUNYUI spa - therapeutic treatment space with professional massage table and calming ambiance"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/0d0096c79_2.jpg?w=1200&q=90",
     title: "Spa Suite",
     category: "Treatment",
-    alt: "Luxury spa suite at SERENITY Tangra - premium treatment room with advanced equipment for beauty and wellness services"
+    alt: "Luxury spa suite at NUNYUI Tangra - premium treatment room with advanced equipment for beauty and wellness services"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/664dc3f67_15.jpg?w=1200&q=90",
     title: "Relaxation Room",
     category: "Treatment",
-    alt: "Peaceful relaxation room at SERENITY spa Kolkata - comfortable seating area for post-treatment relaxation and recovery"
+    alt: "Peaceful relaxation room at NUNYUI spa Kolkata - comfortable seating area for post-treatment relaxation and recovery"
   }
 ];
 
@@ -118,14 +118,14 @@ export default function Gallery() {
   return (
     <>
       <Head>
-        <title>Gallery - Luxury Spa & Salon Interior | SERENITY Kolkata</title>
+        <title>Gallery - Luxury Spa & Salon Interior | NUNYUI Kolkata</title>
         <meta 
           name="description" 
-          content="Explore our beautiful luxury spa and salon interior at SERENITY Kolkata. View our elegant treatment rooms, reception area, and premium facilities in Tangra." 
+          content="Explore our beautiful luxury spa and salon interior at NUNYUI Kolkata. View our elegant treatment rooms, reception area, and premium facilities in Tangra." 
         />
-        <meta name="keywords" content="SERENITY spa gallery, luxury salon interior Kolkata, spa photos Tangra, wellness center facilities, massage rooms, beauty salon pictures" />
-        <meta property="og:title" content="Gallery - Luxury Spa & Salon Interior | SERENITY Kolkata" />
-        <meta property="og:description" content="Take a visual tour of SERENITY's luxurious spa and salon facilities in Kolkata. See our elegant treatment rooms and premium amenities." />
+        <meta name="keywords" content="NUNYUI spa gallery, luxury salon interior Kolkata, spa photos Tangra, wellness center facilities, massage rooms, beauty salon pictures" />
+        <meta property="og:title" content="Gallery - Luxury Spa & Salon Interior | NUNYUI Kolkata" />
+        <meta property="og:description" content="Take a visual tour of NUNYUI's luxurious spa and salon facilities in Kolkata. See our elegant treatment rooms and premium amenities." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={galleryImages[0].src} />
         <link rel="canonical" href="https://yourwebsite.com/gallery" />
@@ -140,13 +140,13 @@ export default function Gallery() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <div className="inline-flex items-center gap-2 bg-[#C8A882]/10 rounded-full px-4 py-2 mb-6">
-              <Sparkles className="w-4 h-4 text-[#C8A882]" />
+            <div className="inline-flex items-center gap-2 bg-[#2db83d]/10 rounded-full px-4 py-2 mb-6">
+              <Sparkles className="w-4 h-4 text-[#2db83d]" />
               <span className="text-sm font-medium">Visual Journey</span>
             </div>
             
             <h1 className="font-serif font-medium text-[clamp(2.5rem,5vw,4rem)] text-[#0F0F0F] mb-6 leading-tight">
-              Luxury Organic Spa & Salon in Kolkata | Serenity Wellness
+              Luxury Organic Spa & Salon in Kolkata | Nunyui Wellness
             </h1>
             
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-[1.618]">
@@ -186,7 +186,7 @@ export default function Gallery() {
                     {/* Overlay Content */}
                     <div className="absolute inset-0 flex items-end justify-start p-6 opacity-0 group-hover:opacity-100 transition-all duration-500">
                       <div className="text-white">
-                        <span className="inline-block bg-[#C8A882] text-white px-3 py-1 rounded-full text-xs font-medium mb-2">
+                        <span className="inline-block bg-[#2db83d] text-white px-3 py-1 rounded-full text-xs font-medium mb-2">
                           {image.category}
                         </span>
                         <h3 className="font-serif text-xl font-bold">
@@ -197,7 +197,7 @@ export default function Gallery() {
 
                     {/* Hover Icon */}
                     <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                      <ArrowRight className="w-5 h-5 text-[#C8A882]" />
+                      <ArrowRight className="w-5 h-5 text-[#2db83d]" />
                     </div>
                   </div>
                 </div>
@@ -212,9 +212,9 @@ export default function Gallery() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-center mt-16"
           >
-            <div className="bg-white rounded-3xl p-12 shadow-lg border border-[#C8A882]/20">
+            <div className="bg-white rounded-3xl p-12 shadow-lg border border-[#2db83d]/20">
               <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-bold text-[#0F0F0F] mb-4">
-                Ready to Experience Serenity?
+                Ready to Experience Nunyui?
               </h2>
               <p className="text-gray-600 mb-8 max-w-2xl mx-auto leading-[1.618]">
                 Book your appointment today and step into our world of luxury, wellness, and tranquility. 
@@ -226,7 +226,7 @@ export default function Gallery() {
                     window.dispatchEvent(new CustomEvent('open-booking-modal'));
                   }
                 }}
-                className="bg-[#C8A882] text-white px-8 py-4 rounded-full font-medium hover:bg-[#FF5C8D] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-[#2db83d] text-white px-8 py-4 rounded-full font-medium hover:bg-[#45f248] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Schedule Your Visit
               </button>
@@ -293,7 +293,7 @@ export default function Gallery() {
             {/* Image Info */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
               <div className="text-white">
-                <span className="inline-block bg-[#C8A882] text-white px-3 py-1 rounded-full text-sm font-medium mb-2">
+                <span className="inline-block bg-[#2db83d] text-white px-3 py-1 rounded-full text-sm font-medium mb-2">
                   {selectedImage.category}
                 </span>
                 <h3 className="font-serif text-2xl font-bold mb-1">

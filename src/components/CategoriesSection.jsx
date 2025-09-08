@@ -64,7 +64,7 @@ const categories = [
         <circle cx="30" cy="10" r="0.5" fill="currentColor"/>
       </svg>
     ),
-    bgColor: "bg-white border border-[#C8A882]/20"
+    bgColor: "bg-white border border-[#2db83d]/20"
   },
   {
     id: 4,
@@ -164,15 +164,15 @@ export default function CategoriesSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-2 bg-[#C8A882]/10 rounded-full px-4 py-2 mb-6">
-            <Sparkles className="w-4 h-4 text-[#C8A882]" />
-            <span className="font-sans text-sm text-[#C8A882] font-medium">Our Expertise</span>
+          <div className="inline-flex items-center gap-2 bg-[#2db83d]/10 rounded-full px-4 py-2 mb-6">
+            <Sparkles className="w-4 h-4 text-[#2db83d]" />
+            <span className="font-sans text-sm text-[#2db83d] font-medium">Our Expertise</span>
           </div>
           
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             <span className="text-[#0F0F0F]">Curated Wellness</span>
             <br />
-            <span className="text-[#C8A882]">Journeys</span>
+            <span className="text-[#2db83d]">Journeys</span>
           </h2>
           
           <p className="font-sans text-lg text-gray-600 max-w-2xl mx-auto">
@@ -216,12 +216,12 @@ export default function CategoriesSection() {
                 >
                   <div className={`${category.bgColor} rounded-3xl p-6 h-full flex flex-col hover:shadow-xl transition-all duration-500 group-hover:-translate-y-2 min-h-[280px]`}>
                     {/* Icon */}
-                    <div className="mb-6 text-[#8B6F3F] group-hover:text-[#C8A882] transition-colors duration-300">
+                    <div className="mb-6 text-[#8B6F3F] group-hover:text-[#2db83d] transition-colors duration-300">
                       {category.icon}
                     </div>
                     
                     {/* Content */}
-                    <h3 className="font-serif text-2xl font-bold text-[#0F0F0F] mb-4 group-hover:text-[#C8A882] transition-colors duration-300 leading-tight">
+                    <h3 className="font-serif text-2xl font-bold text-[#0F0F0F] mb-4 group-hover:text-[#2db83d] transition-colors duration-300 leading-tight">
                       {category.title}
                     </h3>
                     
@@ -230,7 +230,7 @@ export default function CategoriesSection() {
                     </p>
                     
                     {/* Read More Button */}
-                    <div className="flex items-center gap-2 font-sans text-sm font-medium text-gray-500 hover:text-[#C8A882] transition-colors duration-300 group mt-auto">
+                    <div className="flex items-center gap-2 font-sans text-sm font-medium text-gray-500 hover:text-[#2db83d] transition-colors duration-300 group mt-auto">
                       DISCOVER THE EXPERIENCE
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>

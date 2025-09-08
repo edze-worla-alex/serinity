@@ -8,10 +8,10 @@ export default function SeoSchema() {
       {
         "@type": "HealthAndBeautyBusiness",
         "@id": "https://www.serenitysalon.in/#organization",
-        "name": "SERENITY Luxury Spa & Salon",
+        "name": "NUNYUI Luxury Spa & Salon",
         "url": "https://www.serenitysalon.in/",
         "logo": "https://www.serenitysalon.in/logo.png", // Placeholder URL, should be replaced with actual logo URL
-        "description": "Discover SERENITY, Kolkata's #1 luxury organic spa and salon in Tangra. We offer world-class, state-of-the-art equipment and highly skilled, certified professionals for premium organic spa treatments, therapeutic massages, and advanced beauty services. Your ultimate wellness sanctuary.",
+        "description": "Discover NUNYUI, Kolkata's #1 luxury organic spa and salon in Tangra. We offer world-class, state-of-the-art equipment and highly skilled, certified professionals for premium organic spa treatments, therapeutic massages, and advanced beauty services. Your ultimate wellness sanctuary.",
         "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/831601306_14.jpg",
         "telephone": "+91-98765-43210",
         "priceRange": "$$ - $$$",
@@ -47,7 +47,7 @@ export default function SeoSchema() {
         "@type": "WebSite",
         "@id": "https://www.serenitysalon.in/#website",
         "url": "https://www.serenitysalon.in/",
-        "name": "SERENITY Luxury Spa & Salon",
+        "name": "NUNYUI Luxury Spa & Salon",
         "publisher": { "@id": "https://www.serenitysalon.in/#organization" },
         "potentialAction": {
             "@type": "SearchAction",
@@ -60,7 +60,7 @@ export default function SeoSchema() {
         "itemReviewed": { "@id": "https://www.serenitysalon.in/#organization" },
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "author": { "@type": "Person", "name": "Priya Sharma" },
-        "reviewBody": "SERENITY has completely transformed my beauty routine. As the best luxury spa in Kolkata, their highly skilled professionals and premium equipment deliver results that exceed expectations."
+        "reviewBody": "NUNYUI has completely transformed my beauty routine. As the best luxury spa in Kolkata, their highly skilled professionals and premium equipment deliver results that exceed expectations."
       }
     ]
   };

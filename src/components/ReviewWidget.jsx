@@ -40,7 +40,7 @@ const reviews = [
     id: 5,
     name: "Kavita R.",
     rating: 5,
-    text: "SERENITY is my go-to place for all beauty needs.",
+    text: "NUNYUI is my go-to place for all beauty needs.",
     service: "Full Package",
     avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7cf2b68ad_image.png?w=400&q=90"
   },
@@ -144,7 +144,7 @@ export default function ReviewWidget() {
         >
           <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-3 sm:p-4 relative overflow-hidden">
             {/* Gradient Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#C8A882]/5 via-white to-[#FF5C8D]/5" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#2db83d]/5 via-white to-[#45f248]/5" />
             
             {/* Close Button */}
             <button
@@ -158,9 +158,9 @@ export default function ReviewWidget() {
             <div className="relative">
               {/* Header */}
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-[#C8A882]/20 flex-shrink-0 bg-gray-100">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-[#2db83d]/20 flex-shrink-0 bg-gray-100">
                   {imageErrors[review.id] ? (
-                    <div className="w-full h-full bg-gradient-to-br from-[#C8A882] to-[#FF5C8D] flex items-center justify-center">
+                    <div className="w-full h-full bg-gradient-to-br from-[#2db83d] to-[#45f248] flex items-center justify-center">
                       <span className="text-white font-semibold text-xs">{review.name.charAt(0)}</span>
                     </div>
                   ) : (
@@ -182,7 +182,7 @@ export default function ReviewWidget() {
                         key={i}
                         className={`w-3 h-3 ${
                           i < review.rating
-                            ? 'text-[#C8A882] fill-current'
+                            ? 'text-[#2db83d] fill-current'
                             : 'text-gray-300'
                         }`}
                       />
@@ -197,18 +197,18 @@ export default function ReviewWidget() {
               </p>
 
               {/* Service */}
-              <div className="inline-block bg-[#C8A882]/10 text-[#C8A882] px-2 py-1 rounded-full text-xs font-medium">
+              <div className="inline-block bg-[#2db83d]/10 text-[#2db83d] px-2 py-1 rounded-full text-xs font-medium">
                 {review.service}
               </div>
             </div>
 
             {/* Pulse Animation Border */}
-            <div className="absolute inset-0 rounded-xl border-2 border-[#C8A882]/30 animate-pulse pointer-events-none" />
+            <div className="absolute inset-0 rounded-xl border-2 border-[#2db83d]/30 animate-pulse pointer-events-none" />
           </div>
 
-          {/* SERENITY Badge */}
-          <div className="absolute -top-1 -right-1 bg-[#C8A882] text-white px-2 py-0.5 rounded-full text-xs font-medium shadow-lg">
-            SERENITY
+          {/* NUNYUI Badge */}
+          <div className="absolute -top-1 -right-1 bg-[#2db83d] text-white px-2 py-0.5 rounded-full text-xs font-medium shadow-lg">
+            NUNYUI
           </div>
         </motion.div>
       )}

@@ -5,7 +5,7 @@ import { X, Calendar, Clock, User, Mail, Phone, MessageSquare, Sparkles, Check, 
 // import { Appointment } from "@/entities/Appointment";
 // import { BookingNotification } from "@/entities/BookingNotification";
 
-// Complete SERENITY services list with accurate data
+// Complete NUNYUI services list with accurate data
 const services = [
   // Massage Services
   { name: "Swedish Massage", price: 2500, duration: "60 min", category: "Massage" },
@@ -306,7 +306,7 @@ Monday - Saturday: 9:00 AM - 8:00 PM
 Sunday: 10:00 AM - 6:00 PM
 
 ════════════════════════════════════════════════════
-Thank you for choosing SERENITY. We look forward to 
+Thank you for choosing NUNYUI. We look forward to 
 providing you with an exceptional wellness experience.
 ════════════════════════════════════════════════════
 `;
@@ -343,7 +343,7 @@ providing you with an exceptional wellness experience.
             {/* Header */}
             <div className="sticky top-0 bg-white rounded-t-3xl border-b border-gray-100 p-6 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <Sparkles className="w-6 h-6 text-[#C8A882]" />
+                <Sparkles className="w-6 h-6 text-[#2db83d]" />
                 <h2 className="font-serif text-2xl font-bold text-[#0F0F0F]">
                   Book Your Appointment
                 </h2>
@@ -388,8 +388,8 @@ providing you with an exceptional wellness experience.
                         }}
                         className={`p-4 rounded-xl border-2 cursor-pointer transition-all duration-300 hover:shadow-md ${
                           formData.service === service.name
-                            ? 'border-[#C8A882] bg-[#C8A882]/5'
-                            : 'border-gray-200 hover:border-[#C8A882]/50'
+                            ? 'border-[#2db83d] bg-[#2db83d]/5'
+                            : 'border-gray-200 hover:border-[#2db83d]/50'
                         }`}
                       >
                         <div className="flex justify-between items-center">
@@ -400,7 +400,7 @@ providing you with an exceptional wellness experience.
                             <p className="text-sm text-gray-500">{service.duration}</p>
                           </div>
                           <div className="text-right">
-                            <p className="font-serif text-xl font-bold text-[#C8A882]">
+                            <p className="font-serif text-xl font-bold text-[#2db83d]">
                               ${service.price.toLocaleString('en-IN')}
                               {service.priceNote && <span className="text-xs text-gray-600 ml-1">{service.priceNote}</span>}
                             </p>
@@ -420,7 +420,7 @@ providing you with an exceptional wellness experience.
                 >
                   <div className="text-center mb-8">
                     <p className="text-gray-600">Step 2 of 2: Your Details</p>
-                    <div className="mt-4 p-4 bg-[#C8A882]/5 rounded-xl">
+                    <div className="mt-4 p-4 bg-[#2db83d]/5 rounded-xl">
                       <p className="font-serif text-lg text-[#0F0F0F]">
                         {formData.service} - ${selectedService?.price.toLocaleString('en-IN')}
                         {selectedService?.priceNote && <span className="text-sm text-gray-600 ml-1">{selectedService.priceNote}</span>}
@@ -441,7 +441,7 @@ providing you with an exceptional wellness experience.
                           required
                           value={formData.client_name}
                           onChange={(e) => handleInputChange('client_name', e.target.value)}
-                          className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#C8A882] transition-colors duration-300"
+                          className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#2db83d] transition-colors duration-300"
                           placeholder="Your full name"
                         />
                       </div>
@@ -455,7 +455,7 @@ providing you with an exceptional wellness experience.
                           required
                           value={formData.email}
                           onChange={(e) => handleInputChange('email', e.target.value)}
-                          className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#C8A882] transition-colors duration-300"
+                          className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#2db83d] transition-colors duration-300"
                           placeholder="your@email.com"
                         />
                       </div>
@@ -471,7 +471,7 @@ providing you with an exceptional wellness experience.
                         required
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#C8A882] transition-colors duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#2db83d] transition-colors duration-300"
                         placeholder="+91 98765 43210"
                       />
                     </div>
@@ -488,7 +488,7 @@ providing you with an exceptional wellness experience.
                           value={formData.preferred_date}
                           onChange={(e) => handleInputChange('preferred_date', e.target.value)}
                           min={getTomorrowDate()}
-                          className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#C8A882] transition-colors duration-300"
+                          className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#2db83d] transition-colors duration-300"
                         />
                       </div>
                       <div>
@@ -500,7 +500,7 @@ providing you with an exceptional wellness experience.
                           required
                           value={formData.preferred_time}
                           onChange={(e) => handleInputChange('preferred_time', e.target.value)}
-                          className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#C8A882] transition-colors duration-300"
+                          className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#2db83d] transition-colors duration-300"
                         >
                           <option value="">Select time</option>
                           {timeSlots.map((time) => (
@@ -519,7 +519,7 @@ providing you with an exceptional wellness experience.
                         value={formData.message}
                         onChange={(e) => handleInputChange('message', e.target.value)}
                         rows={3}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#C8A882] transition-colors duration-300 resize-none"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#2db83d] transition-colors duration-300 resize-none"
                         placeholder="Any special requests or preferences..."
                       />
                     </div>
@@ -535,7 +535,7 @@ providing you with an exceptional wellness experience.
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="flex-1 py-3 px-6 bg-[#C8A882] text-white rounded-xl font-sans font-medium hover:bg-[#FF5C8D] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                        className="flex-1 py-3 px-6 bg-[#2db83d] text-white rounded-xl font-sans font-medium hover:bg-[#45f248] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                       >
                         {isSubmitting ? (
                           <>
@@ -571,23 +571,23 @@ providing you with an exceptional wellness experience.
                   </div>
 
                   {/* Professional Booking Summary Card */}
-                  <div className="bg-gradient-to-br from-[#C8A882]/10 to-[#FF5C8D]/10 rounded-2xl p-4 md:p-6 text-left border-2 border-[#C8A882]/30 mx-auto max-w-lg shadow-lg">
+                  <div className="bg-gradient-to-br from-[#2db83d]/10 to-[#45f248]/10 rounded-2xl p-4 md:p-6 text-left border-2 border-[#2db83d]/30 mx-auto max-w-lg shadow-lg">
                     <div className="text-center mb-4">
                       <h4 className="font-serif text-xl font-bold text-[#0F0F0F] mb-1">
                         📋 APPOINTMENT CONFIRMATION
                       </h4>
-                      <div className="w-16 h-0.5 bg-[#C8A882] mx-auto"></div>
+                      <div className="w-16 h-0.5 bg-[#2db83d] mx-auto"></div>
                     </div>
                     
                     <div className="space-y-3 text-sm">
                       <div className="bg-white/70 rounded-lg p-3">
                         <div className="flex justify-between items-center mb-2">
                           <strong className="text-gray-700">Booking Reference:</strong>
-                          <span className="text-[#FF5C8D] font-bold font-mono text-xs bg-[#FF5C8D]/10 px-2 py-1 rounded">
+                          <span className="text-[#45f248] font-bold font-mono text-xs bg-[#45f248]/10 px-2 py-1 rounded">
                             #{createdAppointment?.id?.slice(-8)?.toUpperCase()}
                           </span>
                         </div>
-                        <div className="w-full h-[1px] bg-[#C8A882]/30 mb-2"></div>
+                        <div className="w-full h-[1px] bg-[#2db83d]/30 mb-2"></div>
                         
                         <div className="flex justify-between items-start mb-2">
                           <strong className="text-gray-700">Service:</strong>
@@ -596,7 +596,7 @@ providing you with an exceptional wellness experience.
                         
                         <div className="flex justify-between items-center mb-2">
                           <strong className="text-gray-700">Investment:</strong>
-                          <span className="text-[#C8A882] font-bold text-lg">${selectedService?.price.toLocaleString('en-IN')}</span>
+                          <span className="text-[#2db83d] font-bold text-lg">${selectedService?.price.toLocaleString('en-IN')}</span>
                         </div>
                         
                         <div className="flex justify-between items-center mb-2">
@@ -604,7 +604,7 @@ providing you with an exceptional wellness experience.
                           <span className="font-medium">{selectedService?.duration}</span>
                         </div>
                         
-                        <div className="w-full h-[1px] bg-[#C8A882]/30 mb-2"></div>
+                        <div className="w-full h-[1px] bg-[#2db83d]/30 mb-2"></div>
                         
                         <div className="flex justify-between items-center mb-2">
                           <strong className="text-gray-700">Date:</strong>
@@ -637,7 +637,7 @@ providing you with an exceptional wellness experience.
                   <div className="space-y-3 pt-4 px-4">
                     <button
                       onClick={downloadBookingDetails}
-                      className="w-full py-3 md:py-4 px-6 bg-[#C8A882] text-white rounded-xl font-sans font-medium hover:bg-[#FF5C8D] transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl text-base"
+                      className="w-full py-3 md:py-4 px-6 bg-[#2db83d] text-white rounded-xl font-sans font-medium hover:bg-[#45f248] transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl text-base"
                     >
                       <Download className="w-5 h-5" />
                       Download Confirmation Document
@@ -653,10 +653,10 @@ providing you with an exceptional wellness experience.
 
                   {/* Professional Footer */}
                   <div className="text-xs text-gray-500 pt-6 border-t border-gray-200 space-y-1">
-                    <p className="font-bold text-[#C8A882] text-sm">SERENITY Luxury Spa & Salon</p>
+                    <p className="font-bold text-[#2db83d] text-sm">NUNYUI Luxury Spa & Salon</p>
                     <p>P-145, Sector A, Metropolitan C.H.S. Ltd.</p>
                     <p>Tangra, Kolkata 700105 | +91 98765 43210</p>
-                    <p className="text-[#C8A882] font-medium">Operating Hours: Mon-Sat 9AM-8PM | Sun 10AM-6PM</p>
+                    <p className="text-[#2db83d] font-medium">Operating Hours: Mon-Sat 9AM-8PM | Sun 10AM-6PM</p>
                   </div>
                 </motion.div>
               )}

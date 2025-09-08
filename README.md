@@ -1,6 +1,6 @@
-# Serenity Luxury Spa & Salon
+# Nunyui Luxury Spa & Salon
 
-A modern, responsive website for Serenity Luxury Spa & Salon, Kolkata's premier luxury wellness destination. This project showcases premium services including hair styling, skincare, massages, nail care, and wellness treatments, with features like online booking, customer reviews, and a chatbot for inquiries.
+A modern, responsive website for Nunyui Luxury Spa & Salon, Kolkata's premier luxury wellness destination. This project showcases premium services including hair styling, skincare, massages, nail care, and wellness treatments, with features like online booking, customer reviews, and a chatbot for inquiries.
 
 ## Features
 

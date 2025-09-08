@@ -6,7 +6,7 @@ import { Clock, Star, ArrowRight, Sparkles } from "lucide-react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Head from "next/head";
 
-// Complete SERENITY Spa Service Menu with SEO-optimized alt text and optimized image URLs
+// Complete NUNYUI Spa Service Menu with SEO-optimized alt text and optimized image URLs
 const servicesData = [
   // Massage Services
   {
@@ -17,7 +17,7 @@ const servicesData = [
     price: 2500,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/77609c815_image.png?w=600&q=80",
-    alt_text: "Professional Swedish massage therapy session at SERENITY luxury spa in Kolkata - premium relaxation treatment"
+    alt_text: "Professional Swedish massage therapy session at NUNYUI luxury spa in Kolkata - premium relaxation treatment"
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const servicesData = [
     price: 3500,
     duration: "90 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/ddade6f79_image.png?w=600&q=80",
-    alt_text: "Japanese Head Spa waterfall treatment with chromotherapy lighting at SERENITY Tangra salon - luxury scalp therapy"
+    alt_text: "Japanese Head Spa waterfall treatment with chromotherapy lighting at NUNYUI Tangra salon - luxury scalp therapy"
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const servicesData = [
     price: 3000,
     duration: "75 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/5ea9a35b6_image.png?w=600&q=80",
-    alt_text: "Traditional Thai dry massage therapy with acupressure and yoga stretches at SERENITY spa Kolkata"
+    alt_text: "Traditional Thai dry massage therapy with acupressure and yoga stretches at NUNYUI spa Kolkata"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const servicesData = [
     price: 1500,
     duration: "45 min", 
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/0c4d65a6a_image.png?w=600&q=80",
-    alt_text: "Relaxing foot reflexology massage therapy at SERENITY luxury wellness center in Kolkata"
+    alt_text: "Relaxing foot reflexology massage therapy at NUNYUI luxury wellness center in Kolkata"
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const servicesData = [
     price: 1200,
     duration: "30 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/30adeac89_image.png?w=600&q=80",
-    alt_text: "Therapeutic head and shoulder massage for stress relief at SERENITY premium spa in Tangra Kolkata"
+    alt_text: "Therapeutic head and shoulder massage for stress relief at NUNYUI premium spa in Tangra Kolkata"
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ const servicesData = [
     price: 3500,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7581a5afb_image.png?w=600&q=80",
-    alt_text: "Deep tissue massage therapy for chronic pain relief at SERENITY luxury spa - professional treatment in Kolkata"
+    alt_text: "Deep tissue massage therapy for chronic pain relief at NUNYUI luxury spa - professional treatment in Kolkata"
   },
 
   // Beauty & Cosmetic Services
@@ -79,7 +79,7 @@ const servicesData = [
     price: 2000,
     duration: "120 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/17af3b19c_image.png?w=600&q=80",
-    alt_text: "Professional eyelash extensions application at SERENITY beauty salon Kolkata - dramatic volume lashes"
+    alt_text: "Professional eyelash extensions application at NUNYUI beauty salon Kolkata - dramatic volume lashes"
   },
   {
     id: 8,
@@ -89,7 +89,7 @@ const servicesData = [
     price: 1500,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/c88be1d9b_image.png?w=600&q=80",
-    alt_text: "Before and after lash lift treatment showing natural curled lashes at SERENITY beauty salon Tangra"
+    alt_text: "Before and after lash lift treatment showing natural curled lashes at NUNYUI beauty salon Tangra"
   },
   {
     id: 9,
@@ -99,7 +99,7 @@ const servicesData = [
     price: 6500,
     duration: "180 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/eac0a9a29_image.png?w=600&q=80",
-    alt_text: "Expert microblading procedure for natural-looking, fuller eyebrows at SERENITY beauty clinic Kolkata"
+    alt_text: "Expert microblading procedure for natural-looking, fuller eyebrows at NUNYUI beauty clinic Kolkata"
   },
   {
     id: 10,
@@ -109,7 +109,7 @@ const servicesData = [
     price: 6500,
     duration: "180 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/a13d91e6c_image.png?w=600&q=80",
-    alt_text: "Soft, powdered microshading eyebrow tattoo for a gradient brow look at SERENITY Tangra salon"
+    alt_text: "Soft, powdered microshading eyebrow tattoo for a gradient brow look at NUNYUI Tangra salon"
   },
   {
     id: 11,
@@ -119,7 +119,7 @@ const servicesData = [
     price: 7500,
     duration: "200 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7b4d0a42b_image.png?w=600&q=80",
-    alt_text: "Hybrid microblading and microshading technique for textured, defined eyebrows at SERENITY Beauty Salon"
+    alt_text: "Hybrid microblading and microshading technique for textured, defined eyebrows at NUNYUI Beauty Salon"
   },
   {
     id: 12,
@@ -129,7 +129,7 @@ const servicesData = [
     price: 3000,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/e4068a7fd_image.png?w=600&q=80",
-    alt_text: "Professional touch-up session for semi-permanent makeup at SERENITY luxury beauty studio Kolkata"
+    alt_text: "Professional touch-up session for semi-permanent makeup at NUNYUI luxury beauty studio Kolkata"
   },
   {
     id: 13,
@@ -139,7 +139,7 @@ const servicesData = [
     price: 5000,
     duration: "120 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/74b9d8a69_image.png?w=600&q=80",
-    alt_text: "Lip blush semi-permanent makeup for enhanced lip color and shape at SERENITY beauty salon Kolkata"
+    alt_text: "Lip blush semi-permanent makeup for enhanced lip color and shape at NUNYUI beauty salon Kolkata"
   },
 
   // Laser Hair Removal
@@ -151,7 +151,7 @@ const servicesData = [
     price: 1000,
     duration: "30 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/fa95b506d_image.png?w=600&q=80",
-    alt_text: "Advanced laser hair removal for smooth underarms at SERENITY medical spa in Kolkata"
+    alt_text: "Advanced laser hair removal for smooth underarms at NUNYUI medical spa in Kolkata"
   },
   {
     id: 15,
@@ -161,7 +161,7 @@ const servicesData = [
     price: 2000,
     duration: "45 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/2788765aa_image.png?w=600&q=80",
-    alt_text: "Discreet and effective bikini area laser hair removal for lasting smoothness at SERENITY wellness center"
+    alt_text: "Discreet and effective bikini area laser hair removal for lasting smoothness at NUNYUI wellness center"
   },
   {
     id: 16,
@@ -171,7 +171,7 @@ const servicesData = [
     price: 2000,
     duration: "90 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/f2d4681df_image.png?w=600&q=80",
-    alt_text: "Comprehensive full leg laser hair removal for permanent smooth skin at SERENITY clinic Kolkata"
+    alt_text: "Comprehensive full leg laser hair removal for permanent smooth skin at NUNYUI clinic Kolkata"
   },
   {
     id: 17,
@@ -181,7 +181,7 @@ const servicesData = [
     price: 1500,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/41592e74d_image.png?w=600&q=80",
-    alt_text: "Targeted half leg laser hair removal for upper or lower legs at SERENITY spa Tangra"
+    alt_text: "Targeted half leg laser hair removal for upper or lower legs at NUNYUI spa Tangra"
   },
   {
     id: 18,
@@ -191,7 +191,7 @@ const servicesData = [
     price: 1500,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/8ef5399b8_image.png?w=600&q=80",
-    alt_text: "Permanent full arm laser hair removal for silky smooth skin at SERENITY aesthetic clinic"
+    alt_text: "Permanent full arm laser hair removal for silky smooth skin at NUNYUI aesthetic clinic"
   },
   {
     id: 19,
@@ -201,7 +201,7 @@ const servicesData = [
     price: 1500,
     duration: "45 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/9e9f0d824_image.png?w=600&q=80",
-    alt_text: "Gentle full face laser hair removal for flawless complexion at SERENITY skincare clinic Kolkata"
+    alt_text: "Gentle full face laser hair removal for flawless complexion at NUNYUI skincare clinic Kolkata"
   },
   {
     id: 20,
@@ -211,7 +211,7 @@ const servicesData = [
     price: 2000,
     duration: "75 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/a74b83a89_image.png?w=600&q=80",
-    alt_text: "Effective full back laser hair removal for men and women at SERENITY aesthetic center Kolkata"
+    alt_text: "Effective full back laser hair removal for men and women at NUNYUI aesthetic center Kolkata"
   },
   {
     id: 21,
@@ -221,7 +221,7 @@ const servicesData = [
     price: 2000,
     duration: "45 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/94c56298e_image.png?w=600&q=80",
-    alt_text: "Safe and effective stomach laser hair removal for clear skin at SERENITY luxury spa Tangra"
+    alt_text: "Safe and effective stomach laser hair removal for clear skin at NUNYUI luxury spa Tangra"
   },
   {
     id: 22,
@@ -231,7 +231,7 @@ const servicesData = [
     price: 900,
     duration: "15 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/c7a20dcd0_image.png?w=600&q=80",
-    alt_text: "Quick and precise upper lip laser hair removal for women at SERENITY beauty clinic Kolkata"
+    alt_text: "Quick and precise upper lip laser hair removal for women at NUNYUI beauty clinic Kolkata"
   },
   {
     id: 23,
@@ -241,7 +241,7 @@ const servicesData = [
     price: 12999,
     duration: "240 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/de75478b0_image.png?w=600&q=80",
-    alt_text: "Ultimate full body laser hair removal package for permanent hair reduction at SERENITY luxury spa"
+    alt_text: "Ultimate full body laser hair removal package for permanent hair reduction at NUNYUI luxury spa"
   },
 
   // Nail Services
@@ -253,7 +253,7 @@ const servicesData = [
     price: 1200,
     duration: "90 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6e5b55054_image.png?w=600&q=80",
-    alt_text: "Elegant soft gel nail extensions for natural-looking, durable manicure at SERENITY nail salon Kolkata"
+    alt_text: "Elegant soft gel nail extensions for natural-looking, durable manicure at NUNYUI nail salon Kolkata"
   },
   {
     id: 25,
@@ -263,7 +263,7 @@ const servicesData = [
     price: 1500,
     duration: "120 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/3cf879beb_image.png?w=600&q=80",
-    alt_text: "Durable acrylic nail extensions for length and strength with intricate designs at SERENITY nail art studio"
+    alt_text: "Durable acrylic nail extensions for length and strength with intricate designs at NUNYUI nail art studio"
   },
   {
     id: 26,
@@ -273,7 +273,7 @@ const servicesData = [
     price: 500,
     duration: "45 min",
     image_url: "https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    alt_text: "Flawless, long-lasting gel polish application with vast color selection at SERENITY nail bar Tangra"
+    alt_text: "Flawless, long-lasting gel polish application with vast color selection at NUNYUI nail bar Tangra"
   },
   {
     id: 27,
@@ -283,7 +283,7 @@ const servicesData = [
     price: 150,
     duration: "30 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/b2015f12e_image.png?w=600&q=80",
-    alt_text: "Professional and safe nail extension removal service to protect natural nails at SERENITY salon"
+    alt_text: "Professional and safe nail extension removal service to protect natural nails at NUNYUI salon"
   },
   {
     id: 28,
@@ -293,7 +293,7 @@ const servicesData = [
     price: 800,
     duration: "60 min",
     image_url: "https://images.pexels.com/photos/3997378/pexels-photo-3997378.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    alt_text: "Classic manicure service including nail shaping, cuticle care, and hand massage at SERENITY spa Kolkata"
+    alt_text: "Classic manicure service including nail shaping, cuticle care, and hand massage at NUNYUI spa Kolkata"
   },
   {
     id: 29,
@@ -303,7 +303,7 @@ const servicesData = [
     price: 1000,
     duration: "75 min",
     image_url: "https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    alt_text: "Luxury manicure with whitening pack for brighter, youthful-looking hands at SERENITY beauty lounge"
+    alt_text: "Luxury manicure with whitening pack for brighter, youthful-looking hands at NUNYUI beauty lounge"
   },
   {
     id: 30,
@@ -313,7 +313,7 @@ const servicesData = [
     price: 1200,
     duration: "75 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/2f60c4655_image.png?w=600&q=80",
-    alt_text: "Rejuvenating pedicure with foot soak, exfoliation, and massage for tired feet at SERENITY spa Kolkata"
+    alt_text: "Rejuvenating pedicure with foot soak, exfoliation, and massage for tired feet at NUNYUI spa Kolkata"
   },
   {
     id: 31,
@@ -323,7 +323,7 @@ const servicesData = [
     price: 1500,
     duration: "90 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/aae76f589_image.png?w=600&q=80",
-    alt_text: "Premium pedicure with whitening pack for radiant, smooth feet at SERENITY luxury foot spa"
+    alt_text: "Premium pedicure with whitening pack for radiant, smooth feet at NUNYUI luxury foot spa"
   },
 
   // Hair Services
@@ -335,7 +335,7 @@ const servicesData = [
     price: 800,
     duration: "60 min",
     image_url: "https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    alt_text: "Bespoke women's haircut by master stylists at SERENITY hair salon Kolkata - precision cutting and styling"
+    alt_text: "Bespoke women's haircut by master stylists at NUNYUI hair salon Kolkata - precision cutting and styling"
   },
   {
     id: 33,
@@ -345,7 +345,7 @@ const servicesData = [
     price: 500,
     duration: "45 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/84f23d8d4_image.png?w=600&q=80",
-    alt_text: "Expert men's haircut with modern barbering techniques and styling at SERENITY salon for men Kolkata"
+    alt_text: "Expert men's haircut with modern barbering techniques and styling at NUNYUI salon for men Kolkata"
   },
   {
     id: 34,
@@ -355,7 +355,7 @@ const servicesData = [
     price: 300,
     duration: "30 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/3464539b2_image.png?w=600&q=80",
-    alt_text: "Relaxing professional hair wash with organic products and scalp massage at SERENITY salon"
+    alt_text: "Relaxing professional hair wash with organic products and scalp massage at NUNYUI salon"
   },
   {
     id: 35,
@@ -365,7 +365,7 @@ const servicesData = [
     price: 700,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/687f41d49_image.png?w=600&q=80",
-    alt_text: "Professional hair wash and styling for a perfect blowout or event-ready look at SERENITY salon Kolkata"
+    alt_text: "Professional hair wash and styling for a perfect blowout or event-ready look at NUNYUI salon Kolkata"
   },
   {
     id: 36,
@@ -376,7 +376,7 @@ const servicesData = [
     duration: "180 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/92b9aa50d_image.png?w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Expert hair perming for soft waves or bouncy curls using gentle formulas at SERENITY hair studio Kolkata"
+    alt_text: "Expert hair perming for soft waves or bouncy curls using gentle formulas at NUNYUI hair studio Kolkata"
   },
   {
     id: 37,
@@ -387,7 +387,7 @@ const servicesData = [
     duration: "240 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/4162f41a8_image.png?w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Professional hair straightening and keratin treatments for sleek, frizz-free hair at SERENITY salon"
+    alt_text: "Professional hair straightening and keratin treatments for sleek, frizz-free hair at NUNYUI salon"
   },
   {
     id: 38,
@@ -398,7 +398,7 @@ const servicesData = [
     duration: "180 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/35023bf1e_image.png?w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Premium hair colouring services including balayage and highlights with luminous results at SERENITY Kolkata"
+    alt_text: "Premium hair colouring services including balayage and highlights with luminous results at NUNYUI Kolkata"
   },
   {
     id: 39,
@@ -409,7 +409,7 @@ const servicesData = [
     duration: "240 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7615c05a6_image.png?w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Professional hair highlighting for dimension and shine with balayage and foiling at SERENITY hair salon"
+    alt_text: "Professional hair highlighting for dimension and shine with balayage and foiling at NUNYUI hair salon"
   },
   {
     id: 40,
@@ -420,7 +420,7 @@ const servicesData = [
     duration: "120 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/27f1f5a0d_image.png?w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Luxury hair extensions for added length and volume using 100% human hair at SERENITY salon Tangra"
+    alt_text: "Luxury hair extensions for added length and volume using 100% human hair at NUNYUI salon Tangra"
   },
   {
     id: 41,
@@ -431,7 +431,7 @@ const servicesData = [
     duration: "90 min",
     image_url: "https://images.pexels.com/photos/3993324/pexels-photo-3993324.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Revitalizing hair spa treatment with organic masques and steam therapy for healthy, shiny hair at SERENITY"
+    alt_text: "Revitalizing hair spa treatment with organic masques and steam therapy for healthy, shiny hair at NUNYUI"
   },
   {
     id: 42,
@@ -442,7 +442,7 @@ const servicesData = [
     duration: "240 min",
     image_url: "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Transformative keratin treatment for smooth, frizz-free, and manageable hair at SERENITY salon Kolkata"
+    alt_text: "Transformative keratin treatment for smooth, frizz-free, and manageable hair at NUNYUI salon Kolkata"
   }
 ];
 
@@ -496,13 +496,13 @@ export default function Services() {
   return (
     <>
       <Head>
-        <title>Premium Spa & Salon Services in Kolkata | SERENITY</title>
+        <title>Premium Spa & Salon Services in Kolkata | NUNYUI</title>
         <meta 
           name="description" 
-          content="Discover luxury spa treatments, massage therapy, beauty services, laser hair removal, nail care, and hair styling at SERENITY Kolkata. Book your premium wellness experience today." 
+          content="Discover luxury spa treatments, massage therapy, beauty services, laser hair removal, nail care, and hair styling at NUNYUI Kolkata. Book your premium wellness experience today." 
         />
         <meta name="keywords" content="spa services Kolkata, massage therapy, beauty salon, laser hair removal, nail care, hair styling, Tangra wellness center" />
-        <meta property="og:title" content="Premium Spa & Salon Services in Kolkata | SERENITY" />
+        <meta property="og:title" content="Premium Spa & Salon Services in Kolkata | NUNYUI" />
         <meta property="og:description" content="Experience luxury wellness treatments at Kolkata's premier spa. From therapeutic massages to beauty services and hair care." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://yourwebsite.com/services" />
@@ -517,8 +517,8 @@ export default function Services() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <div className="inline-flex items-center gap-2 bg-[#C8A882]/10 rounded-full px-4 py-2 mb-6">
-              <Sparkles className="w-4 h-4 text-[#C8A882]" />
+            <div className="inline-flex items-center gap-2 bg-[#2db83d]/10 rounded-full px-4 py-2 mb-6">
+              <Sparkles className="w-4 h-4 text-[#2db83d]" />
               <span className="text-sm font-medium">Our Services</span>
             </div>
             
@@ -545,8 +545,8 @@ export default function Services() {
                 onClick={() => handleFilterChange(category.key)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   activeFilter === category.key
-                    ? 'bg-[#C8A882] text-white shadow-lg'
-                    : 'bg-white text-gray-600 hover:bg-[#C8A882]/10 hover:text-[#C8A882] border border-gray-200'
+                    ? 'bg-[#2db83d] text-white shadow-lg'
+                    : 'bg-white text-gray-600 hover:bg-[#2db83d]/10 hover:text-[#2db83d] border border-gray-200'
                 }`}
               >
                 {category.name}
@@ -581,7 +581,7 @@ export default function Services() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
                   {/* Price Badge */}
-                  <div className="absolute top-4 right-4 bg-[#C8A882] text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                  <div className="absolute top-4 right-4 bg-[#2db83d] text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                     ${service.price.toLocaleString('en-IN')}
                     {service.priceNote && <span className="text-xs ml-1">{service.priceNote}</span>}
                   </div>
@@ -595,7 +595,7 @@ export default function Services() {
 
                 {/* Service Content */}
                 <div className="p-6">
-                  <h3 className="font-serif text-xl font-bold text-[#0F0F0F] mb-3 group-hover:text-[#C8A882] transition-colors duration-300">
+                  <h3 className="font-serif text-xl font-bold text-[#0F0F0F] mb-3 group-hover:text-[#2db83d] transition-colors duration-300">
                     {service.name}
                   </h3>
                   
@@ -606,14 +606,14 @@ export default function Services() {
                   {/* Rating */}
                   <div className="flex items-center gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-[#C8A882] fill-current" />
+                      <Star key={i} className="w-4 h-4 text-[#2db83d] fill-current" />
                     ))}
                     <span className="text-sm text-gray-500 ml-2">(4.9)</span>
                   </div>
                   
                   <button 
                     onClick={() => handleServiceBooking(service)}
-                    className="w-full bg-[#C8A882]/10 text-[#C8A882] py-3 rounded-full font-medium hover:bg-[#C8A882] hover:text-white transition-all duration-300 group-hover:shadow-lg flex items-center justify-center gap-2"
+                    className="w-full bg-[#2db83d]/10 text-[#2db83d] py-3 rounded-full font-medium hover:bg-[#2db83d] hover:text-white transition-all duration-300 group-hover:shadow-lg flex items-center justify-center gap-2"
                   >
                     Book Now
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
@@ -630,13 +630,13 @@ export default function Services() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-center mt-16"
           >
-            <div className="bg-white rounded-3xl p-12 shadow-lg border border-[#C8A882]/20">
+            <div className="bg-white rounded-3xl p-12 shadow-lg border border-[#2db83d]/20">
               <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-bold text-[#0F0F0F] mb-4">
                 Ready for Your Transformation?
               </h2>
               <p className="text-gray-600 mb-8 max-w-2xl mx-auto leading-[1.618]">
                 Book your appointment today and experience the luxury wellness treatments 
-                that have made SERENITY the #1 spa in Kolkata.
+                that have made NUNYUI the #1 spa in Kolkata.
               </p>
               <button 
                 onClick={() => {
@@ -644,7 +644,7 @@ export default function Services() {
                     window.dispatchEvent(new CustomEvent('open-booking-modal'));
                   }
                 }}
-                className="bg-[#C8A882] text-white px-8 py-4 rounded-full font-medium hover:bg-[#FF5C8D] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-[#2db83d] text-white px-8 py-4 rounded-full font-medium hover:bg-[#45f248] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Book Your Experience
               </button>

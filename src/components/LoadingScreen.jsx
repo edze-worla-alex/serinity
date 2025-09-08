@@ -9,7 +9,7 @@ const AnimatedFlower = () => (
     viewBox="0 0 120 120"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className="text-[#C8A882]"
+    className="text-[#2db83d]"
   >
     {/* Outer Flower Petals */}
     <motion.ellipse
@@ -186,7 +186,7 @@ const AnimatedFlower = () => (
       cy="40"
       rx="8"
       ry="18"
-      fill="#FF5C8D"
+      fill="#45f248"
       opacity="0.9"
       initial={{ scale: 0, rotate: 22.5 }}
       animate={{ 
@@ -207,7 +207,7 @@ const AnimatedFlower = () => (
       cy="50"
       rx="8"
       ry="18"
-      fill="#FF5C8D"
+      fill="#45f248"
       opacity="0.9"
       initial={{ scale: 0, rotate: 67.5 }}
       animate={{ 
@@ -228,7 +228,7 @@ const AnimatedFlower = () => (
       cy="60"
       rx="8"
       ry="18"
-      fill="#FF5C8D"
+      fill="#45f248"
       opacity="0.9"
       initial={{ scale: 0, rotate: 112.5 }}
       animate={{ 
@@ -249,7 +249,7 @@ const AnimatedFlower = () => (
       cy="70"
       rx="8"
       ry="18"
-      fill="#FF5C8D"
+      fill="#45f248"
       opacity="0.9"
       initial={{ scale: 0, rotate: 157.5 }}
       animate={{ 
@@ -270,7 +270,7 @@ const AnimatedFlower = () => (
       cy="80"
       rx="8"
       ry="18"
-      fill="#FF5C8D"
+      fill="#45f248"
       opacity="0.9"
       initial={{ scale: 0, rotate: 202.5 }}
       animate={{ 
@@ -291,7 +291,7 @@ const AnimatedFlower = () => (
       cy="70"
       rx="8"
       ry="18"
-      fill="#FF5C8D"
+      fill="#45f248"
       opacity="0.9"
       initial={{ scale: 0, rotate: 247.5 }}
       animate={{ 
@@ -312,7 +312,7 @@ const AnimatedFlower = () => (
       cy="60"
       rx="8"
       ry="18"
-      fill="#FF5C8D"
+      fill="#45f248"
       opacity="0.9"
       initial={{ scale: 0, rotate: 292.5 }}
       animate={{ 
@@ -333,7 +333,7 @@ const AnimatedFlower = () => (
       cy="50"
       rx="8"
       ry="18"
-      fill="#FF5C8D"
+      fill="#45f248"
       opacity="0.9"
       initial={{ scale: 0, rotate: 337.5 }}
       animate={{ 
@@ -410,7 +410,7 @@ const AnimatedFlower = () => (
       cx="95"
       cy="30"
       r="1.5"
-      fill="#FF5C8D"
+      fill="#45f248"
       opacity="0.7"
       animate={{
         y: [5, -5, 5],
@@ -510,7 +510,7 @@ export default function LoadingScreen() {
               <AnimatedFlower />
               
               {/* Subtle glow effect behind flower */}
-              <div className="absolute inset-0 bg-gradient-radial from-[#C8A882]/30 via-[#FF5C8D]/20 to-transparent rounded-full blur-2xl scale-150 -z-10" />
+              <div className="absolute inset-0 bg-gradient-radial from-[#2db83d]/30 via-[#45f248]/20 to-transparent rounded-full blur-2xl scale-150 -z-10" />
             </div>
             
             <motion.div
@@ -519,8 +519,8 @@ export default function LoadingScreen() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-center mt-6"
             >
-              <h1 className="font-serif text-4xl font-bold text-[#C8A882] mb-2">
-                SERENITY
+              <h1 className="font-serif text-4xl font-bold text-[#2db83d] mb-2">
+                NUNYUI
               </h1>
               <p className="text-sm text-gray-600 tracking-widest uppercase">
                 Luxury Spa & Salon
@@ -536,7 +536,7 @@ export default function LoadingScreen() {
             className="w-64 h-1 bg-gray-200 rounded-full overflow-hidden"
           >
             <motion.div
-              className="h-full bg-gradient-to-r from-[#C8A882] to-[#FF5C8D] rounded-full"
+              className="h-full bg-gradient-to-r from-[#2db83d] to-[#45f248] rounded-full"
               initial={{ width: "0%" }}
               animate={{ width: `${Math.min(progress, 100)}%` }}
               transition={{ duration: 0.3, ease: "easeOut" }}

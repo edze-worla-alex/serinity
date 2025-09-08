@@ -5,7 +5,7 @@ import { Sparkles, ArrowRight } from "lucide-react";
 
 export default function PromotionalBanner() {
   return (
-    <section className="relative py-16 md:py-20 overflow-hidden bg-gradient-to-br from-[#C8A882] via-[#e0bb8e] to-[#cfa169]">
+    <section className="relative py-16 md:py-20 overflow-hidden bg-gradient-to-br from-[#2db83d] via-[#4caf50] to-[#1b5e20]">
       {/* Floating Animation Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(8)].map((_, i) => (
@@ -66,7 +66,7 @@ export default function PromotionalBanner() {
             className="space-y-2"
           >
             <p className="font-sans text-xl md:text-2xl font-light text-white/90 tracking-wide">
-              An Exclusive Invitation to Year-Long Serenity
+              An Exclusive Invitation to Year-Long Nunyui
             </p>
             <motion.p
               initial={{ opacity: 0, scale: 0.8 }}
@@ -91,11 +91,11 @@ export default function PromotionalBanner() {
               whileHover={{ 
                 scale: 1.05, 
                 boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
-                backgroundColor: "#C8A882"
+                backgroundColor: "#2db83d"
               }}
               whileTap={{ scale: 0.95 }}
               onClick={() => window.dispatchEvent(new CustomEvent('open-booking-modal'))}
-              className="group bg-black/80 backdrop-blur-sm text-white px-8 py-4 rounded-full font-sans font-medium hover:bg-[#C8A882] transition-all duration-300 shadow-xl border border-white/20 flex items-center justify-center gap-3 mx-auto"
+              className="group bg-black/80 backdrop-blur-sm text-white px-8 py-4 rounded-full font-sans font-medium hover:bg-[#2db83d] transition-all duration-300 shadow-xl border border-white/20 flex items-center justify-center gap-3 mx-auto"
             >
               CLAIM YOUR MEMBERSHIP
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />

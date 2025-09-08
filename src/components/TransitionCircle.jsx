@@ -49,7 +49,7 @@ export default function TransitionCircle() {
           <div 
             className="w-full h-full rounded-full flex flex-col items-center justify-center bg-white text-center"
           >
-            {/* SERENITY Text - Properly contained within white circle */}
+            {/* NUNYUI Text - Properly contained within white circle */}
             <div className="px-2 py-1 w-full h-full flex flex-col items-center justify-center">
               <h3 
                 className="font-serif font-bold text-[#333333] leading-tight mb-1"
@@ -59,10 +59,10 @@ export default function TransitionCircle() {
                   textShadow: '1px 1px 2px rgba(0,0,0,0.15)'
                 }}
               >
-                SERENITY
+                NUNYUI
               </h3>
               <p 
-                className="font-sans text-[#C8A882] tracking-wider"
+                className="font-sans text-[#2db83d] tracking-wider"
                 style={{ 
                   fontSize: 'clamp(11px, 2.5vw, 13px)',
                   letterSpacing: '1px'

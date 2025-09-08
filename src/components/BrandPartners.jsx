@@ -67,7 +67,7 @@ export default function BrandPartners() {
               >
                 <img
                   src={brand.url}
-                  alt={`${brand.name} logo - Premium beauty products at SERENITY Spa Kolkata`}
+                  alt={`${brand.name} logo - Premium beauty products at NUNYUI Spa Kolkata`}
                   className="h-14 w-auto object-contain filter grayscale opacity-70 transition-all duration-300 ease-in-out hover:grayscale-0 hover:opacity-100 hover:scale-110"
                   style={{ 
                     imageRendering: 'crisp-edges',

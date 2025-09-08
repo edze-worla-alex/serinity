@@ -122,14 +122,14 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact SERENITY - Best Luxury Spa in Kolkata | Book Appointment</title>
+        <title>Contact NUNYUI - Best Luxury Spa in Kolkata | Book Appointment</title>
         <meta 
           name="description" 
-          content="Contact SERENITY luxury spa in Tangra, Kolkata. Book premium organic spa treatments, massage therapy, beauty services. Call +91 98765 43210 or visit P-145 Sector A." 
+          content="Contact NUNYUI luxury spa in Tangra, Kolkata. Book premium organic spa treatments, massage therapy, beauty services. Call +91 98765 43210 or visit P-145 Sector A." 
         />
-        <meta name="keywords" content="contact SERENITY spa, luxury spa Kolkata booking, Tangra spa appointments, organic spa treatments, massage therapy Kolkata, beauty salon contact" />
-        <meta property="og:title" content="Contact SERENITY - Best Luxury Spa in Kolkata" />
-        <meta property="og:description" content="Get in touch with Kolkata's premier luxury spa. Book your organic wellness treatments at SERENITY Tangra today." />
+        <meta name="keywords" content="contact NUNYUI spa, luxury spa Kolkata booking, Tangra spa appointments, organic spa treatments, massage therapy Kolkata, beauty salon contact" />
+        <meta property="og:title" content="Contact NUNYUI - Best Luxury Spa in Kolkata" />
+        <meta property="og:description" content="Get in touch with Kolkata's premier luxury spa. Book your organic wellness treatments at NUNYUI Tangra today." />
         <meta property="og:type" content="website" />
         <meta name="geo.region" content="IN-WB" />
         <meta name="geo.placename" content="Kolkata, West Bengal" />
@@ -143,7 +143,7 @@ export default function Contact() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BeautySalon",
-              "name": "SERENITY Luxury Spa & Salon",
+              "name": "NUNYUI Luxury Spa & Salon",
               "description": "Premium organic spa and salon in Kolkata offering luxury wellness treatments",
               "address": {
                 "@type": "PostalAddress",
@@ -178,17 +178,17 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <div className="inline-flex items-center gap-2 bg-[#C8A882]/10 rounded-full px-4 py-2 mb-6">
-              <Sparkles className="w-4 h-4 text-[#C8A882]" />
+            <div className="inline-flex items-center gap-2 bg-[#2db83d]/10 rounded-full px-4 py-2 mb-6">
+              <Sparkles className="w-4 h-4 text-[#2db83d]" />
               <span className="text-sm font-medium">Get In Touch</span>
             </div>
             
             <h1 className="font-serif font-medium text-[clamp(2.5rem,5vw,4rem)] text-[#0F0F0F] mb-6 leading-tight">
-              Contact SERENITY - The Best Luxury Spa in Kolkata
+              Contact NUNYUI - The Best Luxury Spa in Kolkata
             </h1>
             
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-[1.618]">
-              Experience luxury wellness at SERENITY, where premium equipment meets 
+              Experience luxury wellness at NUNYUI, where premium equipment meets 
               highly skilled professionals for the best organic spa treatments in Kolkata.
             </p>
           </motion.div>
@@ -202,10 +202,10 @@ export default function Contact() {
               className="space-y-[1.2em]"
             >
               {/* Address */}
-              <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#C8A882]/20">
+              <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#2db83d]/20">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#C8A882]/10 rounded-2xl flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-[#C8A882]" />
+                  <div className="w-12 h-12 bg-[#2db83d]/10 rounded-2xl flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-[#2db83d]" />
                   </div>
                   <div>
                     <h3 className="font-serif text-xl font-bold text-[#0F0F0F] mb-2">Visit Our Luxury Spa</h3>
@@ -219,17 +219,17 @@ export default function Contact() {
               </div>
 
               {/* Phone */}
-              <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#C8A882]/20">
+              <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#2db83d]/20">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#C8A882]/10 rounded-2xl flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-[#C8A882]" />
+                  <div className="w-12 h-12 bg-[#2db83d]/10 rounded-2xl flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-[#2db83d]" />
                   </div>
                   <div>
                     <h3 className="font-serif text-xl font-bold text-[#0F0F0F] mb-2">Luxury Booking Line</h3>
                     <div className="leading-[1.618] text-gray-600">
                       <a 
                         href="tel:+919876543210" 
-                        className="text-[#C8A882] hover:text-[#FF5C8D] transition-colors duration-300 font-medium"
+                        className="text-[#2db83d] hover:text-[#45f248] transition-colors duration-300 font-medium"
                       >
                         +91 98765 43210
                       </a>
@@ -241,17 +241,17 @@ export default function Contact() {
               </div>
 
               {/* Email */}
-              <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#C8A882]/20">
+              <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#2db83d]/20">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#C8A882]/10 rounded-2xl flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-[#C8A882]" />
+                  <div className="w-12 h-12 bg-[#2db83d]/10 rounded-2xl flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-[#2db83d]" />
                   </div>
                   <div>
                     <h3 className="font-serif text-xl font-bold text-[#0F0F0F] mb-2">Concierge Email</h3>
                     <div className="leading-[1.618] text-gray-600">
                       <a 
                         href="mailto:info@serenitysalon.in"
-                        className="text-[#C8A882] hover:text-[#FF5C8D] transition-colors duration-300 font-medium"
+                        className="text-[#2db83d] hover:text-[#45f248] transition-colors duration-300 font-medium"
                       >
                         info@serenitysalon.in
                       </a>
@@ -263,10 +263,10 @@ export default function Contact() {
               </div>
 
               {/* Hours */}
-              <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#C8A882]/20">
+              <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#2db83d]/20">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#C8A882]/10 rounded-2xl flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-[#C8A882]" />
+                  <div className="w-12 h-12 bg-[#2db83d]/10 rounded-2xl flex items-center justify-center">
+                    <Clock className="w-5 h-5 text-[#2db83d]" />
                   </div>
                   <div>
                     <h3 className="font-serif text-xl font-bold text-[#0F0F0F] mb-2">Luxury Hours</h3>
@@ -280,19 +280,19 @@ export default function Contact() {
               </div>
 
               {/* Social Media */}
-              <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#C8A882]/20">
+              <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#2db83d]/20">
                 <h3 className="font-serif text-xl font-bold text-[#0F0F0F] mb-4">Follow Us</h3>
                 <div className="flex gap-4">
                   <button 
                     onClick={() => handleSocialClick('instagram')}
-                    className="w-12 h-12 bg-[#C8A882] rounded-2xl flex items-center justify-center hover:bg-[#FF5C8D] transition-colors duration-300 text-white"
+                    className="w-12 h-12 bg-[#2db83d] rounded-2xl flex items-center justify-center hover:bg-[#45f248] transition-colors duration-300 text-white"
                     aria-label="Follow us on Instagram"
                   >
                     <Instagram className="w-6 h-6" />
                   </button>
                   <button 
                     onClick={() => handleSocialClick('facebook')}
-                    className="w-12 h-12 bg-[#C8A882] rounded-2xl flex items-center justify-center hover:bg-[#FF5C8D] transition-colors duration-300 text-white"
+                    className="w-12 h-12 bg-[#2db83d] rounded-2xl flex items-center justify-center hover:bg-[#45f248] transition-colors duration-300 text-white"
                     aria-label="Follow us on Facebook"
                   >
                     <Facebook className="w-6 h-6" />
@@ -306,7 +306,7 @@ export default function Contact() {
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="bg-white rounded-3xl p-8 shadow-lg border border-[#C8A882]/20"
+              className="bg-white rounded-3xl p-8 shadow-lg border border-[#2db83d]/20"
             >
               {isSubmitted ? (
                 <motion.div
@@ -337,7 +337,7 @@ export default function Contact() {
                           className={`w-full px-4 py-3 border rounded-xl focus:outline-none transition-colors duration-300 ${
                             errors.firstName 
                               ? 'border-red-300 focus:border-red-500' 
-                              : 'border-gray-200 focus:border-[#C8A882]'
+                              : 'border-gray-200 focus:border-[#2db83d]'
                           }`}
                           placeholder="Your first name"
                         />
@@ -358,7 +358,7 @@ export default function Contact() {
                           className={`w-full px-4 py-3 border rounded-xl focus:outline-none transition-colors duration-300 ${
                             errors.lastName 
                               ? 'border-red-300 focus:border-red-500' 
-                              : 'border-gray-200 focus:border-[#C8A882]'
+                              : 'border-gray-200 focus:border-[#2db83d]'
                           }`}
                           placeholder="Your last name"
                         />
@@ -381,7 +381,7 @@ export default function Contact() {
                         className={`w-full px-4 py-3 border rounded-xl focus:outline-none transition-colors duration-300 ${
                           errors.email 
                             ? 'border-red-300 focus:border-red-500' 
-                            : 'border-gray-200 focus:border-[#C8A882]'
+                            : 'border-gray-200 focus:border-[#2db83d]'
                         }`}
                         placeholder="your@email.com"
                       />
@@ -403,7 +403,7 @@ export default function Contact() {
                         className={`w-full px-4 py-3 border rounded-xl focus:outline-none transition-colors duration-300 ${
                           errors.phone 
                             ? 'border-red-300 focus:border-red-500' 
-                            : 'border-gray-200 focus:border-[#C8A882]'
+                            : 'border-gray-200 focus:border-[#2db83d]'
                         }`}
                         placeholder="+91 98765 43210"
                       />
@@ -421,7 +421,7 @@ export default function Contact() {
                         name="service"
                         value={formData.service}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#C8A882] transition-colors duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#2db83d] transition-colors duration-300"
                       >
                         <option value="">Select a service</option>
                         <option value="massage">Massage Therapy</option>
@@ -446,7 +446,7 @@ export default function Contact() {
                         className={`w-full px-4 py-3 border rounded-xl focus:outline-none transition-colors duration-300 resize-none ${
                           errors.message 
                             ? 'border-red-300 focus:border-red-500' 
-                            : 'border-gray-200 focus:border-[#C8A882]'
+                            : 'border-gray-200 focus:border-[#2db83d]'
                         }`}
                         placeholder="Tell us about your wellness goals..."
                       />
@@ -458,7 +458,7 @@ export default function Contact() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-[#C8A882] text-white py-4 rounded-xl font-medium hover:bg-[#FF5C8D] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:bg-[#C8A882] flex items-center justify-center gap-2"
+                      className="w-full bg-[#2db83d] text-white py-4 rounded-xl font-medium hover:bg-[#45f248] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:bg-[#2db83d] flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? (
                         <>

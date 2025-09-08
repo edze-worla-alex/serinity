@@ -5,7 +5,7 @@ import { MessageCircle, X, Send, Sparkles, Bot, User } from "lucide-react";
 // import { Appointment } from "@/entities/Appointment";
 // import { InvokeLLM } from "@/integrations/Core";
 
-// Complete SERENITY Services Menu (Updated with SEO Descriptions)
+// Complete NUNYUI Services Menu (Updated with SEO Descriptions)
 const services = [
   // Massage Services
   { name: "Swedish Massage", price: 2500, duration: "60 min", category: "Massage", description: "Indulge in a timeless classic at Kolkata's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation." },
@@ -65,7 +65,7 @@ export default function ChatBot() {
   const [messages, setMessages] = useState([
     {
       id: 1,
-      text: "Hello! I'm Serenity, your AI assistant at SERENITY Spa & Salon. I can help you with:\n\n🔹 Book appointments for any of our 42+ services\n🔹 Check service prices and details\n🔹 Find your existing bookings\n🔹 Get directions and contact info\n🔹 Learn about our organic treatments\n🔹 Answer wellness questions\n\nHow can I assist you today?",
+      text: "Hello! I'm Nunyui, your AI assistant at NUNYUI Spa & Salon. I can help you with:\n\n🔹 Book appointments for any of our 42+ services\n🔹 Check service prices and details\n🔹 Find your existing bookings\n🔹 Get directions and contact info\n🔹 Learn about our organic treatments\n🔹 Answer wellness questions\n\nHow can I assist you today?",
       sender: "bot",
       timestamp: new Date()
     }
@@ -86,9 +86,9 @@ export default function ChatBot() {
     // Get current appointments for context
     // const recentAppointments = await Appointment.list("-created_date", 50);
     const recentAppointments = []
-    return `You are Serenity, an AI assistant for SERENITY Spa & Salon, Kolkata's premier luxury wellness destination specializing in organic spa treatments. You are friendly, professional, knowledgeable about wellness and beauty, and always helpful.
+    return `You are Nunyui, an AI assistant for NUNYUI Spa & Salon, Kolkata's premier luxury wellness destination specializing in organic spa treatments. You are friendly, professional, knowledgeable about wellness and beauty, and always helpful.
 
-SERENITY Spa & Salon Information:
+NUNYUI Spa & Salon Information:
 - Location: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra, Kolkata, West Bengal 700105
 - Phone: +91 98765 43210
 - Email: info@serenitysalon.in, serenitybycece@gmail.com
@@ -213,7 +213,7 @@ Remember: You represent a luxury spa brand, so maintain that premium, caring, an
 
 User message: ${inputText}
 
-Please respond as Serenity, the AI assistant for SERENITY Spa & Salon. Be helpful, friendly, professional, and provide accurate information about services, appointments, and spa-related topics. Format your response nicely with line breaks where appropriate for better readability.`,
+Please respond as Nunyui, the AI assistant for NUNYUI Spa & Salon. Be helpful, friendly, professional, and provide accurate information about services, appointments, and spa-related topics. Format your response nicely with line breaks where appropriate for better readability.`,
         add_context_from_internet: false
       });
 
@@ -255,7 +255,7 @@ Please respond as Serenity, the AI assistant for SERENITY Spa & Salon. Be helpfu
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-6 bg-gradient-to-r from-[#C8A882] to-[#FF5C8D] text-white rounded-full shadow-2xl z-40 flex items-center justify-center transition-all duration-300 ${isOpen ? 'scale-0' : 'scale-100'} w-16 h-16`}
+        className={`fixed bottom-6 right-6 bg-gradient-to-r from-[#2db83d] to-[#45f248] text-white rounded-full shadow-2xl z-40 flex items-center justify-center transition-all duration-300 ${isOpen ? 'scale-0' : 'scale-100'} w-16 h-16`}
         aria-label="Open AI chat assistant"
       >
         <MessageCircle className="w-6 h-6" />
@@ -272,18 +272,18 @@ Please respond as Serenity, the AI assistant for SERENITY Spa & Salon. Be helpfu
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 50 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="fixed bottom-4 right-4 w-[calc(100%-2rem)] max-w-sm h-[75vh] sm:bottom-6 sm:right-6 sm:w-96 sm:h-[600px] bg-white rounded-3xl shadow-2xl z-50 flex flex-col overflow-hidden border border-[#C8A882]/20"
+            className="fixed bottom-4 right-4 w-[calc(100%-2rem)] max-w-sm h-[75vh] sm:bottom-6 sm:right-6 sm:w-96 sm:h-[600px] bg-white rounded-3xl shadow-2xl z-50 flex flex-col overflow-hidden border border-[#2db83d]/20"
           >
             {/* Header */}
-            <div className="bg-gradient-to-r from-[#C8A882] to-[#FF5C8D] text-white p-4 flex items-center justify-between flex-shrink-0">
+            <div className="bg-gradient-to-r from-[#2db83d] to-[#45f248] text-white p-4 flex items-center justify-between flex-shrink-0">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center relative">
                   <Bot className="w-5 h-5" />
                   <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-white"></div>
                 </div>
                 <div>
-                  <h3 className="font-serif text-lg font-bold">Serenity AI</h3>
-                  <p className="text-xs opacity-90">SERENITY Spa Assistant • Online</p>
+                  <h3 className="font-serif text-lg font-bold">Nunyui AI</h3>
+                  <p className="text-xs opacity-90">NUNYUI Spa Assistant • Online</p>
                 </div>
               </div>
               <button
@@ -306,18 +306,18 @@ Please respond as Serenity, the AI assistant for SERENITY Spa & Salon. Be helpfu
                 >
                   <div className={`flex items-start gap-2 max-w-[85%]`}>
                     {message.sender === 'bot' && (
-                      <div className="w-8 h-8 rounded-full bg-[#FF5C8D] flex items-center justify-center flex-shrink-0">
+                      <div className="w-8 h-8 rounded-full bg-[#45f248] flex items-center justify-center flex-shrink-0">
                         <Bot className="w-4 h-4 text-white" />
                       </div>
                     )}
-                    <div className={`p-3 rounded-2xl ${message.sender === 'user' ? 'bg-[#C8A882] text-white ml-2' : 'bg-gray-100 text-gray-800'}`}>
+                    <div className={`p-3 rounded-2xl ${message.sender === 'user' ? 'bg-[#2db83d] text-white ml-2' : 'bg-gray-100 text-gray-800'}`}>
                       <p className="text-sm leading-relaxed whitespace-pre-wrap break-words">{message.text}</p>
                       <p className={`text-xs mt-1 text-right ${message.sender === 'user' ? 'text-white/70' : 'text-gray-500'}`}>
                         {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                       </p>
                     </div>
                     {message.sender === 'user' && (
-                      <div className="w-8 h-8 rounded-full bg-[#C8A882] flex items-center justify-center flex-shrink-0">
+                      <div className="w-8 h-8 rounded-full bg-[#2db83d] flex items-center justify-center flex-shrink-0">
                         <User className="w-4 h-4 text-white" />
                       </div>
                     )}
@@ -332,7 +332,7 @@ Please respond as Serenity, the AI assistant for SERENITY Spa & Salon. Be helpfu
                   className="flex justify-start"
                 >
                   <div className="flex items-start gap-2">
-                    <div className="w-8 h-8 rounded-full bg-[#FF5C8D] flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-full bg-[#45f248] flex items-center justify-center">
                       <Bot className="w-4 h-4 text-white" />
                     </div>
                     <div className="bg-gray-100 p-3 rounded-2xl">
@@ -353,19 +353,19 @@ Please respond as Serenity, the AI assistant for SERENITY Spa & Salon. Be helpfu
               <div className="flex gap-2 mb-2 overflow-x-auto">
                 <button
                   onClick={() => setInputText("I want to book an appointment")}
-                  className="px-3 py-1 bg-[#C8A882] text-white text-xs rounded-full whitespace-nowrap hover:bg-[#FF5C8D] transition-colors"
+                  className="px-3 py-1 bg-[#2db83d] text-white text-xs rounded-full whitespace-nowrap hover:bg-[#45f248] transition-colors"
                 >
                   📅 Book Now
                 </button>
                 <button
                   onClick={() => setInputText("Show me your services and prices")}
-                  className="px-3 py-1 bg-[#C8A882] text-white text-xs rounded-full whitespace-nowrap hover:bg-[#FF5C8D] transition-colors"
+                  className="px-3 py-1 bg-[#2db83d] text-white text-xs rounded-full whitespace-nowrap hover:bg-[#45f248] transition-colors"
                 >
                   💰 Prices
                 </button>
                 <button
                   onClick={() => setInputText("Where are you located?")}
-                  className="px-3 py-1 bg-[#C8A882] text-white text-xs rounded-full whitespace-nowrap hover:bg-[#FF5C8D] transition-colors"
+                  className="px-3 py-1 bg-[#2db83d] text-white text-xs rounded-full whitespace-nowrap hover:bg-[#45f248] transition-colors"
                 >
                   📍 Location
                 </button>
@@ -381,13 +381,13 @@ Please respond as Serenity, the AI assistant for SERENITY Spa & Salon. Be helpfu
                   onChange={(e) => setInputText(e.target.value)}
                   onKeyPress={handleKeyPress}
                   placeholder="Ask about services, booking, prices..."
-                  className="flex-1 px-4 py-2 border border-gray-200 rounded-full focus:outline-none focus:border-[#C8A882] transition-colors"
+                  className="flex-1 px-4 py-2 border border-gray-200 rounded-full focus:outline-none focus:border-[#2db83d] transition-colors"
                   disabled={isTyping}
                 />
                 <button
                   onClick={handleSendMessage}
                   disabled={!inputText.trim() || isTyping}
-                  className="w-10 h-10 bg-gradient-to-r from-[#C8A882] to-[#FF5C8D] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-10 h-10 bg-gradient-to-r from-[#2db83d] to-[#45f248] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform disabled:opacity-50 disabled:cursor-not-allowed"
                   aria-label="Send message"
                 >
                   <Send className="w-4 h-4" />
