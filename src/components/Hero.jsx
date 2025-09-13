@@ -155,7 +155,7 @@ export default function Hero() {
                   onClick={() => window.location.href = 'tel:+919876543210'}
                   className="group bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 px-6 sm:px-8 py-4 sm:py-5 rounded-full font-sans font-semibold text-sm sm:text-base lg:text-lg hover:bg-white hover:text-[#0F0F0F] transition-all duration-500 flex items-center justify-center gap-2 sm:gap-3 min-h-[48px] sm:min-h-[56px] lg:min-h-[60px] w-full sm:w-auto"
                 >
-                  <span className="whitespace-nowrap">Call Now: +91 98765 43210</span>
+                  <span className="whitespace-nowrap">Call Now: +233 249435529</span>
                 </button>
               </div>
 

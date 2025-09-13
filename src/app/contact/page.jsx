@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Sparkles, Send, CheckCircle } from "lucide-react";
-import Head from "next/head";
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -121,54 +121,6 @@ export default function Contact() {
 
   return (
     <>
-      <Head>
-        <title>Contact NUNYUI - Best Luxury Spa in Volta | Book Appointment</title>
-        <meta 
-          name="description" 
-          content="Contact NUNYUI luxury spa in Tangra, Volta. Book premium organic spa treatments, massage therapy, beauty services. Call +91 98765 43210 or visit P-145 Sector A." 
-        />
-        <meta name="keywords" content="contact NUNYUI spa, luxury spa Volta booking, Tangra spa appointments, organic spa treatments, massage therapy Volta, beauty salon contact" />
-        <meta property="og:title" content="Contact NUNYUI - Best Luxury Spa in Volta" />
-        <meta property="og:description" content="Get in touch with Volta's premier luxury spa. Book your organic wellness treatments at NUNYUI Tangra today." />
-        <meta property="og:type" content="website" />
-        <meta name="geo.region" content="IN-WB" />
-        <meta name="geo.placename" content="Volta, West Bengal" />
-        <meta name="geo.position" content="22.5726;88.3639" />
-        <link rel="canonical" href="https://yourwebsite.com/contact" />
-        
-        {/* Structured Data for Local Business */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BeautySalon",
-              "name": "NUNYUI Luxury Spa & Salon",
-              "description": "Premium organic spa and salon in Volta offering luxury wellness treatments",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "P-145, Sector A, Metropolitan Co-Operative Housing Society Limited",
-                "addressLocality": "Tangra",
-                "addressRegion": "West Bengal",
-                "postalCode": "700105",
-                "addressCountry": "IN"
-              },
-              "telephone": "+91 98765 43210",
-              "email": "info@nunyuispa.com",
-              "openingHours": [
-                "Mo-Fr 10:00-20:00",
-                "Sa 09:00-19:00", 
-                "Su 10:00-18:00"
-              ],
-              "sameAs": [
-                "https://instagram.com/nunyuispa",
-                "https://facebook.com/nunyuispa"
-              ]
-            })
-          }}
-        />
-      </Head>
-
       <div className="pt-32 pb-24 bg-gradient-to-b from-[#F8F2EC] to-white min-h-screen">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Page Header */}
@@ -231,7 +183,7 @@ export default function Contact() {
                         href="tel:+919876543210" 
                         className="text-[#2db83d] hover:text-[#45f248] transition-colors duration-300 font-medium"
                       >
-                        +91 98765 43210
+                        +233 249435529
                       </a>
                       <br />
                       <span className="text-sm">Premium service available daily</span>
@@ -405,7 +357,7 @@ export default function Contact() {
                             ? 'border-red-300 focus:border-red-500' 
                             : 'border-gray-200 focus:border-[#2db83d]'
                         }`}
-                        placeholder="+91 98765 43210"
+                        placeholder="+233 249435529"
                       />
                       {errors.phone && (
                         <p className="text-red-500 text-sm mt-1">{errors.phone}</p>

@@ -133,7 +133,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 - **Location**: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra, Volta 700105
-- **Phone**: +91 98765 43210
+- **Phone**: +233 249435529
 - **Email**: info@nunyuispa.com
 - **Social**: Follow us on [Instagram](https://instagram.com/nunyuispa) and [Facebook](https://facebook.com/nunyuispa)
 

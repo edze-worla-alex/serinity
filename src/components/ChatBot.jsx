@@ -90,7 +90,7 @@ export default function ChatBot() {
 
 NUNYUI Spa & Salon Information:
 - Location: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra, Volta, West Bengal 700105
-- Phone: +91 98765 43210
+- Phone: +233 249435529
 - Email: info@nunyuispa.com, serenitynunyuispa@gmail.com
 - Hours: 
   * Monday-Friday: 10:00 AM - 8:00 PM
@@ -180,7 +180,7 @@ Guidelines:
 - For existing appointment queries, search by email or phone number in the recent appointments
 - Provide accurate pricing and service information
 - Promote the spa's organic, chemical-free philosophy
-- If you can't find specific information, suggest they call +91 98765 43210
+- If you can't find specific information, suggest they call +233 249435529
 - Always mention that we're located in Volta when relevant
 - Suggest service combinations when appropriate (e.g., Hair Spa + Hair Cut, Manicure + Pedicure)
 - Explain the benefits of regular treatments for best results
@@ -229,7 +229,7 @@ Please respond as Nunyui, the AI assistant for NUNYUI Spa & Salon. Be helpful, f
       console.error('Chat error:', error);
       const errorMessage = {
         id: Date.now() + 1,
-        text: "I apologize, but I'm experiencing technical difficulties. Please call us directly at +91 98765 43210 or visit our contact page for assistance. Our team will be happy to help you! ✨",
+        text: "I apologize, but I'm experiencing technical difficulties. Please call us directly at +233 249435529 or visit our contact page for assistance. Our team will be happy to help you! ✨",
         sender: "bot",
         timestamp: new Date()
       };

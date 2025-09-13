@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Sparkles, ArrowRight, X } from "lucide-react";
-import Head from "next/head";
 import Image from "next/image";
+
 
 const galleryImages = [
   {
@@ -117,20 +117,6 @@ export default function Gallery() {
 
   return (
     <>
-      <Head>
-        <title>Gallery - Luxury Spa & Salon Interior | NUNYUI Volta</title>
-        <meta 
-          name="description" 
-          content="Explore our beautiful luxury spa and salon interior at NUNYUI Volta. View our elegant treatment rooms, reception area, and premium facilities in Tangra." 
-        />
-        <meta name="keywords" content="NUNYUI spa gallery, luxury salon interior Volta, spa photos Tangra, wellness center facilities, massage rooms, beauty salon pictures" />
-        <meta property="og:title" content="Gallery - Luxury Spa & Salon Interior | NUNYUI Volta" />
-        <meta property="og:description" content="Take a visual tour of NUNYUI's luxurious spa and salon facilities in Volta. See our elegant treatment rooms and premium amenities." />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content={galleryImages[0].src} />
-        <link rel="canonical" href="https://yourwebsite.com/gallery" />
-      </Head>
-
       <div className="pt-32 pb-24 bg-gradient-to-b from-[#F8F2EC] to-white min-h-screen">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Page Header */}

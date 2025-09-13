@@ -195,7 +195,7 @@ export default function BookingModal() {
       setStep(3);
     } catch (error) {
       console.error('Booking submission failed:', error);
-      setError('A technical error occurred while submitting your booking. Please try again or call us directly at +91 98765 43210.');
+      setError('A technical error occurred while submitting your booking. Please try again or call us directly at +233 249435529.');
     } finally {
       setIsSubmitting(false);
     }
@@ -306,7 +306,7 @@ Address:   P-145, Sector A, Metropolitan Co-operative
            Housing Society Limited, Tangra
            Volta, West Bengal 700105
 
-Phone:     +91 98765 43210
+Phone:     +233 249435529
 Email:     info@nunyuispa.com
 Website:   www.nunyuispa.com
 
@@ -481,7 +481,7 @@ providing you with an exceptional wellness experience.
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
                         className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-[#2db83d] transition-colors duration-300"
-                        placeholder="+91 98765 43210"
+                        placeholder="+233 249435529"
                       />
                     </div>
 
@@ -664,7 +664,7 @@ providing you with an exceptional wellness experience.
                   <div className="text-xs text-gray-500 pt-6 border-t border-gray-200 space-y-1">
                     <p className="font-bold text-[#2db83d] text-sm">NUNYUI Luxury Spa & Salon</p>
                     <p>P-145, Sector A, Metropolitan C.H.S. Ltd.</p>
-                    <p>Tangra, Volta 700105 | +91 98765 43210</p>
+                    <p>Tangra, Volta 700105 | +233 249435529</p>
                     <p className="text-[#2db83d] font-medium">Operating Hours: Mon-Sat 9AM-8PM | Sun 10AM-6PM</p>
                   </div>
                 </motion.div>

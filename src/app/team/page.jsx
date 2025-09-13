@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Sparkles, Star, Award, Clock } from "lucide-react";
 import Image from "next/image";
 
+
 // Static team data for the landing page
 const teamMembers = [
   {

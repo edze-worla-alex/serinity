@@ -204,7 +204,7 @@ export default function Sitemap() {
                 <p>P-145, Sector A, Metropolitan Co-Operative</p>
                 <p>Housing Society Limited, Tangra</p>
                 <p>Volta, West Bengal 700105</p>
-                <p className="mt-3 font-medium">Phone: +91 98765 43210</p>
+                <p className="mt-3 font-medium">Phone: +233 249435529</p>
               </div>
             </div>
           </div>
