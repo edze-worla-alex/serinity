@@ -40,7 +40,7 @@ export default function BookingNotifications() {
   });
 
   const formatDate = (dateString) => {
-    return new Date(dateString).toLocaleDateString('en-IN', {
+    return new Date(dateString).toLocaleDateString('en-US', {
       weekday: 'long',
       year: 'numeric',
       month: 'long',
@@ -185,7 +185,7 @@ export default function BookingNotifications() {
                         <p><strong>Service:</strong> {notification.service_name}</p>
                         <p><strong>Price:</strong> 
                           <span className="text-[#2db83d] font-bold ml-1">
-                            ${notification.service_price?.toLocaleString('en-IN')}
+                            ${notification.service_price?.toLocaleString('en-US')}
                           </span>
                         </p>
                         <p><strong>Duration:</strong> {notification.service_duration}</p>

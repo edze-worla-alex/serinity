@@ -186,7 +186,7 @@ Guidelines:
 - Explain the benefits of regular treatments for best results
 
 Current date: ${new Date().toISOString().split('T')[0]}
-Current time: ${new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Volta' })}
+Current time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Volta' })}
 
 Remember: You represent a luxury spa brand, so maintain that premium, caring, and knowledgeable tone throughout all interactions.`;
   };
