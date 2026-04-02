@@ -9,6 +9,7 @@ import CategoriesSection from "../components/CategoriesSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import BrandPartners from "../components/BrandPartners";
 import StatsSection from "../components/StatsSection";
+import ServicesSection from "../components/ServicesSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       {/* The container below provides the background for all subsequent sections, ensuring a seamless transition */}
       <div className="bg-[#FDFCF9] relative">
         <WhyChooseUs />
+        <ServicesSection />
         <StatsSection />
       </div>
       <CategoriesSection />

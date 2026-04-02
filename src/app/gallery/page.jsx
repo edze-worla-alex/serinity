@@ -117,7 +117,11 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="pt-32 pb-24 bg-gradient-to-b from-[#F8F2EC] to-white min-h-screen">
+      <div className="pt-32 pb-24 bg-gradient-to-b from-[#F8F2EC] to-white min-h-screen relative">
+      <div style={{backgroundImage:'url(/images/young-woman-hero2.jpg)'}} className="inset-0 w-full h-80 bg-center bg-cover bg-no-repeat bg-fixed -mt-70">
+      <div className="inset-0 w-full h-full bg-black/70 flex items-center justify-center">
+      </div>
+        </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Page Header */}
           <motion.div
@@ -128,7 +132,7 @@ export default function Gallery() {
           >
             <div className="inline-flex items-center gap-2 bg-[#2db83d]/10 rounded-full px-4 py-2 mb-6">
               <Sparkles className="w-4 h-4 text-[#2db83d]" />
-              <span className="text-sm font-medium">Visual Journey</span>
+              <span className="text-lg font-medium">Visual Journey</span>
             </div>
             
             <h1 className="font-serif font-medium text-[clamp(2.5rem,5vw,4rem)] text-[#0F0F0F] mb-6 leading-tight">

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Clock, Star, ArrowRight, Sparkles } from "lucide-react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Head from "next/head";
+import Link from "next/link";
 
 // Complete NUNYUI Spa Service Menu with SEO-optimized alt text and optimized image URLs
 const servicesData = [
@@ -455,7 +456,7 @@ const categories = [
   { key: "hair", name: "Hair Services" }
 ];
 
-export default function ServicesPage() {
+export default function ServicesSection() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [activeFilter, setActiveFilter] = useState("all");
@@ -495,24 +496,8 @@ export default function ServicesPage() {
 
   return (
     <>
-      <Head>
-        <title>Premium Spa & Salon Services in Volta | NUNYUI</title>
-        <meta 
-          name="description" 
-          content="Discover luxury spa treatments, massage therapy, beauty services, laser hair removal, nail care, and hair styling at NUNYUI Volta. Book your premium wellness experience today." 
-        />
-        <meta name="keywords" content="spa services Volta, massage therapy, beauty salon, laser hair removal, nail care, hair styling, Ho wellness center" />
-        <meta property="og:title" content="Premium Spa & Salon Services in Volta | NUNYUI" />
-        <meta property="og:description" content="Experience luxury wellness treatments at Volta's premier spa. From therapeutic massages to beauty services and hair care." />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://yourwebsite.com/services" />
-      </Head>
 
-      <div className="pt-32 pb-24 bg-gradient-to-b from-[#F8F2EC] to-white min-h-screen relative">
-        <div style={{backgroundImage:'url(/images/young-woman-hero2.jpg)'}} className="inset-0 w-full h-80 bg-center bg-cover bg-no-repeat bg-fixed -mt-70">
-      <div className="inset-0 w-full h-full bg-black/70 flex items-center justify-center">
-      </div>
-        </div>
+      <div className="pt-20 md:pt-24  pb-20 bg-gradient-to-b from-[#F8F2EC] to-white min-h-screen relative">
 
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Page Header */}
@@ -527,41 +512,16 @@ export default function ServicesPage() {
               <span className="text-lg font-medium">Our Services</span>
             </div>
             
-            <h1 className="font-serif font-medium text-[clamp(2.5rem,5vw,4rem)] text-[#0F0F0F] mb-6 leading-tight">
-              Premium Spa & Salon Services in Volta
+            <h1 className="max-w-3xl mx-auto text-center flex flex-col justify-center font-serif font-bold text-[clamp(2.5rem,5vw,4rem)] text-[#0F0F0F] mb-6 leading-tight">
+              <div>Premium Spa & Salon</div> 
+              
+              <div className="text-[#2db83d]">Services in Volta</div>
             </h1>
-            
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-[1.618]">
-              Discover our comprehensive menu of luxury treatments, performed by certified professionals 
-              using state-of-the-art equipment and organic products.
-            </p>
-          </motion.div>
-
-          {/* Category Filters */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-wrap justify-center gap-4 mb-12"
-          >
-            {categories.map((category) => (
-              <button
-                key={category.key}
-                onClick={() => handleFilterChange(category.key)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  activeFilter === category.key
-                    ? 'bg-[#2db83d] text-white shadow-lg'
-                    : 'bg-white text-gray-600 hover:bg-[#2db83d]/10 hover:text-[#2db83d] border border-gray-200'
-                }`}
-              >
-                {category.name}
-              </button>
-            ))}
           </motion.div>
 
           {/* Services Grid */}
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-[clamp(1rem,2vw,2.5rem)]">
-            {filteredServices.map((service, index) => (
+            {filteredServices.slice(0, 6).map((service, index) => (
               <motion.div
                 key={service.id}
                 initial={{ opacity: 0, y: 60 }}
@@ -635,24 +595,16 @@ export default function ServicesPage() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-center mt-16"
           >
-            <div className="bg-white rounded-3xl p-12 shadow-lg border border-[#2db83d]/20">
+            <div className="bg-white">
               <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-bold text-[#0F0F0F] mb-4">
-                Ready for Your Transformation?
               </h2>
-              <p className="text-gray-600 mb-8 max-w-2xl mx-auto leading-[1.618]">
-                Book your appointment today and experience the luxury wellness treatments 
-                that have made NUNYUI the #1 spa in Volta.
-              </p>
-              <button 
-                onClick={() => {
-                  if (typeof window !== 'undefined') {
-                    window.dispatchEvent(new CustomEvent('open-booking-modal'));
-                  }
-                }}
+              <Link
+                href="/services" 
+                
                 className="bg-[#2db83d] text-white px-8 py-4 rounded-full font-medium hover:bg-[#45f248] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
-                Book Your Experience
-              </button>
+                                Explore All Services
+              </Link>
             </div>
           </motion.div>
         </div>

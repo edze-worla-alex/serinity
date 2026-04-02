@@ -133,7 +133,7 @@ export default function Navbar() {
                     key={item.name}
                     href={item.url}
                     role="menuitem"
-                    className={`text-sm font-medium transition-all duration-300 hover:text-[#2db83d] relative group ${
+                    className={`text-lg font-medium transition-all duration-300 hover:text-[#2db83d] relative group ${
                       active
                         ? "text-[#2db83d]"
                         : isScrolled || isMenuOpen

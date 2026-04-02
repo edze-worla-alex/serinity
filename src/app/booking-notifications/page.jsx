@@ -60,7 +60,11 @@ export default function BookingNotifications() {
   }
 
   return (
-    <div className="pt-32 pb-24 bg-[#F8F2EC] min-h-screen">
+    <div className="pt-32 pb-24 bg-[#F8F2EC] min-h-screen relative">
+         <div style={{backgroundImage:'url(/images/young-woman-hero2.jpg)'}} className="inset-0 w-full h-80 bg-center bg-cover bg-no-repeat bg-fixed -mt-70">
+      <div className="inset-0 w-full h-full bg-black/70 flex items-center justify-center">
+      </div>
+        </div>
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8">
