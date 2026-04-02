@@ -434,7 +434,7 @@ providing you with an exceptional wellness experience.
                     <p className="text-gray-600">Step 2 of 2: Your Details</p>
                     <div className="mt-4 p-4 bg-[#2db83d]/5 rounded-xl">
                       <p className="font-serif text-lg text-[#0F0F0F]">
-                        {formData.service} - ${new Intl.NumberFormat('en-US', {
+                        {formData.service} - {new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD'
 }).format(selectedService?.price)}
