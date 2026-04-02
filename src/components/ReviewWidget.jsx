@@ -6,7 +6,7 @@ import { Star, X } from "lucide-react";
 const reviews = [
   {
     id: 1,
-    name: "Priya S.",
+    name: "Ama S.",
     rating: 5,
     text: "Amazing facial treatment! My skin feels incredible.",
     service: "Signature Facial",
@@ -14,7 +14,7 @@ const reviews = [
   },
   {
     id: 2,
-    name: "Anjali D.",
+    name: "Agnes D.",
     rating: 5,
     text: "Best massage experience in Volta. Highly recommend!",
     service: "Deep Tissue Massage",
@@ -22,7 +22,7 @@ const reviews = [
   },
   {
     id: 3,
-    name: "Ritu B.",
+    name: "Rita B.",
     rating: 5,
     text: "Professional staff and luxury ambiance. Perfect!",
     service: "Hair Styling",
@@ -30,7 +30,7 @@ const reviews = [
   },
   {
     id: 4,
-    name: "Meera K.",
+    name: "Eunice K.",
     rating: 4,
     text: "Excellent service and attention to detail.",
     service: "Nail Care",
@@ -38,7 +38,7 @@ const reviews = [
   },
   {
     id: 5,
-    name: "Kavita R.",
+    name: "Akosua R.",
     rating: 5,
     text: "NUNYUI is my go-to place for all beauty needs.",
     service: "Full Package",
@@ -46,7 +46,7 @@ const reviews = [
   },
   {
     id: 6,
-    name: "Sneha R.",
+    name: "Ewenam R.",
     rating: 4,
     text: "Great experience! Will definitely come back.",
     service: "Eyebrow Shaping",
@@ -62,7 +62,7 @@ const reviews = [
   },
   {
     id: 8,
-    name: "Deepa N.",
+    name: "Annette N.",
     rating: 4,
     text: "Hair spa treatment was absolutely amazing. Loved it!",
     service: "Hair Treatment",
@@ -70,7 +70,7 @@ const reviews = [
   },
   {
     id: 9,
-    name: "Zara A.",
+    name: "Mariam A.",
     rating: 5,
     text: "Best deep tissue massage ever! So relaxing.",
     service: "Deep Tissue Massage",
@@ -78,7 +78,7 @@ const reviews = [
   },
   {
     id: 10,
-    name: "Simran P.",
+    name: "Patience P.",
     rating: 4,
     text: "Complete wellness package. Highly recommended!",
     service: "Full Package",
