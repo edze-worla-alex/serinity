@@ -4,7 +4,6 @@ import React, { useState, useMemo, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Clock, Star, ArrowRight, Sparkles } from "lucide-react";
 import { useSearchParams, useRouter } from "next/navigation";
-import Head from "next/head";
 import Link from "next/link";
 
 // Complete NUNYUI Spa Service Menu with SEO-optimized alt text and optimized image URLs
@@ -483,16 +482,274 @@ export default function ServicesSection() {
     }
   }, []);
 
-  const handleFilterChange = useCallback((filterKey) => {
-    setActiveFilter(filterKey);
-    
-    // Update URL without page reload
-    const newUrl = filterKey === 'all' 
-      ? '/services' 
-      : `/services?category=${filterKey}`;
-    
-    router.push(newUrl, { scroll: false });
-  }, [router]);
+  const StarIcon = ({ filled }) => (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill={filled ? "#c9a84c" : "none"} stroke="#c9a84c" strokeWidth="2">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+    </svg>
+  );
+  
+  const ClockIcon = () => (
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+      <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
+    </svg>
+  );
+  
+  const ArrowIcon = () => (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+    </svg>
+  );
+  
+  function ServiceCard({ service}) {
+    const [hovered, setHovered] = useState(false);
+   
+    return (
+      <>
+        <style>{`
+  
+          .sc-card {
+            background: #ffffff;
+            border-radius: 28px;
+            overflow: hidden;
+            position: relative;
+            transform: ${hovered ? "translateY(-10px) scale(1.015)" : "translateY(0) scale(1)"};
+            box-shadow: ${hovered
+              ? "0 24px 64px rgba(45,184,61,0.18), 0 8px 24px rgba(0,0,0,0.08), 0 0 0 1.5px rgba(45,184,61,0.25)"
+              : "0 4px 24px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.05), 0 0 0 1px rgba(45,184,61,0.08)"};
+            transition: transform 0.5s cubic-bezier(0.23,1,0.32,1), box-shadow 0.5s cubic-bezier(0.23,1,0.32,1);
+          }
+   
+          .sc-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #2db83d, transparent);
+            z-index: 10;
+            opacity: ${hovered ? 1 : 0};
+            transition: opacity 0.4s ease;
+          }
+   
+          .sc-img-wrap {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+          }
+   
+          .sc-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: ${hovered ? "scale(1.08)" : "scale(1)"};
+            transition: transform 0.9s cubic-bezier(0.23,1,0.32,1);
+          }
+   
+          .sc-img-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+              to bottom,
+              rgba(0,0,0,0) 30%,
+              rgba(0,0,0,0.08) 60%,
+              rgba(0,0,0,0.45) 100%
+            );
+          }
+   
+          .sc-price-badge {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: #2db83d;
+            color: #ffffff;
+            padding: 6px 14px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: 0.02em;
+            box-shadow: 0 4px 16px rgba(45,184,61,0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+          }
+   
+          .sc-price-note {
+            font-size: 10px;
+            opacity: 0.8;
+            font-weight: 400;
+            margin-left: 1px;
+          }
+   
+          .sc-tag {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(255,255,255,0.88);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(45,184,61,0.3);
+            color: #1f8a2b;
+            padding: 4px 11px;
+            border-radius: 100px;
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+          }
+   
+          .sc-duration {
+            position: absolute;
+            bottom: 14px;
+            left: 14px;
+            background: rgba(255,255,255,0.88);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.6);
+            color: #2a2a2a;
+            padding: 5px 11px;
+            border-radius: 100px;
+            font-size: 11px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            letter-spacing: 0.02em;
+          }
+   
+          .sc-content {
+            padding: 20px 22px 22px;
+          }
+   
+          .sc-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(45,184,61,0.2), transparent);
+            margin: 0 -22px 18px;
+          }
+   
+          .sc-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: ${hovered ? "#2db83d" : "#0F0F0F"};
+            line-height: 1.25;
+            margin: 0 0 10px;
+            letter-spacing: 0.01em;
+            transition: color 0.3s ease;
+          }
+   
+          .sc-desc {
+            font-size: 13px;
+            font-weight: 300;
+            color: #6b7280;
+            line-height: 1.7;
+            margin: 0 0 16px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+   
+          .sc-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+          }
+   
+          .sc-stars {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+          }
+   
+          .sc-rating {
+            font-size: 12px;
+            color: #2db83d;
+            margin-left: 6px;
+            font-weight: 500;
+          }
+   
+          .sc-reviews {
+            font-size: 11px;
+            color: #9ca3af;
+            font-weight: 300;
+          }
+   
+          .sc-btn {
+            width: 100%;
+            padding: 13px 20px;
+            border-radius: 100px;
+            border: 1.5px solid ${hovered ? "#2db83d" : "rgba(45,184,61,0.3)"};
+            background: ${hovered ? "#2db83d" : "rgba(45,184,61,0.06)"};
+            color: ${hovered ? "#ffffff" : "#2db83d"};
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+            box-shadow: ${hovered ? "0 8px 24px rgba(45,184,61,0.35)" : "none"};
+          }
+   
+          .sc-arrow {
+            transform: ${hovered ? "translateX(4px)" : "translateX(0)"};
+            transition: transform 0.4s cubic-bezier(0.23,1,0.32,1);
+          }
+   
+          .sc-corner {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle at 100% 100%, rgba(45,184,61,0.05) 0%, transparent 70%);
+            pointer-events: none;
+          }
+        `}</style>
+   
+          <div
+            className="sc-card"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            <div className="sc-img-wrap">
+              <img src={service.image_url} alt={service.alt_text} loading="lazy" />
+              <div className="sc-img-overlay" />
+              <div className="sc-tag">Signature</div>
+              <div className="sc-price-badge">
+                ${service.price.toLocaleString()}
+                {service.priceNote && <span className="sc-price-note">{service.priceNote}</span>}
+              </div>
+              <div className="sc-duration">
+                <ClockIcon />
+                {service.duration}
+              </div>
+            </div>
+   
+            <div className="sc-content">
+              <div className="sc-divider" />
+              <h3 className="sc-name">{service.name}</h3>
+              <p className="sc-desc">{service.description}</p>
+              <div className="sc-meta">
+                <div className="sc-stars">
+                  {[...Array(5)].map((_, i) => <StarIcon key={i} />)}
+                  <span className="sc-rating">4.9</span>
+                </div>
+                <span className="sc-reviews">128 reviews</span>
+              </div>
+              <button onClick={() => handleServiceBooking(service)} className="sc-btn">
+                Reserve Session
+                <span className="sc-arrow"><ArrowIcon /></span>
+              </button>
+            </div>
+   
+            <div className="sc-corner" />
+          </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -520,71 +777,9 @@ export default function ServicesSection() {
           </motion.div>
 
           {/* Services Grid */}
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-[clamp(1rem,2vw,2.5rem)]">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-[clamp(3rem,5vw,6.5rem)]">
             {filteredServices.slice(0, 6).map((service, index) => (
-              <motion.div
-                key={service.id}
-                initial={{ opacity: 0, y: 60 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.8, 
-                  delay: index * 0.1,
-                  ease: "easeOut"
-                }}
-                whileHover={{ scale: 1.03, y: -8, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
-                className="group bg-white rounded-3xl overflow-hidden shadow-lg will-change-transform"
-              >
-                {/* Service Image */}
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={service.image_url}
-                    alt={service.alt_text}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
-                  {/* Price Badge */}
-                  <div className="absolute top-4 right-4 bg-[#2db83d] text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                    ${service.price.toLocaleString('en-IN')}
-                    {service.priceNote && <span className="text-xs ml-1">{service.priceNote}</span>}
-                  </div>
-
-                  {/* Duration Badge */}
-                  <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm flex items-center gap-1">
-                    <Clock className="w-3 h-3" />
-                    {service.duration}
-                  </div>
-                </div>
-
-                {/* Service Content */}
-                <div className="p-6">
-                  <h3 className="font-serif text-xl font-bold text-[#0F0F0F] mb-3 group-hover:text-[#2db83d] transition-colors duration-300">
-                    {service.name}
-                  </h3>
-                  
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
-                    {service.description}
-                  </p>
-
-                  {/* Rating */}
-                  <div className="flex items-center gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-[#2db83d] fill-current" />
-                    ))}
-                    <span className="text-sm text-gray-500 ml-2">(4.9)</span>
-                  </div>
-                  
-                  <button 
-                    onClick={() => handleServiceBooking(service)}
-                    className="w-full bg-[#2db83d]/10 text-[#2db83d] py-3 rounded-full font-medium hover:bg-[#2db83d] hover:text-white transition-all duration-300 group-hover:shadow-lg flex items-center justify-center gap-2"
-                  >
-                    Book Now
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </button>
-                </div>
-              </motion.div>
+             <ServiceCard service={service} key={index} />
             ))}
           </div>
 
