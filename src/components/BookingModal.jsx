@@ -409,7 +409,7 @@ providing you with an exceptional wellness experience.
                             <p className="text-sm text-gray-500">{service.duration}</p>
                           </div>
                           <div className="text-right">
-                            <p className="font-serif text-xl font-bold text-[#2db83d]">
+                            <p className="font-sans text-xl font-bold text-[#2db83d]">
                               {new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD'
