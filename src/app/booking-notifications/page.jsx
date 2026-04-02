@@ -185,7 +185,10 @@ export default function BookingNotifications() {
                         <p><strong>Service:</strong> {notification.service_name}</p>
                         <p><strong>Price:</strong> 
                           <span className="text-[#2db83d] font-bold ml-1">
-                            ${notification.service_price?.toLocaleString('en-US')}
+                            ${new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD'
+}).format(notification.service_price?.price)}
                           </span>
                         </p>
                         <p><strong>Duration:</strong> {notification.service_duration}</p>

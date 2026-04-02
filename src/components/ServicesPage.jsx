@@ -587,7 +587,10 @@ export default function ServicesPage() {
                   
                   {/* Price Badge */}
                   <div className="absolute top-4 right-4 bg-[#2db83d] text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                    ${service.price.toLocaleString('en-US')}
+                    {new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD'
+}).format(service.price)}
                     {service.priceNote && <span className="text-xs ml-1">{service.priceNote}</span>}
                   </div>
 

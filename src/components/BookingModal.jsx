@@ -278,7 +278,7 @@ Phone:         ${formData.phone}
 APPOINTMENT DETAILS:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Service:       ${createdAppointment?.service}
-Investment:    ${selectedService?.price.toLocaleString('en-US')}
+Investment:    ${new Intl.NumberFormat('en-US', {style: 'currency',currency: 'USD'}).format(selectedService?.price)}
 Duration:      ${selectedService?.duration}
 Date:          ${formatDate(createdAppointment?.preferred_date)}
 Time:          ${createdAppointment?.preferred_time}
@@ -410,7 +410,10 @@ providing you with an exceptional wellness experience.
                           </div>
                           <div className="text-right">
                             <p className="font-serif text-xl font-bold text-[#2db83d]">
-                              {service.price.toLocaleString('en-US')}
+                              {new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD'
+}).format(service.price)}
                               {service.priceNote && <span className="text-xs text-gray-600 ml-1">{service.priceNote}</span>}
                             </p>
                           </div>
@@ -431,7 +434,10 @@ providing you with an exceptional wellness experience.
                     <p className="text-gray-600">Step 2 of 2: Your Details</p>
                     <div className="mt-4 p-4 bg-[#2db83d]/5 rounded-xl">
                       <p className="font-serif text-lg text-[#0F0F0F]">
-                        {formData.service} - {selectedService?.price.toLocaleString('en-US')}
+                        {formData.service} - ${new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD'
+}).format(selectedService?.price)}
                         {selectedService?.priceNote && <span className="text-sm text-gray-600 ml-1">{selectedService.priceNote}</span>}
                       </p>
                       <p className="text-sm text-gray-600">{selectedService?.duration}</p>
@@ -605,7 +611,10 @@ providing you with an exceptional wellness experience.
                         
                         <div className="flex justify-between items-center mb-2">
                           <strong className="text-gray-700">Investment:</strong>
-                          <span className="text-[#2db83d] font-bold text-lg">{selectedService?.price.toLocaleString('en-US')}</span>
+                          <span className="text-[#2db83d] font-bold text-lg">{new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD'
+}).format(selectedService?.price)}</span>
                         </div>
                         
                         <div className="flex justify-between items-center mb-2">
