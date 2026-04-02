@@ -11,7 +11,7 @@ const galleryImages = [
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/287fd6130_13.jpg?w=1200&q=90",
     title: "Reception Area",
     category: "Reception",
-    alt: "Elegant reception area at NUNYUI luxury spa and salon in Tangra, Volta - welcoming entrance with modern design"
+    alt: "Elegant reception area at NUNYUI luxury spa and salon in Ho, Volta - welcoming entrance with modern design"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/831601306_14.jpg?w=1200&q=90",
@@ -53,7 +53,7 @@ const galleryImages = [
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/0d0096c79_2.jpg?w=1200&q=90",
     title: "Spa Suite",
     category: "Treatment",
-    alt: "Luxury spa suite at NUNYUI Tangra - premium treatment room with advanced equipment for beauty and wellness services"
+    alt: "Luxury spa suite at NUNYUI Ho - premium treatment room with advanced equipment for beauty and wellness services"
   },
   {
     src: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/664dc3f67_15.jpg?w=1200&q=90",

@@ -202,7 +202,7 @@ export default function Sitemap() {
               <div className="text-gray-600 space-y-1">
                 <p>NUNYUI Luxury Spa & Salon</p>
                 <p>P-145, Sector A, Metropolitan Co-Operative</p>
-                <p>Housing Society Limited, Tangra</p>
+                <p>Housing Society Limited, Ho</p>
                 <p>Volta, West Bengal 700105</p>
                 <p className="mt-3 font-medium">Phone: +233 249435529</p>
               </div>

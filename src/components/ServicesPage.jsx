@@ -13,7 +13,7 @@ const servicesData = [
     id: 1,
     name: "Swedish Massage",
     category: "massage",
-    description: "Indulge in a timeless classic at Volta's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation. This is the perfect introduction to therapeutic massage, meticulously performed by our certified therapists in Tangra to restore your body's natural harmony.",
+    description: "Indulge in a timeless classic at Volta's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation. This is the perfect introduction to therapeutic massage, meticulously performed by our certified therapists in Ho to restore your body's natural harmony.",
     price: 2500,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/77609c815_image.png?w=600&q=80",
@@ -27,7 +27,7 @@ const servicesData = [
     price: 3500,
     duration: "90 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/ddade6f79_image.png?w=600&q=80",
-    alt_text: "Japanese Head Spa waterfall treatment with chromotherapy lighting at NUNYUI Tangra salon - luxury scalp therapy"
+    alt_text: "Japanese Head Spa waterfall treatment with chromotherapy lighting at NUNYUI Ho salon - luxury scalp therapy"
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const servicesData = [
     id: 4,
     name: "Foot Massage",
     category: "massage",
-    description: "Revitalize your entire being from the ground up with our specialized Foot Massage. This ancient reflexology-based treatment targets key pressure points in your feet that correspond to different organs and systems in the body. Alleviate fatigue, reduce stress, and promote overall wellness in our luxurious Tangra spa.",
+    description: "Revitalize your entire being from the ground up with our specialized Foot Massage. This ancient reflexology-based treatment targets key pressure points in your feet that correspond to different organs and systems in the body. Alleviate fatigue, reduce stress, and promote overall wellness in our luxurious Ho spa.",
     price: 1500,
     duration: "45 min", 
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/0c4d65a6a_image.png?w=600&q=80",
@@ -57,7 +57,7 @@ const servicesData = [
     price: 1200,
     duration: "30 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/30adeac89_image.png?w=600&q=80",
-    alt_text: "Therapeutic head and shoulder massage for stress relief at NUNYUI premium spa in Tangra Volta"
+    alt_text: "Therapeutic head and shoulder massage for stress relief at NUNYUI premium spa in Ho Volta"
   },
   {
     id: 6,
@@ -85,11 +85,11 @@ const servicesData = [
     id: 8,
     name: "Lash Lift",
     category: "beauty",
-    description: "Elevate your natural beauty with a Lash Lift, the ultimate low-maintenance lash solution. This semi-permanent treatment curls your natural lashes from the root, creating the illusion of longer, thicker lashes. The perfect alternative to extensions, it's a must-have service at our Tangra beauty salon.",
+    description: "Elevate your natural beauty with a Lash Lift, the ultimate low-maintenance lash solution. This semi-permanent treatment curls your natural lashes from the root, creating the illusion of longer, thicker lashes. The perfect alternative to extensions, it's a must-have service at our Ho beauty salon.",
     price: 1500,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/c88be1d9b_image.png?w=600&q=80",
-    alt_text: "Before and after lash lift treatment showing natural curled lashes at NUNYUI beauty salon Tangra"
+    alt_text: "Before and after lash lift treatment showing natural curled lashes at NUNYUI beauty salon Ho"
   },
   {
     id: 9,
@@ -109,7 +109,7 @@ const servicesData = [
     price: 6500,
     duration: "180 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/a13d91e6c_image.png?w=600&q=80",
-    alt_text: "Soft, powdered microshading eyebrow tattoo for a gradient brow look at NUNYUI Tangra salon"
+    alt_text: "Soft, powdered microshading eyebrow tattoo for a gradient brow look at NUNYUI Ho salon"
   },
   {
     id: 11,
@@ -157,7 +157,7 @@ const servicesData = [
     id: 15,
     name: "Bikini Laser",
     category: "laser",
-    description: "Achieve ultimate confidence with our discreet and professional Bikini Laser hair removal. Our certified technicians use cutting-edge equipment to ensure a comfortable experience and long-lasting, silky-smooth results. Say goodbye to razors and waxing forever at our Tangra wellness center.",
+    description: "Achieve ultimate confidence with our discreet and professional Bikini Laser hair removal. Our certified technicians use cutting-edge equipment to ensure a comfortable experience and long-lasting, silky-smooth results. Say goodbye to razors and waxing forever at our Ho wellness center.",
     price: 2000,
     duration: "45 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/2788765aa_image.png?w=600&q=80",
@@ -181,7 +181,7 @@ const servicesData = [
     price: 1500,
     duration: "60 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/41592e74d_image.png?w=600&q=80",
-    alt_text: "Targeted half leg laser hair removal for upper or lower legs at NUNYUI spa Tangra"
+    alt_text: "Targeted half leg laser hair removal for upper or lower legs at NUNYUI spa Ho"
   },
   {
     id: 18,
@@ -217,11 +217,11 @@ const servicesData = [
     id: 21,
     name: "Stomach Laser",
     category: "laser",
-    description: "Gain confidence in your look with our effective and discreet Stomach Laser hair removal. This treatment safely and permanently removes unwanted hair from the abdominal area, leading to smoother, clearer skin. It's a popular choice at our Tangra luxury spa.",
+    description: "Gain confidence in your look with our effective and discreet Stomach Laser hair removal. This treatment safely and permanently removes unwanted hair from the abdominal area, leading to smoother, clearer skin. It's a popular choice at our Ho luxury spa.",
     price: 2000,
     duration: "45 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/94c56298e_image.png?w=600&q=80",
-    alt_text: "Safe and effective stomach laser hair removal for clear skin at NUNYUI luxury spa Tangra"
+    alt_text: "Safe and effective stomach laser hair removal for clear skin at NUNYUI luxury spa Ho"
   },
   {
     id: 22,
@@ -273,7 +273,7 @@ const servicesData = [
     price: 500,
     duration: "45 min",
     image_url: "https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    alt_text: "Flawless, long-lasting gel polish application with vast color selection at NUNYUI nail bar Tangra"
+    alt_text: "Flawless, long-lasting gel polish application with vast color selection at NUNYUI nail bar Ho"
   },
   {
     id: 27,
@@ -289,7 +289,7 @@ const servicesData = [
     id: 28,
     name: "Manicure",
     category: "nails",
-    description: "Treat your hands to our classic Manicure, a ritual of grooming and relaxation. This service includes nail shaping, cuticle care, a soothing hand massage with organic lotion, and a flawless polish application. It's an essential act of self-care at our luxury Tangra salon.",
+    description: "Treat your hands to our classic Manicure, a ritual of grooming and relaxation. This service includes nail shaping, cuticle care, a soothing hand massage with organic lotion, and a flawless polish application. It's an essential act of self-care at our luxury Ho salon.",
     price: 800,
     duration: "60 min",
     image_url: "https://images.pexels.com/photos/3997378/pexels-photo-3997378.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
@@ -415,12 +415,12 @@ const servicesData = [
     id: 40,
     name: "Hair Extension",
     category: "hair",
-    description: "Instantly add luxurious length and volume with our premium Hair Extensions. We use only 100% human hair, expertly applied by our certified specialists for a seamless, natural, and comfortable blend. Transform your look in a single session at our Tangra salon.",
+    description: "Instantly add luxurious length and volume with our premium Hair Extensions. We use only 100% human hair, expertly applied by our certified specialists for a seamless, natural, and comfortable blend. Transform your look in a single session at our Ho salon.",
     price: 1499,
     duration: "120 min",
     image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/27f1f5a0d_image.png?w=600&q=80",
     priceNote: "Starting",
-    alt_text: "Luxury hair extensions for added length and volume using 100% human hair at NUNYUI salon Tangra"
+    alt_text: "Luxury hair extensions for added length and volume using 100% human hair at NUNYUI salon Ho"
   },
   {
     id: 41,
@@ -501,7 +501,7 @@ export default function ServicesPage() {
           name="description" 
           content="Discover luxury spa treatments, massage therapy, beauty services, laser hair removal, nail care, and hair styling at NUNYUI Volta. Book your premium wellness experience today." 
         />
-        <meta name="keywords" content="spa services Volta, massage therapy, beauty salon, laser hair removal, nail care, hair styling, Tangra wellness center" />
+        <meta name="keywords" content="spa services Volta, massage therapy, beauty salon, laser hair removal, nail care, hair styling, Ho wellness center" />
         <meta property="og:title" content="Premium Spa & Salon Services in Volta | NUNYUI" />
         <meta property="og:description" content="Experience luxury wellness treatments at Volta's premier spa. From therapeutic massages to beauty services and hair care." />
         <meta property="og:type" content="website" />

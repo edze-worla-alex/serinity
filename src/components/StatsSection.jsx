@@ -56,8 +56,11 @@ const StatsSection = () => {
   }, []);
 
   return (
-    <section id="stats-section" className="py-16 md:py-20 bg-gradient-to-b from-white to-[#FDFCF9] relative overflow-hidden">
+    <section id="stats-section" style={{backgroundImage:'url(/images/young-woman-hero2.jpg)'}} className="py-16 md:py-20 bg-center bg-cover bg-no-repeat bg-gradient-to-b from-white to-[#FDFCF9] relative overflow-hidden">
       {/* Background Decoration */}
+      <div className="z[1] inset-0 absolute w-full h-full bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.6)]">
+
+      </div>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 0.1, scale: 1 }}
@@ -68,7 +71,7 @@ const StatsSection = () => {
         <div className="w-64 h-64 bg-[#2db83d] rounded-full blur-3xl" />
       </motion.div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 z-10 relative">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +79,7 @@ const StatsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-[#2db83d]/10 rounded-full px-4 py-2 mb-6 mx-auto">
+          <div className="inline-flex items-center gap-2 bg-[#2db83d]/80 rounded-full px-4 py-2 mb-6 mx-auto">
             <motion.div
               initial={{ scale: 0, rotate: -180 }}
               whileInView={{ scale: 1, rotate: 0 }}
@@ -84,9 +87,9 @@ const StatsSection = () => {
               viewport={{ once: true }}
               className=""
             >
-              <Users className="w-4 h-4 text-[#2db83d]" />
+              <Users className="w-4 h-4 text-[#020202]" />
             </motion.div>
-            <span className="font-sans text-sm text-[#2db83d] font-medium uppercase tracking-wider">Our Impact</span>
+            <span className="font-sans text-sm text-[#020202] font-medium uppercase tracking-wider">Our Impact</span>
           </div>
 
           <motion.h2
@@ -94,7 +97,7 @@ const StatsSection = () => {
             whileInView={{ opacity: 1, y: 0, skewY: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="font-serif text-4xl text-white md:text-5xl lg:text-6xl font-bold mb-6"
           >
             Transforming Lives,
             <br />
@@ -106,7 +109,7 @@ const StatsSection = () => {
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="font-sans text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="font-sans text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed font-bold"
           >
             Join thousands of satisfied clients who have experienced the pinnacle of luxury wellness at NUNYUI. Our commitment to excellence has earned us consistent 5-star reviews and industry recognition.
           </motion.p>
@@ -142,13 +145,13 @@ const StatsSection = () => {
               >
                 <motion.p
                   key={`value-${index}`}
-                  className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F0F0F] group-hover:text-[#2db83d] transition-colors duration-300"
+                  className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[#f8f2ecf2] group-hover:text-[#0F0F0F] transition-colors duration-300"
                 >
                   {stat.prefix}
                   {animatedValues[index].toLocaleString()}
                   {stat.suffix}
                 </motion.p>
-                <p className="font-sans text-sm text-gray-500 uppercase tracking-wider">
+                <p className="font-sans text-sm text-gray-300 uppercase tracking-wider">
                   {stat.label}
                 </p>
               </motion.div>

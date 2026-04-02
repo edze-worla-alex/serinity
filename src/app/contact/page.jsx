@@ -164,7 +164,7 @@ export default function Contact() {
                     <address className="leading-[1.618] text-gray-600 not-italic">
                       P-145, Sector A<br />
                       Metropolitan Co-Operative Housing Society Limited<br />
-                      Tangra, Volta, West Bengal 700105
+                      Ho, Volta, West Bengal 700105
                     </address>
                   </div>
                 </div>

@@ -212,7 +212,7 @@ export default function RootLayout({
                   />
                   <span className="text-gray-300 leading-[1.618]">
                     P-145, Sector A, Metropolitan Co-Operative Housing Society
-                    Limited, Tangra, Volta 700105
+                    Limited, Ho, Volta 700105
                   </span>
                 </div>
                 <div className="flex items-center gap-3">

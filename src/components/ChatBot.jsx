@@ -11,7 +11,7 @@ const services = [
   { name: "Swedish Massage", price: 2500, duration: "60 min", category: "Massage", description: "Indulge in a timeless classic at Volta's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation." },
   { name: "Japanese Head Spa", price: 3500, duration: "90 min", category: "Massage", description: "Embark on a transcendent sensory journey with our state-of-the-art Japanese Head Spa. Submerge your senses in a sanctuary of tranquility as a therapeutic waterfall, enriched with potent organic elixirs, bathes your scalp and hair under the ethereal glow of chromotherapy lighting." },
   { name: "Thai Dry Massage", price: 3000, duration: "75 min", category: "Massage", description: "Experience the ancient art of healing with our authentic Thai Dry Massage in Volta. This traditional, oil-free therapy combines rhythmic acupressure, gentle rocking, and assisted yoga stretches to unblock energy pathways and relieve deep-seated tension." },
-  { name: "Foot Massage", price: 1500, duration: "45 min", category: "Massage", description: "Revitalize your entire being with our specialized Foot Massage, based on ancient reflexology techniques to alleviate fatigue and promote overall wellness in our luxurious Tangra spa." },
+  { name: "Foot Massage", price: 1500, duration: "45 min", category: "Massage", description: "Revitalize your entire being with our specialized Foot Massage, based on ancient reflexology techniques to alleviate fatigue and promote overall wellness in our luxurious Ho spa." },
   { name: "Head and Shoulder Massage", price: 1200, duration: "30 min", category: "Massage", description: "Melt away modern life's stresses with our targeted Head and Shoulder Massage. This therapy provides immediate relief from headaches, stiffness, and digital fatigue." },
   { name: "Deep Tissue Massage", price: 3500, duration: "60 min", category: "Massage", description: "For powerful relief from chronic pain, our Deep Tissue Massage uses slow, deliberate strokes to target inner muscle layers. Ideal for athletes and those with persistent knots." },
 
@@ -89,7 +89,7 @@ export default function ChatBot() {
     return `You are Nunyui, an AI assistant for NUNYUI Spa & Salon, Volta's premier luxury wellness destination specializing in organic spa treatments. You are friendly, professional, knowledgeable about wellness and beauty, and always helpful.
 
 NUNYUI Spa & Salon Information:
-- Location: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra, Volta, West Bengal 700105
+- Location: P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Ho, Volta, West Bengal 700105
 - Phone: +233 249435529
 - Email: info@nunyuispa.com, serenitynunyuispa@gmail.com
 - Hours: 
@@ -104,7 +104,7 @@ MASSAGE THERAPY:
 - Swedish Massage: $2,500 (60 min) - Indulge in a timeless classic at Volta's premier wellness destination. Our Swedish Massage utilizes masterful, flowing strokes and gentle kneading to dissolve muscle tension, enhance circulation, and guide you to a state of profound relaxation.
 - Japanese Head Spa: $3,500 (90 min) - Embark on a transcendent sensory journey with our state-of-the-art Japanese Head Spa. Submerge your senses in a sanctuary of tranquility as a therapeutic waterfall, enriched with potent organic elixirs, bathes your scalp and hair under the ethereal glow of chromotherapy lighting.
 - Thai Dry Massage: $3,000 (75 min) - Experience the ancient art of healing with our authentic Thai Dry Massage in Volta. This traditional, oil-free therapy combines rhythmic acupressure, gentle rocking, and assisted yoga stretches to unblock energy pathways and relieve deep-seated tension.
-- Foot Massage: $1,500 (45 min) - Revitalize your entire being with our specialized Foot Massage, based on ancient reflexology techniques to alleviate fatigue and promote overall wellness in our luxurious Tangra spa.
+- Foot Massage: $1,500 (45 min) - Revitalize your entire being with our specialized Foot Massage, based on ancient reflexology techniques to alleviate fatigue and promote overall wellness in our luxurious Ho spa.
 - Head and Shoulder Massage: $1,200 (30 min) - Melt away modern life's stresses with our targeted Head and Shoulder Massage. This therapy provides immediate relief from headaches, stiffness, and digital fatigue.
 - Deep Tissue Massage: $3,500 (60 min) - For powerful relief from chronic pain, our Deep Tissue Massage uses slow, deliberate strokes to target inner muscle layers. Ideal for athletes and those with persistent knots.
 

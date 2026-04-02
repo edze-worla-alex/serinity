@@ -6,28 +6,28 @@ import { Sparkles, Star, ArrowRight, MapPin, Users, Award } from "lucide-react";
 const slides = [
   {
     id: 1,
-    image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/831601306_14.jpg?w=2560&q=90",
+    image_url: "/images/ideal-hero.jpg",
     headline: "#1 Luxury Spa & Salon in Volta",
-    subheading: "Where Wellness Meets Luxury at NUNYUI Tangra",
+    subheading: "Where Wellness Meets Luxury at NUNYUI Ho",
     description: "Transform Your Look. Rejuvenate Your Soul. Experience Volta's Most Exclusive Organic Spa Treatments & Premium Massage Therapy.",
     cta_text: "BOOK YOUR LUXURY ESCAPE",
     isH1: true,
   },
   {
     id: 2,
-    image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/07d005974_12.jpg?w=2560&q=90",
+    image_url: "/images/young-woman-hero1.jpg",
     headline: "5-Star Rated Luxury Spa Experience",
     subheading: "Premium Interior Design & Certified Therapists",
-    description: "Experience our meticulously designed spa interiors in Tangra, Volta where every detail reflects sophistication and tranquility for your ultimate comfort.",
+    description: "Experience our meticulously designed spa interiors in Ho, Volta where every detail reflects sophistication and tranquility for your ultimate comfort.",
     cta_text: "EXPLORE OUR SANCTUARY",
     isH1: false,
   },
   {
     id: 3,
-    image_url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/4289f0848_13.jpg?w=2560&q=90",
+    image_url: "/images/young-woman-hero.jpg",
     headline: "Award-Winning Organic Spa Treatments",
     subheading: "Sophisticated Treatment Spaces in Volta",
-    description: "Indulge in our beautifully crafted treatment rooms designed for privacy, comfort, and the ultimate organic spa experience in Tangra.",
+    description: "Indulge in our beautifully crafted treatment rooms designed for privacy, comfort, and the ultimate organic spa experience in Ho.",
     cta_text: "DISCOVER PREMIUM WELLNESS",
     isH1: false,
   }
@@ -37,7 +37,7 @@ const slides = [
 const trustIndicators = [
   { icon: Users, text: "2000+ Happy Clients", color: "text-white" },
   { icon: Award, text: "5-Star Rated Spa", color: "text-[#2db83d]" },
-  { icon: MapPin, text: "Prime Tangra Location", color: "text-white" }
+  { icon: MapPin, text: "Located at Ho", color: "text-white" }
 ];
 
 export default function Hero() {
@@ -70,7 +70,7 @@ export default function Hero() {
         >
           <img
             src={currentSlide.image_url}
-            alt={`NUNYUI Luxury Spa & Salon in Volta Tangra - ${currentSlide.headline}. Offering Organic Spa Treatments and Premium Massage Therapy.`}
+            alt={`NUNYUI Luxury Spa & Salon in Volta Ho - ${currentSlide.headline}. Offering Organic Spa Treatments and Premium Massage Therapy.`}
             className="w-full h-full object-cover object-center"
             style={{
               objectPosition: 'center center',
@@ -101,20 +101,20 @@ export default function Hero() {
             >
               {/* Main Headline - Enhanced Glow Effect */}
               {currentSlide.isH1 ? (
-                <h1 className="font-serif font-medium leading-[1.1] text-white text-[clamp(2rem,8vw,5rem)]">
+                <h1 className="font-serif font-medium leading-[1.1] text-white text-[clamp(1rem,5vw,3rem)]">
                   {currentSlide.headline}
-                  <br />
+                  {/* <br />
                   <span className="block text-[#2db83d] enhanced-glow-text mt-4 sm:mt-6 text-[0.85em]">
                     {currentSlide.subheading}
-                  </span>
+                  </span> */}
                 </h1>
               ) : (
-                <h2 className="font-serif font-medium leading-[1.1] text-white text-[clamp(2rem,8vw,5rem)]">
+                <h2 className="font-serif font-medium leading-[1.1] text-white text-[clamp(1rem,5vw,3rem)]">
                   {currentSlide.headline}
-                  <br />
+                  {/* <br />
                   <span className="block text-[#2db83d] enhanced-glow-text mt-4 sm:mt-6 text-[0.85em]">
                     {currentSlide.subheading}
-                  </span>
+                  </span> */}
                 </h2>
               )}
 
@@ -160,7 +160,7 @@ export default function Hero() {
               </div>
 
               {/* Urgency Element - Responsive */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1 }}
@@ -173,7 +173,7 @@ export default function Hero() {
                 <p className="text-white/90 text-xs sm:text-sm leading-relaxed">
                   Book today and receive a complimentary organic facial add-on worth $2,500
                 </p>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </AnimatePresence>
         </div>

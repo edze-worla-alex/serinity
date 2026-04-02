@@ -38,7 +38,18 @@ export default function WhyChooseUs() {
         <div className="w-96 h-96 bg-[#2db83d] rounded-full blur-3xl" />
       </motion.div>
 
-      <div className="mx-auto my-1 px-6 max-w-7xl lg:px-8">
+      <div className="mx-auto my-1 px-6 max-w-7xl lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 items-center rounded-2xl">
+        <motion.div
+            initial={{ opacity: 0, y: 100, scale: 0.9, rotateX: 15 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut", type: "spring", stiffness: 100 }}
+            viewport={{ once: true }}
+            className="space-y-8 text-center flex justify-center items-center"
+          >
+            <img src="/images/cta.jpg" className="object-contain rounded-2xl h-100 sm:h-full"/>
+            </motion.div>
+        </div>
         <div className="grid grid-cols-1 items-center">
           {/* Centered Content */}
           <motion.div

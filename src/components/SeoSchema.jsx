@@ -11,13 +11,13 @@ export default function SeoSchema() {
         "name": "NUNYUI Luxury Spa & Salon",
         "url": "https://www.nunyuispa.com/",
         "logo": "https://www.nunyuispa.com/logo.png", // Placeholder URL, should be replaced with actual logo URL
-        "description": "Discover NUNYUI, Volta's #1 luxury organic spa and salon in Tangra. We offer world-class, state-of-the-art equipment and highly skilled, certified professionals for premium organic spa treatments, therapeutic massages, and advanced beauty services. Your ultimate wellness sanctuary.",
+        "description": "Discover NUNYUI, Volta's #1 luxury organic spa and salon in Ho. We offer world-class, state-of-the-art equipment and highly skilled, certified professionals for premium organic spa treatments, therapeutic massages, and advanced beauty services. Your ultimate wellness sanctuary.",
         "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/831601306_14.jpg",
         "telephone": "+91-98765-43210",
         "priceRange": "$$ - $$$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Tangra",
+          "streetAddress": "P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Ho",
           "addressLocality": "Volta",
           "postalCode": "700105",
           "addressRegion": "West Bengal",
@@ -25,7 +25,7 @@ export default function SeoSchema() {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "22.5413", // Approximate coordinates for Tangra, Volta
+          "latitude": "22.5413", // Approximate coordinates for Ho, Volta
           "longitude": "88.3833"
         },
         "openingHoursSpecification": [
