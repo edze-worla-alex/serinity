@@ -433,7 +433,7 @@ providing you with an exceptional wellness experience.
                   <div className="text-center mb-8">
                     <p className="text-gray-600">Step 2 of 2: Your Details</p>
                     <div className="mt-4 p-4 bg-[#2db83d]/5 rounded-xl">
-                      <p className="font-serif text-lg text-[#0F0F0F]">
+                      <p className="font-sans text-lg text-[#0F0F0F]">
                         {formData.service} - {new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD'
