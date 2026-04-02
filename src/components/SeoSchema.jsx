@@ -14,7 +14,7 @@ export default function SeoSchema() {
         "description": "Discover NUNYUI, Volta's #1 luxury organic spa and salon in Ho. We offer world-class, state-of-the-art equipment and highly skilled, certified professionals for premium organic spa treatments, therapeutic massages, and advanced beauty services. Your ultimate wellness sanctuary.",
         "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/831601306_14.jpg",
         "telephone": "+91-98765-43210",
-        "priceRange": "$$ - $$$",
+        "priceRange": "$ - $",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "P-145, Sector A, Metropolitan Co-Operative Housing Society Limited, Ho",
